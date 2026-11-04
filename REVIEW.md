@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 241 Einträgen freigegeben · 241 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 291 Einträgen freigegeben · 291 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -21,10 +21,11 @@
 | `about.draft` | Alle Inhalte sind ein Entwurf und wurden noch nicht von Fachpersonal geprüft. | ⬜ Entwurf |  |  |
 | `about.not` | Die App stellt keine Diagnose, behandelt keine Erkrankung und ersetzt keine ärztliche oder psychotherapeutische Hilfe. Ob sie in akuten Situationen hilft, ist bisher nicht untersucht. | ⬜ Entwurf |  |  |
 | `about.privacy.title` | Datenschutz | ⬜ Entwurf |  |  |
-| `about.privacy` | 1. Keine Registrierung, kein Tracking, keine Cookies, keine Drittanbieter.<br>2. Deine Eingaben bleiben nur im Arbeitsspeicher dieses Browser-Tabs und werden beim Beenden gelöscht.<br>3. Beim Laden der Seite entstehen beim Hosting-Anbieter technische Zugriffsdaten (z. B. IP-Adresse). | ⬜ Entwurf | Letzten Punkt an den tatsächlichen Hoster anpassen, sobald feststeht. |  |
+| `about.privacy` | 1. Keine Registrierung, kein Tracking, keine Cookies, keine Drittanbieter.<br>2. Deine Eingaben in den Übungen bleiben nur im Arbeitsspeicher dieses Browser-Tabs und werden beim Beenden gelöscht.<br>3. Nur wenn du die Darstellung änderst (Schrift, Abstände, Bewegung, Farben), wird diese Auswahl lokal in deinem Browser gespeichert. Sie verlässt dein Gerät nicht.<br>4. Beim Laden der Seite entstehen beim Hosting-Anbieter technische Zugriffsdaten (z. B. IP-Adresse). | ⬜ Entwurf | Letzten Punkt an den tatsächlichen Hoster anpassen, sobald feststeht. |  |
 | `about.progress` | Fachlich freigegeben: {approved} von {total} Einträgen. | ⬜ Entwurf |  |  |
 | `about.offline` | Nach dem ersten Laden funktioniert die App auch ohne Internet. | ⬜ Entwurf |  |  |
 | `about.sources.title` | Fachliche Grundlagen | ⬜ Entwurf |  |  |
+| `about.version` | Version {version} | ⬜ Entwurf |  |  |
 
 ## `breathing.json`
 
@@ -73,6 +74,12 @@
 | `emergency.ts.numbers` | 1. 0800 111 0 111<br>2. 0800 111 0 222<br>3. 116 123 | ⬜ Entwurf | Nummern am 04.11.2026 auf telefonseelsorge.de geprüft. | `telefonseelsorge` |
 | `emergency.notalone` | Wenn möglich: Sag einer Person in deiner Nähe Bescheid. | ⬜ Entwurf |  |  |
 | `emergency.back` | Zurück | ⬜ Entwurf |  |  |
+| `emergency.crisis.title` | Psychiatrische Krisendienste | ⬜ Entwurf |  |  |
+| `emergency.crisis.lead` | Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert. | ⬜ Entwurf |  | `gesundbund-krisen` |
+| `emergency.crisis.bayern` | Bayern: 0800 655 3000 – kostenlos, rund um die Uhr, nur aus Bayern erreichbar | ⬜ Entwurf |  | `krisendienste-bayern` |
+| `emergency.crisis.berlin` | Berlin: Berliner Krisendienst, 030 390 63 10 (Öffnungszeiten der Standorte auf der Website) | ⬜ Entwurf | Widerspruch: berlin.de nennt 030 390 63 00 als überregionale Nummer, die Seite des Berliner Krisendienstes 030 390 63 10. Übernommen wurde die Angabe des Anbieters. Bitte vor Release erneut prüfen. | `berliner-krisendienst` |
+| `emergency.crisis.other` | Andere Regionen: Krisendienste und Sozialpsychiatrische Dienste in deiner Nähe findest du über die Suche der Stiftung Deutsche Depressionshilfe. | ⬜ Entwurf |  | `depressionshilfe-suche`, `gesundbund-krisen` |
+| `emergency.crisis.link` | Zur Suche (öffnet eine externe Seite) | ⬜ Entwurf |  |  |
 
 ## `end.json`
 
@@ -104,6 +111,10 @@
 | `grounding.54321.badge` | Verbreitete Übung, nicht speziell für Panikattacken geprüft | ⬜ Entwurf | Konzept 5.3: darf nicht als validierte Behandlung dargestellt werden. |  |
 | `grounding.54321.steps` | 1. Nenne 5 Dinge, die du siehst.<br>2. Nenne 4 Dinge, die du fühlen kannst.<br>3. Nenne 3 Dinge, die du hörst.<br>4. Nenne 2 Dinge, die du riechst – oder die du magst.<br>5. Nenne 1 Sache, die du schmeckst – oder bemerk einen Atemzug. | ⬜ Entwurf |  |  |
 | `grounding.done` | Du hast die Übung abgeschlossen. | ⬜ Entwurf |  |  |
+| `grounding.orient.label` | Wo bin ich? | ⬜ Entwurf |  |  |
+| `grounding.orient.steps` | 1. Sag dir leise, wo du gerade bist. Zum Beispiel: Ich sitze in meiner Küche.<br>2. Welcher Tag ist heute? Welche Tageszeit ungefähr?<br>3. Nenne drei Dinge, die dir zeigen, wo du bist: ein Möbelstück, ein Fenster, eine Tür.<br>4. Sag dir: Ich bin hier, und es ist jetzt. | ⬜ Entwurf | Konzept 5.3: Orientierung anhand konkreter Umgebungsmerkmale. Passt besonders bei Unwirklichkeitsgefühl (Derealisation); bitte prüfen. |  |
+| `grounding.object.label` | Ein Gegenstand | ⬜ Entwurf |  |  |
+| `grounding.object.steps` | 1. Nimm einen Gegenstand in die Hand oder schau dir einen genau an.<br>2. Welche Farbe hat er? Gibt es mehrere Farbtöne?<br>3. Wie fühlt er sich an: glatt, rau, warm, kalt?<br>4. Wie schwer ist er? Hat er einen Geruch?<br>5. Beschreib ihn so, als müsstest du ihn jemandem erklären, der ihn nie gesehen hat. | ⬜ Entwurf | Konzept 5.3: Beschreibung neutraler Gegenstände. |  |
 
 ## `learn.json`
 
@@ -124,6 +135,13 @@
 | `learn.help.title` | Hilfe finden | ⬜ Entwurf |  |  |
 | `learn.help.text` | Bei wiederkehrenden Panikattacken gilt Psychotherapie, insbesondere kognitive Verhaltenstherapie, als gut untersuchte Behandlung. Termine in psychotherapeutischen Praxen vermittelt unter anderem der Terminservice der 116 117. | ⬜ Entwurf |  | `s3-angst-2021`, `nice-cg113`, `kbv-116117` |
 | `learn.symptoms.link` | Körpersignale einzeln erklärt | ⬜ Entwurf |  |  |
+| `learn.practice.title` | In Ruhe üben | ⬜ Entwurf |  |  |
+| `learn.practice.text` | Übungen gelingen in einer akuten Situation leichter, wenn man sie vorher in Ruhe ausprobiert hat. Hier gibt es keine Einschätzung vorher und nachher. | ⬜ Entwurf | Begründung: Übung in angstfreien Phasen erleichtert die Anwendung unter Stress (Konzept 5.1 / Psychoedukation). Bitte Formulierung und Beleg prüfen. |  |
+| `learn.practice.grounding` | Im Hier und Jetzt ankommen | ⬜ Entwurf |  |  |
+| `learn.practice.breathing` | Ruhig atmen | ⬜ Entwurf |  |  |
+| `learn.practice.reframe` | Gedanken prüfen | ⬜ Entwurf |  |  |
+| `learn.practice.simple` | Ganz einfache Schritte | ⬜ Entwurf |  |  |
+| `learn.practice.done` | Gut gemacht. Du kannst die Übung jederzeit wiederholen. | ⬜ Entwurf |  |  |
 
 ## `rating.json`
 
@@ -168,6 +186,29 @@
 | `safety.no` | Nein, nichts davon | ⬜ Entwurf |  |  |
 | `safety.hint` | Diese Frage ersetzt keine ärztliche Einschätzung. | ⬜ Entwurf |  |  |
 
+## `settings.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `settings.title` | Darstellung | ⬜ Entwurf |  |  |
+| `settings.lead` | Passe Schrift, Abstände, Bewegung und Farben an. Diese Auswahl wird nur auf diesem Gerät gespeichert, damit sie beim nächsten Öffnen gleich da ist. | ⬜ Entwurf |  |  |
+| `settings.font` | Schriftgröße | ⬜ Entwurf |  |  |
+| `settings.font.m` | Normal | ⬜ Entwurf |  |  |
+| `settings.font.l` | Groß | ⬜ Entwurf |  |  |
+| `settings.font.xl` | Sehr groß | ⬜ Entwurf |  |  |
+| `settings.spacing` | Zeilenabstand | ⬜ Entwurf |  |  |
+| `settings.spacing.normal` | Normal | ⬜ Entwurf |  |  |
+| `settings.spacing.wide` | Weit | ⬜ Entwurf |  |  |
+| `settings.motion` | Bewegung | ⬜ Entwurf |  |  |
+| `settings.motion.system` | Wie im Gerät eingestellt | ⬜ Entwurf |  |  |
+| `settings.motion.reduce` | Möglichst wenig Bewegung | ⬜ Entwurf |  |  |
+| `settings.theme` | Farben | ⬜ Entwurf |  |  |
+| `settings.theme.system` | Wie im Gerät eingestellt | ⬜ Entwurf |  |  |
+| `settings.theme.mocha` | Dunkel | ⬜ Entwurf |  |  |
+| `settings.theme.latte` | Hell | ⬜ Entwurf |  |  |
+| `settings.reset` | Zurücksetzen und nichts speichern | ⬜ Entwurf |  |  |
+| `settings.stored` | Gespeichert wird nur diese Darstellungsauswahl, keine Angaben zu dir oder deiner Angst. Mit „Zurücksetzen“ wird sie gelöscht. | ⬜ Entwurf |  |  |
+
 ## `simple.json`
 
 | ID | Text | Status | Hinweis | Quellen |
@@ -184,6 +225,9 @@
 | `start.learn.sub` | Für ruhigere Momente | ⬜ Entwurf |  |  |
 | `start.about` | Über diese App und ihre Grenzen | ⬜ Entwurf |  |  |
 | `start.note` | Alles hier ist freiwillig. Du kannst jederzeit aufhören. | ⬜ Entwurf |  |  |
+| `start.settings` | Darstellung anpassen | ⬜ Entwurf |  |  |
+| `start.update` | Eine neue Version ist verfügbar. | ⬜ Entwurf |  |  |
+| `start.update.button` | Jetzt aktualisieren | ⬜ Entwurf |  |  |
 
 ## `symptoms.json`
 
@@ -222,15 +266,15 @@
 | `symptoms.blue.text` | Viele Attacken fühlen sich an, als kämen sie aus dem Nichts. In einer Messstudie zeigten sich aber schon bis zu 47 Minuten vorher Veränderungen bei Atmung und Herzschlag, die die Betroffenen nicht bemerkt hatten. Der Körper hat also einen Vorlauf – die Attacke ist kein zufälliger Ausfall. | ⬜ Entwurf | Kleine Stichprobe: 43 Patient:innen, 13 aufgezeichnete Attacken. Befund als vorläufig behandeln. | `meuret2011` |
 | `symptoms.checking.title` | Ein Hinweis zum Nachschauen | ⬜ Entwurf |  |  |
 | `symptoms.checking.text` | Diese Erklärungen sind zum Verstehen da. Wer in jeder Attacke immer wieder prüft, ob ein Symptom gefährlich ist, kann die Angst auf Dauer eher verstärken. Wenn dir das bekannt vorkommt, sprich es in einer Therapie an. | ⬜ Entwurf | Rückversicherung als Sicherheitsverhalten. Bitte prüfen, ob Hinweis so angemessen ist. | `clark1986`, `salkovskis1991`, `schenkel2021` |
-| `symptoms.order` | 1. brust<br>2. atem<br>3. schwindel<br>4. kribbeln<br>5. herz<br>6. zittern<br>7. schwitzen<br>8. bauch<br>9. unwirklich | ⬜ Entwurf | Technische Reihenfolge (Schlüssel). Brustschmerz bewusst zuerst. Nur die Reihenfolge prüfen. |  |
+| `symptoms.order` | 1. brust<br>2. atem<br>3. schwindel<br>4. kribbeln<br>5. herz<br>6. zittern<br>7. schwitzen<br>8. bauch<br>9. ohren<br>10. unwirklich | ⬜ Entwurf | Technische Reihenfolge (Schlüssel). Brustschmerz bewusst zuerst. Nur die Reihenfolge prüfen. |  |
 | `symptoms.brust.label` | Druck oder Schmerz in der Brust | ⬜ Entwurf |  |  |
-| `symptoms.brust.short` | Brustschmerz gehört zu den häufigsten Beschwerden bei Panikattacken. Schnelles Atmen kann selbst Druck und Schmerz in der Brust auslösen. | ⬜ Entwurf | Immer an erster Stelle, 112-Hinweis vor der Erklärung. Fleet 1996: 44 % der Panik-Patient:innen mit Brustschmerz in der Notaufnahme hatten eine dokumentierte KHK. | `tunnell2024`, `freire2009`, `fleet1996`, `116117-112` |
-| `symptoms.brust.what` | Brustschmerz gehört zu den häufigsten körperlichen Symptomen von Panikattacken. Schnelles, flaches Atmen kann selbst Brustschmerzen auslösen. | ⬜ Entwurf |  | `tunnell2024`, `freire2009`, `fleet1996`, `116117-112` |
+| `symptoms.brust.short` | Brustschmerz gehört zu den häufigsten Beschwerden bei Panikattacken. Schnelles Atmen kann selbst Druck und Schmerz in der Brust auslösen. | ⬜ Entwurf | Immer an erster Stelle, 112-Hinweis vor der Erklärung. Fleet 1996: 44 % der Panik-Patient:innen mit Brustschmerz in der Notaufnahme hatten eine dokumentierte KHK. | `tunnell2024`, `nardi2009`, `fleet1996`, `116117-112` |
+| `symptoms.brust.what` | Brustschmerz gehört zu den häufigsten körperlichen Symptomen von Panikattacken. Schnelles, flaches Atmen kann selbst Brustschmerzen auslösen. | ⬜ Entwurf |  | `tunnell2024`, `nardi2009`, `fleet1996`, `116117-112` |
 | `symptoms.brust.why` | Brustschmerz ist auch ein Warnzeichen für Herzerkrankungen. Deshalb ist die Angst davor verständlich – und deshalb ist dieser Punkt anders als die anderen. | ⬜ Entwurf |  | `clark1986` |
 | `symptoms.brust.check` | Bei starken Brustschmerzen oder wenn das für dich neu ist: ruf die 112, auch wenn du Panikattacken kennst. Angst und Herzerkrankung können gleichzeitig vorkommen – unterscheiden kann das nur eine Untersuchung. Wenn eine Ärztin oder ein Arzt deine Beschwerden schon als Teil der Angst eingeordnet hat, darfst du dich an diese Einordnung halten. | ⬜ Entwurf | Vollständiger Text nur unter 'Genauer erklärt' und im Lernbereich. Bitte prüfen, ob der Satz zu Herzerkrankung in der Akutphase eher beruhigt oder beunruhigt. | `fleet1996`, `116117-112` |
 | `symptoms.atem.label` | Atemnot, zu wenig Luft | ⬜ Entwurf |  |  |
-| `symptoms.atem.short` | Bei Angst atmen viele schneller oder tiefer, als der Körper gerade braucht – oft ohne es zu merken. Das Gefühl, nicht genug Luft zu bekommen, kann dabei trotzdem sehr stark sein. Du musst nicht extra tief einatmen. | ⬜ Entwurf | Theorie des Erstickungs-Fehlalarms (Klein) ist nicht gesichert und als 'diskutiert' formuliert. | `tunnell2024`, `kyriakoulis2023`, `freire2009`, `116117-112` |
-| `symptoms.atem.what` | Die genaue Ursache ist nicht geklärt. Zwei Erklärungen werden diskutiert: Viele Menschen atmen bei Angst schneller oder tiefer, als der Körper braucht (Hyperventilation). Oder ein empfindliches inneres Erstickungs-Alarmsystem schlägt an, obwohl genug Sauerstoff da ist. | ⬜ Entwurf |  | `tunnell2024`, `kyriakoulis2023`, `freire2009`, `116117-112` |
+| `symptoms.atem.short` | Bei Angst atmen viele schneller oder tiefer, als der Körper gerade braucht – oft ohne es zu merken. Das Gefühl, nicht genug Luft zu bekommen, kann dabei trotzdem sehr stark sein. Du musst nicht extra tief einatmen. | ⬜ Entwurf | Theorie des Erstickungs-Fehlalarms (Klein) ist nicht gesichert und als 'diskutiert' formuliert. | `tunnell2024`, `kyriakoulis2023`, `nardi2009`, `116117-112`, `freire2009` |
+| `symptoms.atem.what` | Die genaue Ursache ist nicht geklärt. Zwei Erklärungen werden diskutiert: Viele Menschen atmen bei Angst schneller oder tiefer, als der Körper braucht (Hyperventilation). Oder ein empfindliches inneres Erstickungs-Alarmsystem schlägt an, obwohl genug Sauerstoff da ist. | ⬜ Entwurf |  | `tunnell2024`, `kyriakoulis2023`, `nardi2009`, `116117-112`, `freire2009` |
 | `symptoms.atem.why` | Atemnot gehört zu den beängstigendsten Gefühlen überhaupt. Wer glaubt zu ersticken, versucht oft, noch mehr Luft zu holen – das kann die Beschwerden verstärken. | ⬜ Entwurf |  | `clark1986` |
 | `symptoms.atem.check` | Schwere Atemnot: 112. Asthma und andere Lungenerkrankungen können ähnliche Beschwerden machen. Ist die Atemnot neu oder anders als sonst, lass sie ärztlich abklären. | ⬜ Entwurf |  | `116117-112` |
 | `symptoms.schwindel.label` | Schwindel, Benommenheit | ⬜ Entwurf |  |  |
@@ -273,6 +317,11 @@
 | `symptoms.kribbeln.checknote` | Diese Zeichen können auf einen Schlaganfall hinweisen. Sie unterscheiden sich von angstbedingten Beschwerden dadurch, dass sie meist nur eine Körperseite betreffen und mit Ausfällen wie Lähmung oder Sprachstörung einhergehen. | ⬜ Entwurf | Nur im Lernbereich sichtbar, nicht in der Akutkarte. | `schlaganfall-hilfe` |
 | `symptoms.calmfirst.title` | Am besten vorher lesen | ⬜ Entwurf |  |  |
 | `symptoms.calmfirst.text` | Erklärungen zu Körpersignalen wirken am besten, wenn man sie in einem ruhigen Moment schon einmal gelesen hat. In einer Attacke erinnern sie dann an etwas Bekanntes. | ⬜ Entwurf | Belege für Psychoeducation stammen aus Anwendung in ruhigem Zustand; für Anwendung während einer Attacke gibt es keine Studien. | `norr2017`, `gallagher2013` |
+| `symptoms.ohren.label` | Rauschen oder Druck in den Ohren | ⬜ Entwurf |  |  |
+| `symptoms.ohren.short` | Ohrensausen oder Rauschen kann bei Angst auftreten, besonders wenn man schnell atmet. Wenn die Angst nachlässt, wird es oft leiser. | ⬜ Entwurf | Schwache Datenlage: Ohrensausen ist in einem Review als Folge akuter Hyperventilation genannt; Studien zu Ohrgeräuschen während Panikattacken fehlen. Satz 2 ist Trainingswissen und bitte zu prüfen. | `nardi2009`, `invirto-ifu` |
+| `symptoms.ohren.what` | Schnelles Atmen kann neben Schwindel und Kribbeln auch Ohrensausen auslösen. Außerdem achtet man bei Angst stärker auf Körpergeräusche, die sonst untergehen – auch auf den eigenen Puls im Ohr. Für Ohrgeräusche während einer Panikattacke gibt es bisher kaum Studien. | ⬜ Entwurf | 'Stärkere Aufmerksamkeit auf Körpergeräusche' in Anlehnung an erhöhte Interozeption bei Angst; bitte prüfen. | `nardi2009`, `tunnell2024` |
+| `symptoms.ohren.why` | Ein plötzliches Geräusch im Ohr wirkt fremd und schwer einzuordnen. Viele fürchten, dass etwas im Kopf nicht stimmt. | ⬜ Entwurf |  | `clark1986` |
+| `symptoms.ohren.check` | Ärztlich abklären lassen, wenn du plötzlich auf einem Ohr schlechter hörst, starker Drehschwindel dazukommt oder das Ohrgeräusch auch ohne Angst bleibt. | ⬜ Entwurf | Trainingswissen (Hörsturz, Morbus Menière als Differenzialdiagnose). Fachquelle (HNO-Leitlinie) ergänzen. |  |
 
 ## `ui.json`
 
@@ -327,3 +376,9 @@
 | `schenkel2021` | Schenkel, S. K., Jungmann, S. M., Gropalis, M., Witthöft, M. (2021). Conceptualizations of cyberchondria and relations to the anxiety spectrum: Systematic review and meta-analysis. Journal of Medical Internet Research, 23(11), e27835. | https://doi.org/10.2196/27835 | 2026-11-04 | ⬜ Entwurf |
 | `jones2019` | Jones, D. et al. (2019). Safety netting for primary care: evidence from a literature review. British Journal of General Practice, 69, e70–e79. | https://doi.org/10.3399/bjgp18X700193 | 2026-11-04 | ⬜ Entwurf |
 | `salkovskis1991` | Salkovskis, P. M. (1991). The importance of behaviour in the maintenance of anxiety and panic: A cognitive account. Behavioural Psychotherapy, 19, 6–19. | https://www.cambridge.org/core/journals/behavioural-and-cognitive-psychotherapy/article/abs/importance-of-behaviour-in-the-maintenance-of-anxiety-and-panic-a-cognitive-account/B3BAA0EFEF179C99BBCA5F983B05A534 | 2026-11-04 | ⬜ Entwurf |
+| `nardi2009` | Nardi, A. E., Freire, R. C., Zin, W. A. (2009). Panic disorder and control of breathing. Respiratory Physiology & Neurobiology, 167(1), 133–143. [Review] | https://www.sciencedirect.com/science/article/abs/pii/S1569904808001997 | 2026-11-04 | ⬜ Entwurf |
+| `invirto-ifu` | Sympatient GmbH: Invirto – Die Therapie gegen Angst, Gebrauchsanweisung. [Primärquelle, kein Peer-Review] | https://eifu.invirto.de/anxiety/therapy/de | 2026-11-04 | ⬜ Entwurf |
+| `krisendienste-bayern` | Krisendienste Bayern (Bayerischer Bezirketag). [Primärquelle] | https://krisendienste.bayern/faq-fragen-und-antworten/ | 2026-11-04 | ⬜ Entwurf |
+| `berliner-krisendienst` | Berliner Krisendienst: Die Standorte und ihre Telefonnummern. [Primärquelle] | https://www.berliner-krisendienst.de/ich-brauche-hilfe/ | 2026-11-04 | ⬜ Entwurf |
+| `depressionshilfe-suche` | Stiftung Deutsche Depressionshilfe und Suizidprävention: Beratungsstellen und Krisendienste (Suche). | https://www.deutsche-depressionshilfe.de/depression-infos-und-hilfe/wo-finde-ich-hilfe/krisendienste-und-beratungsstellen | 2026-11-04 | ⬜ Entwurf |
+| `gesundbund-krisen` | gesund.bund.de (Bundesministerium für Gesundheit): Anlaufstellen bei psychischen Krisen. | https://gesund.bund.de/wege-im-gesundheitswesen/erwachsenenleben/notfaelle/psychische-krisen | 2026-11-04 | ⬜ Entwurf |

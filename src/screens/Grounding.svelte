@@ -6,7 +6,7 @@
   import { t, list } from '../lib/content';
 
   // Mehrere Varianten, weil sensorische Übungen individuell verschieden erlebt werden (Konzept 5.3).
-  const variants = ['room', 'sound', 'contact', '54321'] as const;
+  const variants = ['room', 'sound', 'contact', 'orient', 'object', '54321'] as const;
   type Variant = (typeof variants)[number];
   let chosen = $state<Variant | null>(null);
 </script>

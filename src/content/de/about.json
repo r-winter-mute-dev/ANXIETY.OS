@@ -47,7 +47,8 @@
   "about.privacy": {
     "text": [
       "Keine Registrierung, kein Tracking, keine Cookies, keine Drittanbieter.",
-      "Deine Eingaben bleiben nur im Arbeitsspeicher dieses Browser-Tabs und werden beim Beenden gelöscht.",
+      "Deine Eingaben in den Übungen bleiben nur im Arbeitsspeicher dieses Browser-Tabs und werden beim Beenden gelöscht.",
+      "Nur wenn du die Darstellung änderst (Schrift, Abstände, Bewegung, Farben), wird diese Auswahl lokal in deinem Browser gespeichert. Sie verlässt dein Gerät nicht.",
       "Beim Laden der Seite entstehen beim Hosting-Anbieter technische Zugriffsdaten (z. B. IP-Adresse)."
     ],
     "review": {
@@ -78,6 +79,15 @@
   },
   "about.sources.title": {
     "text": "Fachliche Grundlagen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.version": {
+    "text": "Version {version}",
     "review": {
       "status": "draft",
       "reviewer": null,

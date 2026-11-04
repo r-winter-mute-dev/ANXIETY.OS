@@ -30,8 +30,8 @@ Die sinnvolle Reihenfolge:
 
 ### Fachlich
 
-- [ ] 🔴 **Review aller 133 Einträge** (124 Textbausteine, 9 Quellen) durch eine Fachperson aus Psychotherapie oder Psychiatrie
-- [ ] 🔴 **Krisenpfad bei Suizidgedanken prüfen lassen.** Bisher zeigt die App nur 112 und die TelefonSeelsorge. Reicht das, oder braucht es mehr, etwa regionale Krisendienste oder einen eigenen, ruhigeren Bildschirm?
+- [ ] 🔴 **Review aller 291 Einträge** (Textbausteine und Quellen, siehe [REVIEW.md](REVIEW.md)) durch eine Fachperson aus Psychotherapie oder Psychiatrie
+- [ ] 🔴 **Krisenpfad bei Suizidgedanken prüfen lassen.** Die App zeigt 112, TelefonSeelsorge, die Krisendienste Bayern und Berlin sowie eine Suche für andere Regionen. Reicht das, oder braucht es einen eigenen, ruhigeren Bildschirm? Berlin: Widerspruch bei der überregionalen Nummer (030 390 63 10 laut Anbieter, 030 390 63 00 laut berlin.de) klären.
 - [ ] 🔴 **Sicherheitsfrage am Anfang fachlich bestätigen:** Auswahl der drei Punkte, Wortlaut und die Entscheidung, nur eine Frage statt einer Symptomliste zu stellen
 - [ ] 🔴 **Körpersignale in der Akutphase fachlich bewerten:** Hilft die Erklärung während einer Attacke, oder wirkt sie wie Rückversicherung? Wortlaut der Warnzeichen prüfen (bewusst ohne Krankheitsnamen). Für diesen Einsatz gibt es keine Studien.
 - [ ] 🔴 **Bewusste Abweichungen vom Konzept bestätigen** (Tabelle in der [README](README.md#bewusste-entscheidungen))
@@ -66,8 +66,8 @@ Diese Punkte stehen im Konzept, sind aber noch nicht oder nur teilweise umgesetz
 | --- | --- | --- |
 | 5.1 Sicherheitsprüfung | **Frage, ob man sich gerade an einem sicheren Ort befindet** | Bewusst weggelassen, um die Hürde klein zu halten. Mit der Fachperson entscheiden. |
 | 6 Phase 2 | **Eigene Phase „Situative Orientierung“** | Teilweise durch die Angst-Skala abgedeckt. Mögliche Ergänzung: „Wo bist du gerade? Bist du allein?“ |
-| 5.3 Grounding | **Variante „Orientierung“:** Wo bin ich, welcher Tag ist heute, was ist um mich herum | Würde gut zu Derealisation passen |
-| 5.3 Grounding | **Variante „Neutraler Gegenstand“:** einen Gegenstand ausführlich beschreiben | Steckt teilweise in „Umgebung“ |
+| 5.3 Grounding | ✅ **Variante „Orientierung“** („Wo bin ich?“) umgesetzt | Passt zu Derealisation; Review offen |
+| 5.3 Grounding | ✅ **Variante „Neutraler Gegenstand“** („Ein Gegenstand“) umgesetzt | Review offen |
 | 2.1 / 5.2 Psychoedukation | ~~Erklärung zu Derealisation und Depersonalisation~~ | ✅ Umgesetzt in „Körpersignale verstehen“ |
 | 5.5 / 5.2 Psychoedukation | ~~Erklärung zu Hyperventilation~~ | ✅ Umgesetzt bei Schwindel, Kribbeln und Atemnot |
 
@@ -103,7 +103,7 @@ Viele Menschen entwickeln nach einem Herzereignis eine Angststörung. Psychother
 
 ### Vorbereitung in ruhigen Momenten
 
-- [ ] 🟡 **Vorbereitungsmodus:** jede Übung in Ruhe ausprobieren, ohne den Akut-Ablauf. Geübte Strategien sind in der Krise leichter abrufbar.
+- [x] 🟡 **Vorbereitungsmodus:** jede Übung in Ruhe ausprobieren, ohne den Akut-Ablauf. Geübte Strategien sind in der Krise leichter abrufbar.
 - [ ] ⚪ **Interozeptive Übungen** (Körperempfindungen gezielt auslösen, wie bei Invirto): nur in ruhigen Momenten und nur mit therapeutischer Begleitung. Invirto weist selbst darauf hin, dass diese Übungen starke Anspannung auslösen können.
 - [ ] 🟡 **Persönlicher Notfallplan:** eigene Sätze, die helfen, eine Lieblingsübung, eine Vertrauensperson mit Telefonnummer. Er erscheint im Akut-Ablauf als Erstes.
   - Erste Funktion, die etwas speichert: nur lokal, nur nach ausdrücklicher Zustimmung, jederzeit löschbar
@@ -111,15 +111,15 @@ Viele Menschen entwickeln nach einem Herzereignis eine Angststörung. Psychother
 
 ### Anpassbarkeit
 
-- [ ] 🟡 **Einstellungen** wie bei 0 to Hero: Schriftgröße, Zeilenabstand, Bewegung an oder aus
-- [ ] ⚪ **Helles Farbschema** (Catppuccin Latte) für Tageslicht
+- [x] 🟡 **Einstellungen** wie bei 0 to Hero: Schriftgröße, Zeilenabstand, Bewegung an oder aus
+- [x] ⚪ **Helles Farbschema** (Catppuccin Latte) für Tageslicht
 - [ ] ⚪ **Optionale Vibration** als Taktgeber für die Atemhilfe, für alle, die nicht auf den Bildschirm schauen wollen
 - [ ] ⚪ **Optionales Vorlesen** der Anweisungen. Das Konzept verlangt „keine überraschenden akustischen Reize“, also nur auf ausdrücklichen Wunsch.
 
 ### Mehr Menschen erreichen
 
-- [ ] 🟡 **Körpersignal „Ohrenrauschen oder Druck auf den Ohren“** ergänzen (bei Invirto genannt; Mechanismus vorher recherchieren)
-- [ ] 🟡 **Psychiatrische Krisendienste** ergänzen. Es gibt keine bundesweite Nummer, sie sind regional organisiert; Lösung ohne Standortabfrage finden, Nummern einzeln prüfen
+- [x] 🟡 **Körpersignal „Rauschen oder Druck in den Ohren“** ergänzt. Datenlage schwach: nur als Folge schnellen Atmens in einem Review genannt (Nardi et al. 2009), keine Studien zu Ohrgeräuschen während Panikattacken. In der Prüfliste markiert.
+- [x] 🟡 **Psychiatrische Krisendienste** ergänzen. Es gibt keine bundesweite Nummer, sie sind regional organisiert; Lösung ohne Standortabfrage finden, Nummern einzeln prüfen
 
 - [ ] ⚪ **Leichte Sprache**
 - [ ] ⚪ **Englisch**, danach weitere Sprachen. Die Textbausteine sind dafür schon getrennt vom Code.
@@ -134,11 +134,11 @@ Viele Menschen entwickeln nach einem Herzereignis eine Angststörung. Psychother
 
 ## 🟡 Technik und Qualität
 
-- [ ] 🟡 Offline-Test in der CI auch für den Unterpfad `/ANXIETY.OS/` laufen lassen, nicht nur lokal
-- [ ] 🟡 Hinweis in der App, wenn eine neue Version verfügbar ist
-- [ ] 🟡 Automatische Updates der Abhängigkeiten (Dependabot)
+- [x] 🟡 Offline-Test in der CI auch für den Unterpfad `/ANXIETY.OS/` laufen lassen, nicht nur lokal
+- [x] 🟡 Hinweis in der App, wenn eine neue Version verfügbar ist
+- [x] 🟡 Automatische Updates der Abhängigkeiten (Dependabot)
 - [ ] 🟡 **Lesbarkeit der Texte prüfen:** kurze Sätze, einheitliches Du, keine Fachbegriffe ohne Erklärung
-- [ ] 🟡 Versionsnummern und `CHANGELOG.md` einführen, sobald das Review beginnt
+- [x] 🟡 Versionsnummern und `CHANGELOG.md` eingeführt (Version steht unter „Über diese App“)
 - [ ] 🟡 Den Test „nichts ist freigegeben“ anpassen, sobald das Review beginnt. Er schlägt dann absichtlich fehl.
 - [ ] ⚪ Eigene Domain
 

@@ -19,3 +19,8 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      # Derselbe Build wie auf GitHub Pages (Unterpfad), inkl. Offline-Test
+      - name: E2E unter dem Pages-Unterpfad
+        run: npm run test:e2e
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/

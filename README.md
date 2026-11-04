@@ -38,9 +38,11 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | **Alles per Antippen** | Auch beim Gedankenprüfen. Eigener Text ist erlaubt, aber nie nötig. |
 | **Du entscheidest** | Jede Übung ist freiwillig, jederzeit abbrechbar und hat kein Zeitlimit. |
 | **Hilfe immer erreichbar** | Unten auf jedem Bildschirm führt ein ruhiger Knopf zu den Notrufnummern, ohne Alarmfarben. |
-| **Keine Überraschungen** | Keine Töne, keine plötzlichen Bewegungen. Wer im System reduzierte Bewegung eingestellt hat, sieht die Atemhilfe ohne Animation. |
+| **Keine Überraschungen** | Keine Töne, keine plötzlichen Bewegungen. Wer im System oder in der App reduzierte Bewegung einstellt, sieht die Atemhilfe ohne Animation. |
 | **Auch ohne Netz** | Nach dem ersten Aufruf läuft die App offline und lässt sich wie eine App auf den Startbildschirm legen. |
-| **Kein Konto, kein Tracking** | Es wird nichts gespeichert. Deine Eingaben sind beim Beenden weg. |
+| **Kein Konto, kein Tracking** | Deine Eingaben sind beim Beenden weg. Gespeichert wird nur, wenn du die Darstellung anpasst. |
+| **Anpassbar** | Schriftgröße, Zeilenabstand, Bewegung und Farben (dunkel: Catppuccin Mocha, hell: Catppuccin Latte). |
+| **In Ruhe üben** | Unter „Angst verstehen“ lassen sich alle Übungen ohne Einschätzung vorher und nachher ausprobieren. |
 
 ## Ablauf
 
@@ -116,7 +118,8 @@ Die Idee, die Ziele und die Entscheidungen kommen von einem Menschen. Texte und 
 
 | | |
 | --- | --- |
-| **Nichts wird gespeichert** | Keine Cookies, kein localStorage, kein Konto. Eingaben existieren nur, solange der Tab offen ist. |
+| **Eingaben werden nicht gespeichert** | Keine Cookies, kein Konto. Was du in den Übungen eingibst, existiert nur, solange der Tab offen ist. |
+| **Einzige Ausnahme: Darstellung** | Änderst du Schriftgröße, Zeilenabstand, Bewegung oder Farben, merkt sich der Browser diese Auswahl lokal (`localStorage`). Sie verlässt das Gerät nicht. „Zurücksetzen“ löscht sie, bei Standardwerten wird nichts gespeichert. |
 | **Keine Drittanbieter** | Keine Schriften von außen, keine CDNs, keine Analyse-Dienste. Ein automatischer Test stellt sicher, dass keine fremden Server angefragt werden. |
 | **Hosting** | Zurzeit GitHub Pages. GitHub erhebt beim Aufruf technische Zugriffsdaten wie die IP-Adresse. Für die spätere Veröffentlichung ist ein Hoster in der EU geplant. |
 

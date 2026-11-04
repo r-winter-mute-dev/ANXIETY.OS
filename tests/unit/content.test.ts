@@ -45,6 +45,35 @@ describe('Inhalte', () => {
     expect(e['emergency.112.label'].tel).toBe('112');
     expect(e['emergency.116117.label'].tel).toBe('116117');
     expect(e['emergency.ts.numbers'].tel).toEqual(['08001110111', '08001110222', '116123']);
+    expect(e['emergency.crisis.bayern'].tel).toBe('08006553000');
+    expect(e['emergency.crisis.berlin'].tel).toBe('0303906310');
+  });
+
+  it('jede Grounding-Variante im Code hat Titel und Schritte', () => {
+    const g = data.byFile['grounding.json'];
+    const src = readFileSync(join(ROOT, 'src/screens/Grounding.svelte'), 'utf8');
+    const variants = JSON.parse(src.match(/const variants = (\[[^\]]+\])/)![1].replace(/'/g, '"'));
+    expect(variants).toContain('orient');
+    expect(variants).toContain('object');
+    for (const v of variants) {
+      expect(g[`grounding.${v}.label`], v).toBeTruthy();
+      expect(Array.isArray(g[`grounding.${v}.steps`].text), v).toBe(true);
+    }
+  });
+
+  it('Einstellungen: jede Option hat einen Text', () => {
+    const st = data.byFile['settings.json'];
+    const opts = { font: ['m', 'l', 'xl'], spacing: ['normal', 'wide'], motion: ['system', 'reduce'], theme: ['system', 'mocha', 'latte'] };
+    for (const [k, vs] of Object.entries(opts)) {
+      expect(st[`settings.${k}`]).toBeTruthy();
+      for (const v of vs) expect(st[`settings.${k}.${v}`], `${k}.${v}`).toBeTruthy();
+    }
+  });
+
+  it('Ohrensausen ist als schwache Datenlage markiert', () => {
+    const s = data.byFile['symptoms.json'];
+    expect(s['symptoms.order'].text).toContain('ohren');
+    expect(s['symptoms.ohren.short'].note).toMatch(/Schwache Datenlage/);
   });
 
   it('im Entwurfsstadium ist nichts freigegeben (Schutz vor versehentlicher Freigabe)', () => {

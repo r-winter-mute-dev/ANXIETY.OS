@@ -6,7 +6,10 @@ class Session {
   pre = $state<number | null>(null);
   post = $state<number | null>(null);
   exercise = $state<Exercise | null>(null);
+  /** Übungsmodus aus „Angst verstehen“: ohne Einschätzung vorher/nachher. */
+  practice = $state(false);
   reset() {
+    this.practice = false;
     this.pre = null;
     this.post = null;
     this.exercise = null;

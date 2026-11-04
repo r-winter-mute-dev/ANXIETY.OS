@@ -27,6 +27,17 @@
     </div>
   </div>
 
+  <div class="ts">
+    <h2>{t('emergency.crisis.title')}</h2>
+    <p class="desc">{t('emergency.crisis.lead')}</p>
+    <div class="ts-numbers">
+      <a class="call small-call" href="tel:{block('emergency.crisis.bayern').tel}">{t('emergency.crisis.bayern')}</a>
+      <a class="call small-call" href="tel:{block('emergency.crisis.berlin').tel}">{t('emergency.crisis.berlin')}</a>
+    </div>
+    <p class="desc other">{t('emergency.crisis.other')}</p>
+    <a class="extern" href={block('emergency.crisis.other').url as string} target="_blank" rel="noopener noreferrer">{t('emergency.crisis.link')}</a>
+  </div>
+
   <p class="muted">{t('emergency.notalone')}</p>
 </Screen>
 
@@ -65,8 +76,16 @@
     display: grid;
     gap: var(--s2);
   }
+  .other {
+    margin-top: var(--s2);
+  }
+  .extern {
+    color: var(--accent);
+  }
   .small-call {
     min-height: 56px;
     font-size: var(--fs-m);
+    font-weight: 500;
+    line-height: 1.35;
   }
 </style>
