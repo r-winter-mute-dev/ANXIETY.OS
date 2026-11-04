@@ -33,6 +33,7 @@ Die sinnvolle Reihenfolge:
 - [ ] 🔴 **Review aller 133 Einträge** (124 Textbausteine, 9 Quellen) durch eine Fachperson aus Psychotherapie oder Psychiatrie
 - [ ] 🔴 **Krisenpfad bei Suizidgedanken prüfen lassen.** Bisher zeigt die App nur 112 und die TelefonSeelsorge. Reicht das, oder braucht es mehr, etwa regionale Krisendienste oder einen eigenen, ruhigeren Bildschirm?
 - [ ] 🔴 **Sicherheitsfrage am Anfang fachlich bestätigen:** Auswahl der drei Punkte, Wortlaut und die Entscheidung, nur eine Frage statt einer Symptomliste zu stellen
+- [ ] 🔴 **Körpersignale in der Akutphase fachlich bewerten:** Hilft die Erklärung während einer Attacke, oder wirkt sie wie Rückversicherung? Wortlaut der Warnzeichen prüfen (bewusst ohne Krankheitsnamen). Für diesen Einsatz gibt es keine Studien.
 - [ ] 🔴 **Bewusste Abweichungen vom Konzept bestätigen** (Tabelle in der [README](README.md#bewusste-entscheidungen))
 
 ### Rechtlich
@@ -77,6 +78,7 @@ Diese Punkte stehen im Konzept, sind aber noch nicht oder nur teilweise umgesetz
 ### Vorbereitung in ruhigen Momenten
 
 - [ ] 🟡 **Vorbereitungsmodus:** jede Übung in Ruhe ausprobieren, ohne den Akut-Ablauf. Geübte Strategien sind in der Krise leichter abrufbar.
+- [ ] ⚪ **Interozeptive Übungen** (Körperempfindungen gezielt auslösen, wie bei Invirto): nur in ruhigen Momenten und nur mit therapeutischer Begleitung. Invirto weist selbst darauf hin, dass diese Übungen starke Anspannung auslösen können.
 - [ ] 🟡 **Persönlicher Notfallplan:** eigene Sätze, die helfen, eine Lieblingsübung, eine Vertrauensperson mit Telefonnummer. Er erscheint im Akut-Ablauf als Erstes.
   - Erste Funktion, die etwas speichert: nur lokal, nur nach ausdrücklicher Zustimmung, jederzeit löschbar
   - Datenschutz-Test erweitern: ohne Zustimmung darf weiterhin nichts gespeichert werden
@@ -135,4 +137,6 @@ Fragen, die vor dem Review oder währenddessen geklärt werden sollten.
 | Ist der ruhige Hilfe-Knopf noch auffindbar genug? | Fachperson und Usability-Test | offen |
 | Soll „Alles ist zu viel“ direkt eine Übung starten, statt erst vier Sätze zu zeigen? | Fachperson und Usability-Test | offen |
 | Zielgruppe nur Erwachsene: Braucht es dafür einen Hinweis oder eine Abfrage? | Fachperson und Recht | offen |
+| Nachfrage „weniger / gleich / stärker“ nach jedem Körpersignal: hilfreich oder lenkt sie den Fokus zu stark auf die Angst? | Fachperson und Usability-Test | offen |
+| Brustschmerz-Hinweis: Roter Rahmen und 112-Knopf vor der Erklärung angemessen, oder zu alarmierend? | Fachperson | offen |
 | Projektfarbe Teal oder Mauve wie bei den anderen Projekten? | Projektinhaber | offen |

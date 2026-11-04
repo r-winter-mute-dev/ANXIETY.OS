@@ -30,6 +30,16 @@ describe('Inhalte', () => {
     expect(missing).toEqual([]);
   });
 
+  it('jedes Körpersignal hat alle Textbausteine, Brustschmerz zuerst und als Warnzeichen', () => {
+    const s = data.byFile['symptoms.json'];
+    const order: string[] = s['symptoms.order'].text;
+    expect(order[0]).toBe('brust');
+    for (const k of order)
+      for (const f of ['label', 'short', 'what', 'why', 'check']) expect(s[`symptoms.${k}.${f}`], `${k}.${f}`).toBeTruthy();
+    expect(s['symptoms.brust.check'].redflag).toBe(true);
+    expect(s['symptoms.brust.alert']).toBeTruthy();
+  });
+
   it('Notrufnummern sind korrekt hinterlegt', () => {
     const e = data.byFile['emergency.json'];
     expect(e['emergency.112.label'].tel).toBe('112');

@@ -1,0 +1,973 @@
+{
+  "symptoms.title": {
+    "text": "Körpersignale verstehen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.select.title": {
+    "text": "Was spürst du gerade?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.select.hint": {
+    "text": "Wähle alles, was passt. Wir gehen es dann einzeln durch.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.select.go": {
+    "text": "Erklär es mir",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.intro": {
+    "text": "Was du spürst, ist echt. Du bildest es dir nicht ein. Dein Körper ist gerade im Alarmmodus, und jedes dieser Signale hat eine Erklärung.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Kernbotschaft: Symptome validieren (echt, nicht eingebildet) und gleichzeitig entkatastrophisieren. Keine Aussage 'harmlos' (Konzept 2.2).",
+    "refs": [
+      "clark1986",
+      "tunnell2024"
+    ]
+  },
+  "symptoms.more": {
+    "text": "Genauer erklärt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.less": {
+    "text": "Weniger anzeigen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.what": {
+    "text": "Was im Körper passiert",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.why": {
+    "text": "Warum es sich so bedrohlich anfühlt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.check": {
+    "text": "Wann du Hilfe holen solltest",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.progress": {
+    "text": "Signal {n} von {total}",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.title": {
+    "text": "Und deine Angst – wie ist sie jetzt?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Wunsch des Projektinhabers: nach jedem Symptom kurz nachfragen. Bitte fachlich prüfen, ob die Frage den Fokus zu stark auf das Angstniveau lenkt."
+  },
+  "symptoms.ask.less": {
+    "text": "Etwas weniger",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.same": {
+    "text": "Ungefähr gleich",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.more": {
+    "text": "Stärker",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.more.title": {
+    "text": "Das kann passieren",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.more.text": {
+    "text": "Wenn man genau auf den Körper achtet, wird die Angst manchmal erst einmal stärker. Du kannst weitermachen, deine Aufmerksamkeit nach außen lenken oder dir Hilfe holen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Bei 'stärker' wird kein Weiterbohren erzwungen; Ausweg über Grounding (Aufmerksamkeit nach außen) oder Hilfe."
+  },
+  "symptoms.ask.more.continue": {
+    "text": "Weiter mit dem nächsten Signal",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.more.finish": {
+    "text": "Weiter",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ask.more.ground": {
+    "text": "Aufmerksamkeit nach außen lenken",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.done.title": {
+    "text": "Du hast deine Körpersignale eingeordnet",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.done.text": {
+    "text": "Sie sind echt, und sie haben eine Erklärung. Sie können eine Weile bleiben, auch wenn du sie verstehst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.done.next": {
+    "text": "Weiter",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.done.ground": {
+    "text": "Noch eine Übung: Im Raum ankommen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.learn.lead": {
+    "text": "Was bei Angst im Körper passiert – Signal für Signal.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.alarm.title": {
+    "text": "Das Alarmsystem",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.alarm.text": {
+    "text": "Nimmt das Gehirn eine Gefahr wahr, schütten Nerven und Nebennieren Adrenalin und Noradrenalin aus. Das Herz schlägt schneller, die Muskeln werden stärker durchblutet und spannen sich an, die Haut wird schlechter durchblutet, Schweißdrüsen werden aktiv, die Atmung beschleunigt sich. Der Körper macht sich bereit für Flucht oder Kampf – auch dann, wenn es nichts gibt, wovor man fliehen müsste.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "davis2008",
+      "schlereth2009"
+    ]
+  },
+  "symptoms.peak.title": {
+    "text": "Eine Welle mit Höhepunkt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.peak.text": {
+    "text": "Eine Panikattacke erreicht ihren Höhepunkt typischerweise innerhalb weniger Minuten.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Bewusst keine Aussage zur Gesamtdauer, da diese stark variiert.",
+    "refs": [
+      "tunnell2024"
+    ]
+  },
+  "symptoms.blue.title": {
+    "text": "Wie aus heiterem Himmel?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.blue.text": {
+    "text": "Viele Attacken fühlen sich an, als kämen sie aus dem Nichts. In einer Messstudie zeigten sich aber schon bis zu 47 Minuten vorher Veränderungen bei Atmung und Herzschlag, die die Betroffenen nicht bemerkt hatten. Der Körper hat also einen Vorlauf – die Attacke ist kein zufälliger Ausfall.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Kleine Stichprobe: 43 Patient:innen, 13 aufgezeichnete Attacken. Befund als vorläufig behandeln.",
+    "refs": [
+      "meuret2011"
+    ]
+  },
+  "symptoms.checking.title": {
+    "text": "Ein Hinweis zum Nachschauen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.checking.text": {
+    "text": "Diese Erklärungen sind zum Verstehen da. Wer in jeder Attacke immer wieder prüft, ob ein Symptom gefährlich ist, kann die Angst auf Dauer eher verstärken. Wenn dir das bekannt vorkommt, sprich es in einer Therapie an.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Rückversicherung als Sicherheitsverhalten. Bitte prüfen, ob Hinweis so angemessen ist.",
+    "refs": [
+      "clark1986",
+      "salkovskis1991",
+      "schenkel2021"
+    ]
+  },
+  "symptoms.order": {
+    "text": [
+      "brust",
+      "atem",
+      "schwindel",
+      "kribbeln",
+      "herz",
+      "zittern",
+      "schwitzen",
+      "bauch",
+      "unwirklich"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Technische Reihenfolge (Schlüssel). Brustschmerz bewusst zuerst. Nur die Reihenfolge prüfen."
+  },
+  "symptoms.brust.label": {
+    "text": "Druck oder Schmerz in der Brust",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.brust.short": {
+    "text": "Brustschmerz gehört zu den häufigsten Beschwerden bei Panikattacken. Schnelles Atmen kann selbst Druck und Schmerz in der Brust auslösen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Immer an erster Stelle, 112-Hinweis vor der Erklärung. Fleet 1996: 44 % der Panik-Patient:innen mit Brustschmerz in der Notaufnahme hatten eine dokumentierte KHK.",
+    "refs": [
+      "tunnell2024",
+      "freire2009",
+      "fleet1996",
+      "116117-112"
+    ]
+  },
+  "symptoms.brust.what": {
+    "text": "Brustschmerz gehört zu den häufigsten körperlichen Symptomen von Panikattacken. Schnelles, flaches Atmen kann selbst Brustschmerzen auslösen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "tunnell2024",
+      "freire2009",
+      "fleet1996",
+      "116117-112"
+    ]
+  },
+  "symptoms.brust.why": {
+    "text": "Brustschmerz ist auch ein Warnzeichen für Herzerkrankungen. Deshalb ist die Angst davor verständlich – und deshalb ist dieser Punkt anders als die anderen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.brust.check": {
+    "text": "Bei starken Brustschmerzen oder wenn das für dich neu ist: ruf die 112, auch wenn du Panikattacken kennst. Angst und Herzerkrankung können gleichzeitig vorkommen – unterscheiden kann das nur eine Untersuchung. Wenn eine Ärztin oder ein Arzt deine Beschwerden schon als Teil der Angst eingeordnet hat, darfst du dich an diese Einordnung halten.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "fleet1996",
+      "116117-112"
+    ],
+    "redflag": true,
+    "note": "Vollständiger Text nur unter 'Genauer erklärt' und im Lernbereich. Bitte prüfen, ob der Satz zu Herzerkrankung in der Akutphase eher beruhigt oder beunruhigt."
+  },
+  "symptoms.atem.label": {
+    "text": "Atemnot, zu wenig Luft",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.atem.short": {
+    "text": "Bei Angst atmen viele schneller oder tiefer, als der Körper gerade braucht – oft ohne es zu merken. Das Gefühl, nicht genug Luft zu bekommen, kann dabei trotzdem sehr stark sein. Du musst nicht extra tief einatmen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Theorie des Erstickungs-Fehlalarms (Klein) ist nicht gesichert und als 'diskutiert' formuliert.",
+    "refs": [
+      "tunnell2024",
+      "kyriakoulis2023",
+      "freire2009",
+      "116117-112"
+    ]
+  },
+  "symptoms.atem.what": {
+    "text": "Die genaue Ursache ist nicht geklärt. Zwei Erklärungen werden diskutiert: Viele Menschen atmen bei Angst schneller oder tiefer, als der Körper braucht (Hyperventilation). Oder ein empfindliches inneres Erstickungs-Alarmsystem schlägt an, obwohl genug Sauerstoff da ist.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "tunnell2024",
+      "kyriakoulis2023",
+      "freire2009",
+      "116117-112"
+    ]
+  },
+  "symptoms.atem.why": {
+    "text": "Atemnot gehört zu den beängstigendsten Gefühlen überhaupt. Wer glaubt zu ersticken, versucht oft, noch mehr Luft zu holen – das kann die Beschwerden verstärken.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.atem.check": {
+    "text": "Schwere Atemnot: 112. Asthma und andere Lungenerkrankungen können ähnliche Beschwerden machen. Ist die Atemnot neu oder anders als sonst, lass sie ärztlich abklären.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112"
+    ],
+    "redflag": false
+  },
+  "symptoms.schwindel.label": {
+    "text": "Schwindel, Benommenheit",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.schwindel.short": {
+    "text": "Schnelles Atmen senkt den CO₂-Gehalt im Blut. Dann ziehen sich Blutgefäße im Gehirn leicht zusammen – das fühlt sich an wie Schwindel oder Leere im Kopf. Bei Panik steigt der Blutdruck eher an; tatsächlich ohnmächtig werden Menschen dabei selten.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Hinweis: Bei Hyperventilation wurde in Messungen echter Attacken nicht immer ein CO₂-Abfall gefunden; Mechanismus erklärt Symptome teilweise.",
+    "refs": [
+      "kyriakoulis2023",
+      "tunnell2024",
+      "ritz2010",
+      "schlaganfall-hilfe"
+    ]
+  },
+  "symptoms.schwindel.what": {
+    "text": "Schnelles Atmen senkt den CO₂-Gehalt im Blut, und Blutgefäße im Gehirn ziehen sich leicht zusammen. Das kann Schwindel, Benommenheit und ein Gefühl von Leere im Kopf auslösen. Ohnmacht entsteht dagegen meist durch einen Abfall des Blutdrucks. Bei Panik steigen Herzschlag und Blutdruck eher an. Viele Menschen mit Panik kennen das Gefühl, gleich umzukippen – tatsächlich ohnmächtig werden sie selten. Eine Ausnahme ist die Angst vor Blut, Spritzen oder Verletzungen: Dort kann der Blutdruck nach einem ersten Anstieg absinken, und Ohnmacht kommt häufiger vor.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "kyriakoulis2023",
+      "tunnell2024",
+      "ritz2010",
+      "schlaganfall-hilfe"
+    ]
+  },
+  "symptoms.schwindel.why": {
+    "text": "Schwindel fühlt sich an wie Kontrollverlust. Die Angst, gleich umzufallen, verstärkt dann die Anspannung.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.schwindel.check": {
+    "text": "Kommt plötzlich etwas dazu – eine Körperseite wird schwach, ein Mundwinkel hängt, du kannst nicht richtig sprechen oder sehen: sofort 112. Ärztlich abklären lassen, wenn Schwindel auch ohne Angst auftritt oder du tatsächlich ohnmächtig wirst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "schlaganfall-hilfe"
+    ],
+    "redflag": false,
+    "note": "Formulierung nach Safety-Netting-Prinzipien: konkrete Zeichen + konkrete Handlung, keine Krankheitsnamen in der Akutphase, Abgrenzung über 'zusätzlich' bzw. 'neu/anders als sonst'. Krankheitsname nur im Lernbereich (checknote). Bitte fachlich prüfen."
+  },
+  "symptoms.kribbeln.label": {
+    "text": "Kribbeln oder Taubheit",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.kribbeln.short": {
+    "text": "Wenn durch schnelles Atmen CO₂ im Blut fehlt, werden Nerven reizbarer. Das zeigt sich oft als Kribbeln oder Taubheit in Händen, Füßen oder um den Mund.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "kyriakoulis2023",
+      "tunnell2024",
+      "schlaganfall-hilfe"
+    ]
+  },
+  "symptoms.kribbeln.what": {
+    "text": "Schnelles Atmen senkt den CO₂-Gehalt im Blut, das Blut wird leicht basisch. Nerven werden dadurch reizbarer. Das kann Kribbeln, Taubheit oder steife Finger auslösen, typischerweise in Händen, Füßen und um den Mund.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "kyriakoulis2023",
+      "tunnell2024",
+      "schlaganfall-hilfe"
+    ]
+  },
+  "symptoms.kribbeln.why": {
+    "text": "Kribbeln und Taubheit erinnern an Schlaganfall oder Nervenerkrankungen. Das macht sie besonders beängstigend.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.kribbeln.check": {
+    "text": "Betrifft es plötzlich nur eine Körperseite, wird ein Arm oder Bein schwach, hängt ein Mundwinkel oder fällt das Sprechen schwer: sofort 112, auch wenn es wieder weggeht.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "schlaganfall-hilfe"
+    ],
+    "redflag": false,
+    "note": "Formulierung nach Safety-Netting-Prinzipien: konkrete Zeichen + konkrete Handlung, keine Krankheitsnamen in der Akutphase, Abgrenzung über 'zusätzlich' bzw. 'neu/anders als sonst'. Krankheitsname nur im Lernbereich (checknote). Bitte fachlich prüfen."
+  },
+  "symptoms.herz.label": {
+    "text": "Herzrasen oder Herzklopfen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.herz.short": {
+    "text": "Bei Angst schüttet dein Körper Adrenalin aus. Es lässt dein Herz schneller und kräftiger schlagen, damit die Muskeln mehr Blut bekommen – dein Körper macht sich bereit zum Weglaufen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Studien mit kleinen Stichproben (Taylor 1986: 33 Attacken; Shear 1987: 23 Patient:innen).",
+    "refs": [
+      "davis2008",
+      "taylor1986",
+      "shear1987",
+      "clark1986",
+      "116117-112"
+    ]
+  },
+  "symptoms.herz.what": {
+    "text": "Adrenalin lässt das Herz schneller und kräftiger schlagen. In Langzeit-EKG-Messungen während Panikattacken zeigte sich meist ein beschleunigter, regelmäßiger Herzschlag. Wenn es dabei stolperte, waren das meist einzelne Extraschläge.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "davis2008",
+      "taylor1986",
+      "shear1987",
+      "clark1986",
+      "116117-112"
+    ]
+  },
+  "symptoms.herz.why": {
+    "text": "Bei Angst achtet man stärker auf den eigenen Herzschlag. Ein kräftiges Klopfen wird dann schnell als Zeichen für einen Herzinfarkt gedeutet – und diese Angst treibt das Herz weiter an.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.herz.check": {
+    "text": "Ärztlich abklären lassen, wenn Herzrasen für dich neu ist oder sich anders anfühlt als sonst. Bei Ohnmacht oder starken Brustschmerzen: 112.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112"
+    ],
+    "redflag": false
+  },
+  "symptoms.zittern.label": {
+    "text": "Zittern, weiche Knie",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.zittern.short": {
+    "text": "Jeder Mensch hat ein feines, unsichtbares Muskelzittern. Adrenalin verstärkt es direkt in den Muskeln – deshalb zittern Hände und Knie bei Angst. Das ist ein Zeichen für Alarm, nicht für Schwäche.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Muskelanspannung als Bewegungsbereitschaft: Trainingswissen, bitte prüfen.",
+    "refs": [
+      "davis2008",
+      "baker2012"
+    ]
+  },
+  "symptoms.zittern.what": {
+    "text": "Jeder Mensch hat ein feines, normalerweise nicht sichtbares Zittern der Muskeln. Adrenalin verstärkt es über Rezeptoren in den Muskeln selbst. Deshalb zittern Hände und Knie bei Angst sichtbar. Gleichzeitig spannen sich Muskeln an, um für Bewegung bereit zu sein.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "davis2008",
+      "baker2012"
+    ]
+  },
+  "symptoms.zittern.why": {
+    "text": "Sichtbares Zittern fühlt sich an, als würde der Körper versagen. Tatsächlich zeigt es, dass er gerade auf Hochtouren läuft.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.zittern.check": {
+    "text": "Ärztlich abklären lassen, wenn du auch ohne Angst oder Aufregung zitterst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "redflag": false
+  },
+  "symptoms.schwitzen.label": {
+    "text": "Schwitzen, Hitze oder Kälte",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.schwitzen.short": {
+    "text": "Bei Stress aktiviert dein Nervensystem die Schweißdrüsen, vor allem an Händen, Füßen, Gesicht und Achseln. Gleichzeitig wird die Haut schlechter durchblutet – deshalb können die Hände kalt sein, während du schwitzt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "sweating2013",
+      "schlereth2009",
+      "fischer2021"
+    ]
+  },
+  "symptoms.schwitzen.what": {
+    "text": "Bei Stress aktiviert das Nervensystem Schweißdrüsen vor allem an Handflächen, Fußsohlen, Gesicht und Achseln. Gleichzeitig ziehen sich Blutgefäße in der Haut zusammen. Deshalb können sich Hitze, Schwitzen und kalte Hände gleichzeitig zeigen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "sweating2013",
+      "schlereth2009",
+      "fischer2021"
+    ]
+  },
+  "symptoms.schwitzen.why": {
+    "text": "Schwitzen und Erröten sind von außen sichtbar. Viele fürchten, dass andere es merken – das verstärkt die Anspannung zusätzlich.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.schwitzen.check": {
+    "text": "Ärztlich abklären lassen, wenn du ohne Anlass stark schwitzt, etwa nachts oder mit Fieber.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "redflag": false
+  },
+  "symptoms.bauch.label": {
+    "text": "Übelkeit, Bauchgrummeln",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.bauch.short": {
+    "text": "Gehirn und Darm sind eng verbunden, und Angst wirkt sich direkt auf den Bauch aus. Übelkeit bei einer Panikattacke erreicht meist innerhalb von Minuten ihren Höhepunkt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "'Gehirn und Darm eng verbunden' bewusst allgemein; Mechanismus laut Review ungeklärt.",
+    "refs": [
+      "tunnell2024",
+      "116117-112"
+    ]
+  },
+  "symptoms.bauch.what": {
+    "text": "Wie genau Angst Magen-Darm-Beschwerden auslöst, ist noch nicht vollständig geklärt. Diskutiert wird die enge Verbindung zwischen Gehirn und Darm. Bei Panik kommen Übelkeit und Bauchbeschwerden meist plötzlich, erreichen innerhalb von Minuten ihren Höhepunkt und hängen nicht vom Essen ab.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "tunnell2024",
+      "116117-112"
+    ]
+  },
+  "symptoms.bauch.why": {
+    "text": "Übelkeit weckt die Angst, sich übergeben zu müssen, besonders unterwegs oder unter Menschen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.bauch.check": {
+    "text": "Bei starken oder anhaltenden Bauchschmerzen ärztlich abklären lassen, außerhalb der Sprechzeiten über die 116 117.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112"
+    ],
+    "redflag": false
+  },
+  "symptoms.unwirklich.label": {
+    "text": "Alles wirkt unwirklich",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.unwirklich.short": {
+    "text": "Wenn alles unwirklich oder fern wirkt, nennen Fachleute das Derealisation oder Depersonalisation. Das ist bei Panikattacken häufig. Du merkst, dass sich nur dein Gefühl verändert hat, nicht die Welt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Häufigkeit in Studien sehr unterschiedlich (7,8–82,6 %, je nach Stichprobe). Aussage 'du merkst, dass sich nur das Gefühl verändert hat' beruht auf der Definition (erhaltene Realitätsprüfung).",
+    "refs": [
+      "mendoza2011",
+      "french2022",
+      "sierra2011"
+    ]
+  },
+  "symptoms.unwirklich.what": {
+    "text": "Bei Derealisation wirkt die Umgebung unwirklich, wie hinter Glas. Bei Depersonalisation fühlt man sich von sich selbst getrennt. Beides kommt bei Panikattacken häufig vor und tritt kurzzeitig auch bei vielen Menschen ohne Angststörung auf, etwa bei starkem Stress oder Müdigkeit. Als Erklärung wird diskutiert, dass das Gehirn bei Überlastung die gefühlsmäßige Verarbeitung herunterregelt. Wichtig: Wer das erlebt, weiß dabei, dass sich nur das Gefühl verändert hat, nicht die Welt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "mendoza2011",
+      "french2022",
+      "sierra2011"
+    ]
+  },
+  "symptoms.unwirklich.why": {
+    "text": "Weil es so fremd ist, deuten viele es als Zeichen, verrückt zu werden. Diese Deutung verstärkt die Angst – und mehr Angst verstärkt das Gefühl der Unwirklichkeit.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "french2022"
+    ]
+  },
+  "symptoms.unwirklich.check": {
+    "text": "Hält das Gefühl auch ohne Angst über längere Zeit an oder tritt es nach Drogen oder Medikamenten auf, sprich mit einer Ärztin, einem Arzt oder einer psychotherapeutischen Praxis.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "redflag": false
+  },
+  "symptoms.brust.alert": {
+    "text": "Bei starken Brustschmerzen oder wenn das für dich neu ist: ruf die 112, auch wenn du Panikattacken kennst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112",
+      "fleet1996"
+    ],
+    "note": "Kurzfassung des Warnhinweises für die Akutkarte; vollständiger Text in symptoms.brust.check (unter 'Genauer erklärt')."
+  },
+  "symptoms.schwindel.checknote": {
+    "text": "Diese Zeichen können auf einen Schlaganfall hinweisen. Sie unterscheiden sich von angstbedingten Beschwerden dadurch, dass sie meist nur eine Körperseite betreffen und mit Ausfällen wie Lähmung oder Sprachstörung einhergehen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "schlaganfall-hilfe"
+    ],
+    "note": "Nur im Lernbereich sichtbar, nicht in der Akutkarte."
+  },
+  "symptoms.kribbeln.checknote": {
+    "text": "Diese Zeichen können auf einen Schlaganfall hinweisen. Sie unterscheiden sich von angstbedingten Beschwerden dadurch, dass sie meist nur eine Körperseite betreffen und mit Ausfällen wie Lähmung oder Sprachstörung einhergehen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "schlaganfall-hilfe"
+    ],
+    "note": "Nur im Lernbereich sichtbar, nicht in der Akutkarte."
+  },
+  "symptoms.calmfirst.title": {
+    "text": "Am besten vorher lesen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.calmfirst.text": {
+    "text": "Erklärungen zu Körpersignalen wirken am besten, wenn man sie in einem ruhigen Moment schon einmal gelesen hat. In einer Attacke erinnern sie dann an etwas Bekanntes.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "norr2017",
+      "gallagher2013"
+    ],
+    "note": "Belege für Psychoeducation stammen aus Anwendung in ruhigem Zustand; für Anwendung während einer Attacke gibt es keine Studien."
+  }
+}

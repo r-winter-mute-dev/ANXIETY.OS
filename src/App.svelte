@@ -11,6 +11,8 @@
   import Grounding from './screens/Grounding.svelte';
   import Reframe from './screens/Reframe.svelte';
   import Breathing from './screens/Breathing.svelte';
+  import Symptoms from './screens/Symptoms.svelte';
+  import SymptomsLearn from './screens/SymptomsLearn.svelte';
   import End from './screens/End.svelte';
   import Learn from './screens/Learn.svelte';
   import About from './screens/About.svelte';
@@ -34,6 +36,8 @@
       {:else if nav.screen === 'grounding'}<Grounding />
       {:else if nav.screen === 'reframe'}<Reframe />
       {:else if nav.screen === 'breathing'}<Breathing />
+      {:else if nav.screen === 'symptoms'}<Symptoms />
+      {:else if nav.screen === 'symptomsLearn'}<SymptomsLearn />
       {:else if nav.screen === 'end'}<End />
       {:else if nav.screen === 'learn'}<Learn />
       {:else if nav.screen === 'about'}<About />

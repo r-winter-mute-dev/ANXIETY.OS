@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { afterSafety, anxietyIncreased, EXERCISE_ORDER, HIDE_EMERGENCY_BAR, NEED_TO_EXERCISE } from '../../src/lib/routes';
+import { afterSafety, anxietyIncreased, EXERCISE_ORDER, HIDE_EMERGENCY_BAR, NEED_TO_EXERCISE, orderSymptoms } from '../../src/lib/routes';
 
 describe('Ablauflogik', () => {
   it('Sicherheitsfrage: "ja/unsicher" führt immer zur Hilfe', () => {
@@ -7,10 +7,10 @@ describe('Ablauflogik', () => {
     expect(afterSafety('no')).toBe('ratingPre');
   });
 
-  it('Adaptionsprinzip entspricht Konzept 6.1', () => {
+  it('Adaptionsprinzip (Konzept 6.1, Körperfokus → Körpersignale)', () => {
     expect(NEED_TO_EXERCISE).toEqual({
       thoughts: 'reframe',
-      body: 'grounding',
+      body: 'symptoms',
       breath: 'breathing',
       overwhelm: 'simple',
     });
@@ -18,7 +18,7 @@ describe('Ablauflogik', () => {
 
   it('Atemhilfe wird nicht als erste Übung angeboten', () => {
     expect(EXERCISE_ORDER[0]).not.toBe('breathing');
-    expect(new Set(EXERCISE_ORDER)).toEqual(new Set(Object.values(NEED_TO_EXERCISE)));
+    expect(new Set(EXERCISE_ORDER)).toEqual(new Set([...Object.values(NEED_TO_EXERCISE), 'grounding']));
   });
 
   it('Notfall-Leiste ist nur auf dem Hilfe-Bildschirm ausgeblendet', () => {
@@ -30,5 +30,11 @@ describe('Ablauflogik', () => {
     expect(anxietyIncreased(6, 4)).toBe(false);
     expect(anxietyIncreased(5, 5)).toBe(false);
     expect(anxietyIncreased(null, 8)).toBe(false);
+  });
+
+  it('Brustschmerz wird immer zuerst erklärt, Reihenfolge folgt der Vorgabe', () => {
+    const order = ['brust', 'atem', 'schwindel', 'bauch'];
+    expect(orderSymptoms(['bauch', 'brust', 'schwindel'], order)).toEqual(['brust', 'schwindel', 'bauch']);
+    expect(orderSymptoms(['unbekannt'], order)).toEqual([]);
   });
 });
