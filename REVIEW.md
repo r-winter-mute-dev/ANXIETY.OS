@@ -195,7 +195,7 @@
 | `nav.next` | Weiter | ⬜ Entwurf |  |  |
 | `nav.skip` | Überspringen | ⬜ Entwurf |  |  |
 | `nav.done` | Fertig | ⬜ Entwurf |  |  |
-| `emergency.bar` | Notfall – Hilfe rufen | ⬜ Entwurf |  |  |
+| `emergency.bar` | Hilfe & Notrufnummern | ⬜ Entwurf | Bewusst neutral gestaltet (keine rote Fläche, dezente Größe), um bei bestehender Angst keine zusätzliche Alarmwirkung zu erzeugen. Bitte prüfen: Ist der Zugang so noch ausreichend auffindbar? |  |
 | `input.private` | Wird nicht gespeichert. | ⬜ Entwurf |  |  |
 | `a11y.step` | Schritt {n} von {total} | ⬜ Entwurf |  |  |
 | `a11y.scale` | Skala von 0 bis 10 | ⬜ Entwurf |  |  |
