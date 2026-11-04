@@ -65,7 +65,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | **Vorbereitungsmodus** | Übungen in Ruhe ausprobieren, eigenen Notfallplan anlegen | 🚧 |
 | **Tagebuch** | Freiwillig, nur auf deinem Gerät, mit Export und Löschen | 🚧 |
 
-✅ nutzbar, als Entwurf · 🚧 geplant
+✅ nutzbar, als Entwurf · 🚧 geplant, Details in der [ROADMAP.md](ROADMAP.md)
 
 ## Fachliche Prüfung
 
@@ -85,7 +85,7 @@ Am meisten hilft gerade:
 - [ ] **Juristische Einschätzung**, ob die App unter die Medizinprodukte-Verordnung (MDR) fällt
 - [ ] **Hosting bei einem Anbieter in der EU** für die spätere Veröffentlichung
 
-Hinweise gern als [Issue](https://github.com/r-winter-mute-dev/ANXIETY.OS/issues).
+Alle offenen Punkte, fehlenden Funktionen und nächsten Schritte stehen in der **[ROADMAP.md](ROADMAP.md)**. Hinweise gern als [Issue](https://github.com/r-winter-mute-dev/ANXIETY.OS/issues).
 
 ## Bewusste Entscheidungen
 
