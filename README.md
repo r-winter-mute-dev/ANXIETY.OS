@@ -82,6 +82,7 @@ Damit nichts versehentlich ungeprüft veröffentlicht wird:
 Am meisten hilft gerade:
 
 - [ ] **Fachliches Review** durch Psychotherapeutinnen, Psychotherapeuten oder Psychiaterinnen und Psychiater
+- [ ] **Kardiologisches Review** der Körpersignale, damit die App auch Menschen nach einem Herzereignis sicher begleiten kann
 - [ ] **Rückmeldung von Menschen mit Angsterfahrung:** Ist etwas zu viel, zu wenig oder unpassend formuliert?
 - [ ] **Juristische Einschätzung**, ob die App unter die Medizinprodukte-Verordnung (MDR) fällt
 - [ ] **Hosting bei einem Anbieter in der EU** für die spätere Veröffentlichung
