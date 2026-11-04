@@ -16,7 +16,8 @@ export type Screen =
   | 'ratingPost'
   | 'end'
   | 'learn'
-  | 'about';
+  | 'about'
+  | 'settings';
 
 export type Exercise = 'reframe' | 'symptoms' | 'grounding' | 'breathing' | 'simple';
 export type Need = 'thoughts' | 'body' | 'breath' | 'overwhelm';

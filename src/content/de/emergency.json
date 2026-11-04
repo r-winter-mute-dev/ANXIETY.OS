@@ -121,5 +121,76 @@
       "date": null,
       "comment": null
     }
+  },
+  "emergency.crisis.title": {
+    "text": "Psychiatrische Krisendienste",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.crisis.lead": {
+    "text": "Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "gesundbund-krisen"
+    ]
+  },
+  "emergency.crisis.bayern": {
+    "text": "Bayern: 0800 655 3000 – kostenlos, rund um die Uhr, nur aus Bayern erreichbar",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "krisendienste-bayern"
+    ],
+    "tel": "08006553000"
+  },
+  "emergency.crisis.berlin": {
+    "text": "Berlin: Berliner Krisendienst, 030 390 63 10 (Öffnungszeiten der Standorte auf der Website)",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Widerspruch: berlin.de nennt 030 390 63 00 als überregionale Nummer, die Seite des Berliner Krisendienstes 030 390 63 10. Übernommen wurde die Angabe des Anbieters. Bitte vor Release erneut prüfen.",
+    "refs": [
+      "berliner-krisendienst"
+    ],
+    "tel": "0303906310"
+  },
+  "emergency.crisis.other": {
+    "text": "Andere Regionen: Krisendienste und Sozialpsychiatrische Dienste in deiner Nähe findest du über die Suche der Stiftung Deutsche Depressionshilfe.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "depressionshilfe-suche",
+      "gesundbund-krisen"
+    ],
+    "url": "https://www.deutsche-depressionshilfe.de/depression-infos-und-hilfe/wo-finde-ich-hilfe/krisendienste-und-beratungsstellen"
+  },
+  "emergency.crisis.link": {
+    "text": "Zur Suche (öffnet eine externe Seite)",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

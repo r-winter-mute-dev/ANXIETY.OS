@@ -1,0 +1,164 @@
+{
+  "settings.title": {
+    "text": "Darstellung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.lead": {
+    "text": "Passe Schrift, Abstände, Bewegung und Farben an. Diese Auswahl wird nur auf diesem Gerät gespeichert, damit sie beim nächsten Öffnen gleich da ist.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.font": {
+    "text": "Schriftgröße",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.font.m": {
+    "text": "Normal",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.font.l": {
+    "text": "Groß",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.font.xl": {
+    "text": "Sehr groß",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.spacing": {
+    "text": "Zeilenabstand",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.spacing.normal": {
+    "text": "Normal",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.spacing.wide": {
+    "text": "Weit",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.motion": {
+    "text": "Bewegung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.motion.system": {
+    "text": "Wie im Gerät eingestellt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.motion.reduce": {
+    "text": "Möglichst wenig Bewegung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.theme": {
+    "text": "Farben",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.theme.system": {
+    "text": "Wie im Gerät eingestellt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.theme.mocha": {
+    "text": "Dunkel",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.theme.latte": {
+    "text": "Hell",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.reset": {
+    "text": "Zurücksetzen und nichts speichern",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "settings.stored": {
+    "text": "Gespeichert wird nur diese Darstellungsauswahl, keine Angaben zu dir oder deiner Angst. Mit „Zurücksetzen“ wird sie gelöscht.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

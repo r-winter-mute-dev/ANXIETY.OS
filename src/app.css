@@ -41,6 +41,60 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Catppuccin Latte (hell): per Einstellung oder Systemvorgabe */
+:root[data-theme='latte'] {
+  --bg: #eff1f5; /* base */
+  --surface: #e6e9ef; /* mantle */
+  --surface-2: #dce0e8; /* crust */
+  --line: #bcc0cc; /* surface1 */
+  --line-strong: #7c7f93; /* overlay2 */
+  --text: #4c4f69; /* text */
+  --muted: #5c5f77; /* subtext1 (subtext0 erreicht 4,5:1 nicht) */
+  --accent: #0b6b70; /* teal, abgedunkelt für WCAG-AA-Kontrast */
+  --accent-soft: rgba(11, 107, 112, 0.14);
+  --on-accent: #ffffff;
+  --danger: #d20f39; /* red */
+  --on-danger: #ffffff;
+  --draft: #df8e1d; /* yellow */
+  --on-draft: #11111b;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme='system'] {
+  --bg: #eff1f5; /* base */
+  --surface: #e6e9ef; /* mantle */
+  --surface-2: #dce0e8; /* crust */
+  --line: #bcc0cc; /* surface1 */
+  --line-strong: #7c7f93; /* overlay2 */
+  --text: #4c4f69; /* text */
+  --muted: #5c5f77; /* subtext1 (subtext0 erreicht 4,5:1 nicht) */
+  --accent: #0b6b70; /* teal, abgedunkelt für WCAG-AA-Kontrast */
+  --accent-soft: rgba(11, 107, 112, 0.14);
+  --on-accent: #ffffff;
+  --danger: #d20f39; /* red */
+  --on-danger: #ffffff;
+  --draft: #df8e1d; /* yellow */
+  --on-draft: #11111b;
+  color-scheme: light;
+  }
+}
+
+/* Anzeige-Einstellungen (src/lib/settings.svelte.ts) */
+:root[data-font='l'] {
+  font-size: 118.75%;
+}
+:root[data-font='xl'] {
+  font-size: 131.25%;
+}
+:root[data-spacing='wide'] {
+  line-height: 1.85;
+  --gap: var(--s5);
+}
+:root[data-spacing='wide'] p,
+:root[data-spacing='wide'] li {
+  line-height: 1.85;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -247,4 +301,10 @@ textarea {
     animation: none !important;
     transition: none !important;
   }
+}
+:root[data-motion='reduce'] *,
+:root[data-motion='reduce'] *::before,
+:root[data-motion='reduce'] *::after {
+  animation: none !important;
+  transition: none !important;
 }

@@ -5,6 +5,8 @@ import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
+const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
+
 /**
  * Erzeugt nach dem Build einen minimalen Service Worker, der alle Dateien vorab cacht.
  * Ohne Fremdabhängigkeit, damit der Offline-Mechanismus vollständig nachvollziehbar bleibt.
@@ -35,7 +37,12 @@ const CACHE = 'anxiety-os-${version}';
 const BASE = ${JSON.stringify(base)};
 const URLS = ${JSON.stringify(urls)};
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(URLS)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(URLS)));
+});
+// Updates werden nicht automatisch aktiviert: Die App fragt auf der Startseite, damit niemand
+// mitten in einer Übung neu geladen wird.
+self.addEventListener('message', (e) => {
+  if (e.data === 'skipWaiting') self.skipWaiting();
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(
@@ -63,6 +70,7 @@ export default defineConfig({
   // Für GitHub Pages (Unterpfad) per BASE_PATH setzbar, sonst Wurzel.
   base: process.env.BASE_PATH || '/',
   plugins: [svelte(), offlineServiceWorker()],
+  define: { __APP_VERSION__: JSON.stringify(pkg.version) },
   build: { sourcemap: false },
   test: {
     include: ['tests/unit/**/*.test.ts'],

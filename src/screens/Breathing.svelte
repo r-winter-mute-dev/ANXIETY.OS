@@ -2,12 +2,12 @@
   import { onDestroy } from 'svelte';
   import Screen from '../components/Screen.svelte';
   import { finishExercise } from '../lib/start-exercise';
+  import { settings } from '../lib/settings.svelte';
   import { block, t, list } from '../lib/content';
 
   // Sanfte, nicht forcierte Atemführung (Konzept 5.5): keine Pausen, kein Zeitlimit, jederzeit abbrechbar.
   const timing = block('breathing.timing') as unknown as { inSeconds: number; outSeconds: number };
-  const reducedMotion =
-    typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reducedMotion = settings.reducedMotion;
 
   let mode = $state<'intro' | 'running' | 'after'>('intro');
   let phase = $state<'in' | 'out'>('in');

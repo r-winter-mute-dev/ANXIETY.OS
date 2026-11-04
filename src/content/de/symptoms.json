@@ -331,6 +331,7 @@
       "zittern",
       "schwitzen",
       "bauch",
+      "ohren",
       "unwirklich"
     ],
     "review": {
@@ -361,7 +362,7 @@
     "note": "Immer an erster Stelle, 112-Hinweis vor der Erklärung. Fleet 1996: 44 % der Panik-Patient:innen mit Brustschmerz in der Notaufnahme hatten eine dokumentierte KHK.",
     "refs": [
       "tunnell2024",
-      "freire2009",
+      "nardi2009",
       "fleet1996",
       "116117-112"
     ]
@@ -376,7 +377,7 @@
     },
     "refs": [
       "tunnell2024",
-      "freire2009",
+      "nardi2009",
       "fleet1996",
       "116117-112"
     ]
@@ -429,8 +430,9 @@
     "refs": [
       "tunnell2024",
       "kyriakoulis2023",
-      "freire2009",
-      "116117-112"
+      "nardi2009",
+      "116117-112",
+      "freire2009"
     ]
   },
   "symptoms.atem.what": {
@@ -444,8 +446,9 @@
     "refs": [
       "tunnell2024",
       "kyriakoulis2023",
-      "freire2009",
-      "116117-112"
+      "nardi2009",
+      "116117-112",
+      "freire2009"
     ]
   },
   "symptoms.atem.why": {
@@ -969,5 +972,64 @@
       "gallagher2013"
     ],
     "note": "Belege für Psychoeducation stammen aus Anwendung in ruhigem Zustand; für Anwendung während einer Attacke gibt es keine Studien."
+  },
+  "symptoms.ohren.label": {
+    "text": "Rauschen oder Druck in den Ohren",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "symptoms.ohren.short": {
+    "text": "Ohrensausen oder Rauschen kann bei Angst auftreten, besonders wenn man schnell atmet. Wenn die Angst nachlässt, wird es oft leiser.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Schwache Datenlage: Ohrensausen ist in einem Review als Folge akuter Hyperventilation genannt; Studien zu Ohrgeräuschen während Panikattacken fehlen. Satz 2 ist Trainingswissen und bitte zu prüfen.",
+    "refs": [
+      "nardi2009",
+      "invirto-ifu"
+    ]
+  },
+  "symptoms.ohren.what": {
+    "text": "Schnelles Atmen kann neben Schwindel und Kribbeln auch Ohrensausen auslösen. Außerdem achtet man bei Angst stärker auf Körpergeräusche, die sonst untergehen – auch auf den eigenen Puls im Ohr. Für Ohrgeräusche während einer Panikattacke gibt es bisher kaum Studien.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "'Stärkere Aufmerksamkeit auf Körpergeräusche' in Anlehnung an erhöhte Interozeption bei Angst; bitte prüfen.",
+    "refs": [
+      "nardi2009",
+      "tunnell2024"
+    ]
+  },
+  "symptoms.ohren.why": {
+    "text": "Ein plötzliches Geräusch im Ohr wirkt fremd und schwer einzuordnen. Viele fürchten, dass etwas im Kopf nicht stimmt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "symptoms.ohren.check": {
+    "text": "Ärztlich abklären lassen, wenn du plötzlich auf einem Ohr schlechter hörst, starker Drehschwindel dazukommt oder das Ohrgeräusch auch ohne Angst bleibt.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Trainingswissen (Hörsturz, Morbus Menière als Differenzialdiagnose). Fachquelle (HNO-Leitlinie) ergänzen."
   }
 }

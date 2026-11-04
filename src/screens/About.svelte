@@ -17,6 +17,8 @@
   </ul>
   <p class="muted">{t('about.offline')}</p>
 
+  <p class="muted small">{t('about.version', { version: __APP_VERSION__ })}</p>
+
   <h2>{t('about.sources.title')}</h2>
   <ol class="refs">
     {#each Object.values(references) as r}

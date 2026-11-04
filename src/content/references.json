@@ -339,5 +339,71 @@
       "date": null,
       "comment": null
     }
+  },
+  "nardi2009": {
+    "citation": "Nardi, A. E., Freire, R. C., Zin, W. A. (2009). Panic disorder and control of breathing. Respiratory Physiology & Neurobiology, 167(1), 133–143. [Review]",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1569904808001997",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "invirto-ifu": {
+    "citation": "Sympatient GmbH: Invirto – Die Therapie gegen Angst, Gebrauchsanweisung. [Primärquelle, kein Peer-Review]",
+    "url": "https://eifu.invirto.de/anxiety/therapy/de",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "krisendienste-bayern": {
+    "citation": "Krisendienste Bayern (Bayerischer Bezirketag). [Primärquelle]",
+    "url": "https://krisendienste.bayern/faq-fragen-und-antworten/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "berliner-krisendienst": {
+    "citation": "Berliner Krisendienst: Die Standorte und ihre Telefonnummern. [Primärquelle]",
+    "url": "https://www.berliner-krisendienst.de/ich-brauche-hilfe/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "depressionshilfe-suche": {
+    "citation": "Stiftung Deutsche Depressionshilfe und Suizidprävention: Beratungsstellen und Krisendienste (Suche).",
+    "url": "https://www.deutsche-depressionshilfe.de/depression-infos-und-hilfe/wo-finde-ich-hilfe/krisendienste-und-beratungsstellen",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "gesundbund-krisen": {
+    "citation": "gesund.bund.de (Bundesministerium für Gesundheit): Anlaufstellen bei psychischen Krisen.",
+    "url": "https://gesund.bund.de/wege-im-gesundheitswesen/erwachsenenleben/notfaelle/psychische-krisen",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

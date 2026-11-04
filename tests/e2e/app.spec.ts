@@ -10,14 +10,14 @@ async function axe(page: Page) {
 }
 
 test('Entwurfs-Banner ist sichtbar und nicht schließbar', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   const banner = page.getByRole('note');
   await expect(banner).toContainText('ENTWURF – NICHT FACHLICH GEPRÜFT');
   await expect(banner.getByRole('button')).toHaveCount(0);
 });
 
 test('Sicherheitsfrage "Ja/unsicher" führt zu den Notrufnummern', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, /Ja, etwas davon/).click();
   await expect(heading(page)).toHaveText('Hol dir jetzt Hilfe');
@@ -29,7 +29,7 @@ test('Sicherheitsfrage "Ja/unsicher" führt zu den Notrufnummern', async ({ page
 });
 
 test('Notfall-Leiste ist auf jedem Bildschirm des Ablaufs erreichbar', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   const bar = btn(page, 'Hilfe & Notrufnummern');
   await expect(bar).toBeVisible();
   await btn(page, 'Ich habe gerade starke Angst').click();
@@ -48,7 +48,7 @@ test('Notfall-Leiste ist auf jedem Bildschirm des Ablaufs erreichbar', async ({ 
 });
 
 test('Kompletter Ablauf: Gedanken prüfen, nur per Antippen', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await expect(heading(page)).toHaveText('Wie stark ist deine Angst gerade?');
@@ -75,7 +75,7 @@ test('Kompletter Ablauf: Gedanken prüfen, nur per Antippen', async ({ page }) =
 });
 
 test('Anstieg der Angst zeigt Hinweis auf Unterstützung', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await btn(page, '3').click();
@@ -87,7 +87,7 @@ test('Anstieg der Angst zeigt Hinweis auf Unterstützung', async ({ page }) => {
 });
 
 test('Grounding und Atemhilfe sind abbrechbar', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await btn(page, 'Überspringen').click();
@@ -112,7 +112,7 @@ test('Grounding und Atemhilfe sind abbrechbar', async ({ page }) => {
 });
 
 test('Browser-Zurück funktioniert', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await expect(heading(page)).toHaveText(/Kurz vorab/);
   await page.goBack();
@@ -120,7 +120,7 @@ test('Browser-Zurück funktioniert', async ({ page }) => {
 });
 
 test('Lernen und Über-Seite sind barrierefrei', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, /Angst verstehen/).click();
   await expect(page.getByRole('heading', { name: 'Der Angstkreislauf' })).toBeVisible();
   await axe(page);
@@ -135,7 +135,7 @@ test('Keine Anfragen an fremde Server, kein Speicher', async ({ page }) => {
   page.on('request', (r) => {
     if (!r.url().startsWith('http://localhost:4173')) foreign.push(r.url());
   });
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await btn(page, '5').click();
@@ -149,7 +149,7 @@ test('Keine Anfragen an fremde Server, kein Speicher', async ({ page }) => {
 });
 
 test('Offline nach erstem Laden', async ({ page, context }) => {
-  await page.goto('/');
+  await page.goto('./');
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
@@ -164,7 +164,7 @@ test('Offline nach erstem Laden', async ({ page, context }) => {
 });
 
 test('Körpersignale: Auswahl, Erklärung, Nachfrage, nächstes Signal', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await btn(page, '7').click();
@@ -197,7 +197,7 @@ test('Körpersignale: Auswahl, Erklärung, Nachfrage, nächstes Signal', async (
 });
 
 test('Körpersignale: Brustschmerz kommt zuerst und zeigt 112 vor der Erklärung', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, 'Ich habe gerade starke Angst').click();
   await btn(page, 'Nein, nichts davon').click();
   await btn(page, 'Überspringen').click();
@@ -213,12 +213,72 @@ test('Körpersignale: Brustschmerz kommt zuerst und zeigt 112 vor der Erklärung
 });
 
 test('Körpersignale im Lernbereich', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await btn(page, /Angst verstehen/).click();
   await btn(page, /Körpersignale einzeln erklärt/).click();
   await expect(page.getByRole('heading', { name: 'Das Alarmsystem' })).toBeVisible();
   await axe(page);
   await btn(page, /Alles wirkt unwirklich/).click();
   await expect(page.getByText(/Derealisation/).first()).toBeVisible();
+  await axe(page);
+});
+
+test('Krisendienste und Suche sind auf der Hilfe-Seite', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Hilfe & Notrufnummern').click();
+  await expect(page.locator('a[href="tel:08006553000"]')).toBeVisible();
+  await expect(page.locator('a[href="tel:0303906310"]')).toBeVisible();
+  await expect(page.getByRole('link', { name: /Zur Suche/ })).toHaveAttribute('rel', /noopener/);
+});
+
+test('Grounding: neue Varianten Orientierung und Gegenstand', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Angst verstehen').click();
+  await btn(page, 'Im Hier und Jetzt ankommen').click();
+  await expect(btn(page, 'Wo bin ich?')).toBeVisible();
+  await btn(page, 'Ein Gegenstand').click();
+  await expect(page.getByText(/Nimm einen Gegenstand/)).toBeVisible();
+  await axe(page);
+});
+
+test('Übungsmodus: keine Einschätzung, zurück zu „Angst verstehen“', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Angst verstehen').click();
+  await btn(page, 'Ganz einfache Schritte').click();
+  for (let i = 0; i < 12; i++) {
+    const done = btn(page, 'Fertig');
+    if (await done.isVisible()) {
+      await done.click();
+      break;
+    }
+    await btn(page, 'Weiter').click();
+  }
+  await expect(page.getByRole('heading', { name: 'In Ruhe üben' })).toBeVisible();
+  await expect(page.getByText(/Wie stark ist deine Angst/)).toHaveCount(0);
+});
+
+test('Darstellung: wird nur bei Änderung gespeichert, Zurücksetzen löscht', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Darstellung anpassen').click();
+  expect(await page.evaluate(() => localStorage.length)).toBe(0);
+  await page.getByLabel('Sehr groß').check();
+  await page.getByLabel('Hell').check();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'latte');
+  await expect(page.locator('html')).toHaveAttribute('data-font', 'xl');
+  const stored = await page.evaluate(() => Object.keys(localStorage));
+  expect(stored).toEqual(['anxietyos.display']);
+  await axe(page);
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'latte');
+  await btn(page, 'Darstellung anpassen').click();
+  await btn(page, /Zurücksetzen/).click();
+  expect(await page.evaluate(() => localStorage.length)).toBe(0);
+});
+
+test('Helles Farbschema ist barrierefrei (Start und Hilfe)', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.goto('./');
+  await axe(page);
+  await btn(page, 'Hilfe & Notrufnummern').click();
   await axe(page);
 });

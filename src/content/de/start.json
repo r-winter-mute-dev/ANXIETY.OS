@@ -52,5 +52,32 @@
       "date": null,
       "comment": null
     }
+  },
+  "start.settings": {
+    "text": "Darstellung anpassen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.update": {
+    "text": "Eine neue Version ist verfügbar.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.update.button": {
+    "text": "Jetzt aktualisieren",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

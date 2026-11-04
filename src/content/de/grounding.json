@@ -137,5 +137,54 @@
       "date": null,
       "comment": null
     }
+  },
+  "grounding.orient.label": {
+    "text": "Wo bin ich?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.orient.steps": {
+    "text": [
+      "Sag dir leise, wo du gerade bist. Zum Beispiel: Ich sitze in meiner Küche.",
+      "Welcher Tag ist heute? Welche Tageszeit ungefähr?",
+      "Nenne drei Dinge, die dir zeigen, wo du bist: ein Möbelstück, ein Fenster, eine Tür.",
+      "Sag dir: Ich bin hier, und es ist jetzt."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Konzept 5.3: Orientierung anhand konkreter Umgebungsmerkmale. Passt besonders bei Unwirklichkeitsgefühl (Derealisation); bitte prüfen."
+  },
+  "grounding.object.label": {
+    "text": "Ein Gegenstand",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.object.steps": {
+    "text": [
+      "Nimm einen Gegenstand in die Hand oder schau dir einen genau an.",
+      "Welche Farbe hat er? Gibt es mehrere Farbtöne?",
+      "Wie fühlt er sich an: glatt, rau, warm, kalt?",
+      "Wie schwer ist er? Hat er einen Geruch?",
+      "Beschreib ihn so, als müsstest du ihn jemandem erklären, der ihn nie gesehen hat."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Konzept 5.3: Beschreibung neutraler Gegenstände."
   }
 }

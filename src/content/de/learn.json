@@ -153,5 +153,69 @@
       "date": null,
       "comment": null
     }
+  },
+  "learn.practice.title": {
+    "text": "In Ruhe üben",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "learn.practice.text": {
+    "text": "Übungen gelingen in einer akuten Situation leichter, wenn man sie vorher in Ruhe ausprobiert hat. Hier gibt es keine Einschätzung vorher und nachher.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Begründung: Übung in angstfreien Phasen erleichtert die Anwendung unter Stress (Konzept 5.1 / Psychoedukation). Bitte Formulierung und Beleg prüfen."
+  },
+  "learn.practice.grounding": {
+    "text": "Im Hier und Jetzt ankommen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "learn.practice.breathing": {
+    "text": "Ruhig atmen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "learn.practice.reframe": {
+    "text": "Gedanken prüfen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "learn.practice.simple": {
+    "text": "Ganz einfache Schritte",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "learn.practice.done": {
+    "text": "Gut gemacht. Du kannst die Übung jederzeit wiederholen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }
