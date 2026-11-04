@@ -1,0 +1,196 @@
+{
+  "reframe.title": {
+    "text": "Gedanken prüfen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.intro": {
+    "text": "Gedanken sind keine Tatsachen. Wir schauen uns deinen Gedanken kurz genauer an.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "reframe.thought.title": {
+    "text": "Welcher Gedanke ist gerade am lautesten?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.thought.options": {
+    "text": [
+      "Ich verliere gleich die Kontrolle.",
+      "Mit meinem Körper stimmt etwas Schlimmes nicht.",
+      "Ich werde ohnmächtig.",
+      "Ich drehe durch.",
+      "Das hört nie auf.",
+      "Alle merken, dass mit mir etwas nicht stimmt."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Typische katastrophisierende Gedanken in Anlehnung an das Clark-Modell. Bitte Auswahl und Wortlaut prüfen.",
+    "refs": [
+      "clark1986"
+    ]
+  },
+  "reframe.thought.own": {
+    "text": "Ein anderer Gedanke",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.thought.placeholder": {
+    "text": "Mein Gedanke …",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.emotion.title": {
+    "text": "Welches Gefühl gehört dazu?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.emotion.options": {
+    "text": [
+      "Angst",
+      "Panik",
+      "Sorge",
+      "Anspannung",
+      "Scham",
+      "Hilflosigkeit"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.intensity.title": {
+    "text": "Wie stark ist dieses Gefühl? (optional)",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.questions": {
+    "text": [
+      "Was genau befürchte ich, dass passiert?",
+      "Was spricht dafür?",
+      "Was spricht dagegen? Zum Beispiel: Hatte ich diesen Gedanken schon einmal? Was ist damals tatsächlich passiert?",
+      "Welche anderen Erklärungen sind möglich? Zum Beispiel: Könnte das, was ich spüre, auch zu einer starken Angstreaktion passen?"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Strukturierte Fragen aus Konzept 5.4. Frage 4 darf Körpersymptome nicht pauschal als harmlos darstellen – bitte Formulierung prüfen."
+  },
+  "reframe.questions.hint": {
+    "text": "Du musst nichts aufschreiben. Nachdenken reicht.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.alt.title": {
+    "text": "Welche Sicht passt gerade besser?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.alt.options": {
+    "text": [
+      "Ich nehme gerade eine starke Angstreaktion wahr. Das Gefühl ist sehr intensiv, aber es beweist nicht, dass meine Befürchtung eintritt.",
+      "Das ist ein Gedanke. Ein Gedanke ist noch kein Ereignis.",
+      "Ich muss das Gefühl nicht wegmachen. Ich kann es da sein lassen und trotzdem den nächsten Schritt tun."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ausgewogene statt positive Umformulierung (Konzept 5.4). Option 1 wörtlich aus dem Konzept."
+  },
+  "reframe.alt.own": {
+    "text": "Eigene Formulierung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.summary.title": {
+    "text": "Deine Einordnung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.summary.thought": {
+    "text": "Dein Gedanke",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.summary.alt": {
+    "text": "Eine ausgewogenere Sicht",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "reframe.summary.note": {
+    "text": "Diese Sicht muss sich nicht sofort richtig anfühlen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

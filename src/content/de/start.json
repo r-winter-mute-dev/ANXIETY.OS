@@ -1,0 +1,56 @@
+{
+  "start.title": {
+    "text": "Was brauchst du gerade?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.acute": {
+    "text": "Ich habe gerade starke Angst",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.learn": {
+    "text": "Angst verstehen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.learn.sub": {
+    "text": "Für ruhigere Momente",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.about": {
+    "text": "Über diese App und ihre Grenzen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.note": {
+    "text": "Alles hier ist freiwillig. Du kannst jederzeit aufhören.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

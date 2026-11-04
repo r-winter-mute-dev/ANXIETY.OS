@@ -1,0 +1,119 @@
+{
+  "app.name": {
+    "text": "ANXIETY.OS",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "draft.banner": {
+    "text": "ENTWURF – NICHT FACHLICH GEPRÜFT",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "draft.sub": {
+    "text": "Kein Ersatz für ärztliche oder psychotherapeutische Hilfe.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nav.back": {
+    "text": "Zurück",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nav.exit": {
+    "text": "Beenden",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nav.next": {
+    "text": "Weiter",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nav.skip": {
+    "text": "Überspringen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nav.done": {
+    "text": "Fertig",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.bar": {
+    "text": "Notfall – Hilfe rufen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "input.private": {
+    "text": "Wird nicht gespeichert.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "a11y.step": {
+    "text": "Schritt {n} von {total}",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "a11y.scale": {
+    "text": "Skala von 0 bis 10",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "a11y.emergency": {
+    "text": "Notfall",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}
