@@ -97,5 +97,247 @@
       "date": null,
       "comment": null
     }
+  },
+  "tunnell2024": {
+    "citation": "Tunnell, N. C., Corner, S. E., Roque, A. D., Kroll, J. L., Ritz, T., Meuret, A. E. (2024). Biobehavioral approach to distinguishing panic symptoms from medical illness. Frontiers in Psychiatry, 15. [Narratives Review]",
+    "url": "https://doi.org/10.3389/fpsyt.2024.1296569",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "kyriakoulis2023": {
+    "citation": "Kyriakoulis, P., Kyrios, M. (2023). Biological and cognitive theories explaining panic disorder: A narrative review. Frontiers in Psychiatry, 14, 957515. [Narratives Review]",
+    "url": "https://doi.org/10.3389/fpsyt.2023.957515",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "freire2009": {
+    "citation": "Sardinha, A., Freire, R. C. R., Zin, W. A., Nardi, A. E. (2009). Respiratory manifestations of panic disorder: causes, consequences and therapeutic implications. Jornal Brasileiro de Pneumologia, 35(7), 698–708.",
+    "url": "https://doi.org/10.1590/S1806-37132009000700012",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "ritz2010": {
+    "citation": "Ritz, T., Meuret, A. E., Ayala, E. S. (2010). The psychophysiology of blood-injection-injury phobia: Looking beyond the diphasic response paradigm. International Journal of Psychophysiology, 78(1), 50–67.",
+    "url": "https://doi.org/10.1016/j.ijpsycho.2010.05.007",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "taylor1986": {
+    "citation": "Taylor, C. B. et al. (1986). Ambulatory heart rate changes in patients with panic attacks. American Journal of Psychiatry, 143(4), 478–482.",
+    "url": "https://doi.org/10.1176/ajp.143.4.478",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "shear1987": {
+    "citation": "Shear, M. K. et al. (1987). Cardiac rate and rhythm in panic patients. American Journal of Psychiatry, 144(5), 633–637.",
+    "url": "https://doi.org/10.1176/ajp.144.5.633",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "fleet1996": {
+    "citation": "Fleet, R. P. et al. (1996). Panic disorder in emergency department chest pain patients: prevalence, comorbidity, suicidal ideation, and physician recognition. PubMed 8873507.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8873507/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "meuret2011": {
+    "citation": "Meuret, A. E. et al. (2011). Do unexpected panic attacks occur spontaneously? Biological Psychiatry. PubMed 21783179.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21783179/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "mendoza2011": {
+    "citation": "Mendoza, L. et al. (2011). Depersonalization and personality in panic disorder. Comprehensive Psychiatry, 52(4), 413–419.",
+    "url": "https://doi.org/10.1016/j.comppsych.2010.09.002",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "french2022": {
+    "citation": "French, N. J., Eberle, J. W., Teachman, B. A. (2022). Anxiety sensitivity, distress intolerance, and negative interpretation bias strengthen the relationship between trait anxiety and depersonalization. Anxiety, Stress, & Coping, 35(4), 395–408.",
+    "url": "https://doi.org/10.1080/10615806.2021.1977797",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sierra2011": {
+    "citation": "Sierra, M. et al. (2012). Depersonalization disorder and anxiety: A special relationship? Psychiatry Research. [Link geprüft, bibliografische Details bitte verifizieren]",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165178111008018",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sweating2013": {
+    "citation": "Psychological sweating: a systematic review focused on aetiology and cutaneous response (2013). Skin Pharmacology and Physiology, 26(2), 92–100. [Systematisches Review]",
+    "url": "https://doi.org/10.1159/000346930",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "fischer2021": {
+    "citation": "Fischer, S., Haas, F., Strahler, J. (2021). A systematic review of thermosensation and thermoregulation in anxiety disorders. Frontiers in Physiology, 12, 784943. [Systematisches Review]",
+    "url": "https://doi.org/10.3389/fphys.2021.784943",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "schlereth2009": {
+    "citation": "Schlereth, T., Dieterich, M., Birklein, F. (2009). Hyperhidrosis – causes and treatment of enhanced sweating. Deutsches Ärzteblatt International, 106(3), 32–37.",
+    "url": "https://doi.org/10.3238/arztebl.2009.0032",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "davis2008": {
+    "citation": "The rush to adrenaline: drugs in sport acting on the β-adrenergic system (2008). British Journal of Pharmacology. [Review; Autor:innen bitte verifizieren]",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2439523/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "baker2012": {
+    "citation": "Beta-adrenergic modulation of tremor and corticomuscular coherence in humans (2012). PLoS ONE. [Autor:innen bitte verifizieren]",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3502512/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "schlaganfall-hilfe": {
+    "citation": "Stiftung Deutsche Schlaganfall-Hilfe: Schlaganfall-Symptome und FAST-Test. [Fachquelle]",
+    "url": "https://www.schlaganfall-hilfe.de/de/verstehen-vermeiden/schlaganfall-erkennen/fast-test",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "norr2017": {
+    "citation": "Norr, A. M. et al. (2017). Is computerized psychoeducation sufficient to reduce anxiety sensitivity in an at-risk sample?: A randomized trial. Journal of Affective Disorders. [RCT, N = 54, nicht-klinische Stichprobe]",
+    "url": "https://doi.org/10.1016/j.jad.2017.01.032",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "gallagher2013": {
+    "citation": "Mechanisms of change in cognitive behavioral therapy for panic disorder: The unique effects of self-efficacy and anxiety sensitivity (2013). [Autor:innen bitte verifizieren]",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3866809/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "schenkel2021": {
+    "citation": "Schenkel, S. K., Jungmann, S. M., Gropalis, M., Witthöft, M. (2021). Conceptualizations of cyberchondria and relations to the anxiety spectrum: Systematic review and meta-analysis. Journal of Medical Internet Research, 23(11), e27835.",
+    "url": "https://doi.org/10.2196/27835",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "jones2019": {
+    "citation": "Jones, D. et al. (2019). Safety netting for primary care: evidence from a literature review. British Journal of General Practice, 69, e70–e79.",
+    "url": "https://doi.org/10.3399/bjgp18X700193",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "salkovskis1991": {
+    "citation": "Salkovskis, P. M. (1991). The importance of behaviour in the maintenance of anxiety and panic: A cognitive account. Behavioural Psychotherapy, 19, 6–19.",
+    "url": "https://www.cambridge.org/core/journals/behavioural-and-cognitive-psychotherapy/article/abs/importance-of-behaviour-in-the-maintenance-of-anxiety-and-panic-a-cognitive-account/B3BAA0EFEF179C99BBCA5F983B05A534",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

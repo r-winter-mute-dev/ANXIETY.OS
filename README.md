@@ -57,6 +57,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 
 | Modul | Worum es geht | Stand |
 | --- | --- | :---: |
+| **Körpersignale verstehen** | Die App fragt, was du spürst, und erklärt jedes Symptom einzeln: wie Angst es auslöst und wann du Hilfe holen solltest. Nach jedem Signal kurze Nachfrage. Brustschmerz immer zuerst, mit 112. | ✅ |
 | **Gedanken prüfen** | Den lautesten Gedanken auswählen und mit vier Fragen prüfen. Am Ende steht eine ausgewogenere Sicht, kein „positives Denken“. | ✅ |
 | **Im Raum ankommen** | Aufmerksamkeit nach außen lenken: Umgebung, Geräusche, Kontaktpunkte oder 5-4-3-2-1 | ✅ |
 | **Ein einfacher Schritt** | Für den Moment, in dem alles zu viel ist: vier kurze Sätze, mehr nicht | ✅ |
@@ -71,7 +72,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 
 Bevor ANXIETY.OS öffentlich empfohlen wird, muss eine Fachperson aus Psychotherapie oder Psychiatrie jeden Text gegenlesen. Dafür gibt es die Prüfliste **[REVIEW.md](REVIEW.md)**: Sie zeigt jeden einzelnen Textbaustein mit seinem Status, den Rückfragen aus der Entwicklung und den zugehörigen Quellen.
 
-**Stand: 0 von 133 Einträgen freigegeben.**
+**Stand: 0 von 241 Einträgen freigegeben.**
 
 Damit nichts versehentlich ungeprüft veröffentlicht wird:
 
@@ -96,6 +97,7 @@ Einige Stellen weichen vom ursprünglichen Konzept ab. Die Fachperson soll sie g
 | Sicherheitsprüfung mit Symptomabfrage | **Eine einzige Frage** mit drei Punkten | Wiederholtes Prüfen von Körpersymptomen kann die Angst selbst verstärken. Außerdem ist es eine Hürde weniger. |
 | Texteingabe beim Gedankenprüfen | **Alles per Antippen**, Text optional | Bei starker Angst ist Schreiben oft kaum möglich. |
 | Atemübung als gleichwertige Option | **An letzter Stelle** in der Übungsliste | Die Evidenz für Atemübungen bei Angst ist schwach (WHO 2023: bedingte Empfehlung). |
+| Körperfokus → Aufmerksamkeit nach außen (6.1) | **Körpersignale einzeln erklären**, Grounding danach als Angebot | Wunsch des Projektinhabers. Psychoedukation über Körpersymptome senkt Angstsensitivität, die Studien dazu fanden aber in ruhigem Zustand statt. Für den Einsatz während einer Attacke gibt es keine Studien. Deshalb nur ein Durchgang, Warnzeichen ohne Krankheitsnamen, Ausweg bei „stärker“. |
 | Roter Notfall-Knopf | **Ruhiger, neutraler Knopf** „Hilfe & Notrufnummern“ | Rot wirkt bei bestehender Angst alarmierend. Auf dem Hilfe-Bildschirm bleibt die 112 deutlich hervorgehoben. |
 
 ## Entstehung

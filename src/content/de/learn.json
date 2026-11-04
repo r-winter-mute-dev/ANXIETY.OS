@@ -144,5 +144,14 @@
       "nice-cg113",
       "kbv-116117"
     ]
+  },
+  "learn.symptoms.link": {
+    "text": "Körpersignale einzeln erklärt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

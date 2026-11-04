@@ -18,13 +18,14 @@
     }
   },
   "choose.body": {
-    "text": "Ich bin ganz auf meinen Körper fixiert",
+    "text": "Mein Körper macht mir Angst",
     "review": {
       "status": "draft",
       "reviewer": null,
       "date": null,
       "comment": null
-    }
+    },
+    "note": "Führt zu 'Körpersignale verstehen' (Symptome einzeln erklären). Abweichung von Konzept 6.1 (dort: externe Orientierung); Grounding wird am Ende angeboten."
   },
   "choose.breath": {
     "text": "Mein Atem fühlt sich unruhig an",
@@ -101,6 +102,15 @@
   },
   "choose.ex.simple": {
     "text": "Ein einfacher Schritt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "choose.ex.symptoms": {
+    "text": "Körpersignale verstehen",
     "review": {
       "status": "draft",
       "reviewer": null,
