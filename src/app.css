@@ -1,20 +1,21 @@
 /* Ruhig, kontrastreich, ohne Überraschungen (Konzept Abschnitt 7).
    Systemschriften: keine externen Fonts, keine Datenübertragung an Dritte. */
 :root {
-  --bg: #11151b;
-  --surface: #1a2029;
-  --surface-2: #222a35;
-  --line: #2e3845;
-  --line-strong: #4a5768;
-  --text: #e9edf2;
-  --muted: #a9b3c0;
-  --accent: #8fcfbf;
-  --accent-soft: rgba(143, 207, 191, 0.22);
-  --on-accent: #0d1f1a;
-  --danger: #c9433f;
-  --on-danger: #ffffff;
-  --draft: #f2c14e;
-  --on-draft: #1d1600;
+  /* Catppuccin Mocha – https://catppuccin.com/palette */
+  --bg: #1e1e2e; /* base */
+  --surface: #313244; /* surface0 */
+  --surface-2: #45475a; /* surface1 */
+  --line: #45475a; /* surface1 */
+  --line-strong: #6c7086; /* overlay0 */
+  --text: #cdd6f4; /* text */
+  --muted: #a6adc8; /* subtext0 */
+  --accent: #94e2d5; /* teal */
+  --accent-soft: rgba(148, 226, 213, 0.2);
+  --on-accent: #11111b; /* crust */
+  --danger: #f38ba8; /* red */
+  --on-danger: #11111b; /* crust */
+  --draft: #f9e2af; /* yellow */
+  --on-draft: #11111b; /* crust */
 
   --s1: 4px;
   --s2: 8px;
