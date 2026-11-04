@@ -1,0 +1,125 @@
+{
+  "emergency.title": {
+    "text": "Hol dir jetzt Hilfe",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.lead": {
+    "text": "Bei Lebensgefahr – oder wenn du unsicher bist – ruf die 112.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.112.label": {
+    "text": "112 – Notruf",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "tel": "112"
+  },
+  "emergency.112.desc": {
+    "text": "Rettungsdienst. Bei lebensbedrohlichen Beschwerden, z. B. starken Brustschmerzen, schwerer Atemnot, Bewusstseinsstörung oder Suizidgefahr.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112"
+    ]
+  },
+  "emergency.116117.label": {
+    "text": "116 117 – Ärztlicher Bereitschaftsdienst",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "tel": "116117"
+  },
+  "emergency.116117.desc": {
+    "text": "Wenn es nicht lebensbedrohlich ist, aber nicht bis zur nächsten Sprechstunde warten kann. Kostenlos, rund um die Uhr.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "116117-112"
+    ]
+  },
+  "emergency.ts.label": {
+    "text": "TelefonSeelsorge",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.ts.desc": {
+    "text": "Zum Reden in einer Krise. Kostenlos, anonym, rund um die Uhr.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "telefonseelsorge"
+    ]
+  },
+  "emergency.ts.numbers": {
+    "text": [
+      "0800 111 0 111",
+      "0800 111 0 222",
+      "116 123"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Nummern am 04.11.2026 auf telefonseelsorge.de geprüft.",
+    "refs": [
+      "telefonseelsorge"
+    ],
+    "tel": [
+      "08001110111",
+      "08001110222",
+      "116123"
+    ]
+  },
+  "emergency.notalone": {
+    "text": "Wenn möglich: Sag einer Person in deiner Nähe Bescheid.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.back": {
+    "text": "Zurück",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

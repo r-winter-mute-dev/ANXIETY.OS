@@ -1,0 +1,141 @@
+{
+  "grounding.title": {
+    "text": "Im Raum ankommen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.intro": {
+    "text": "Lenk deine Aufmerksamkeit nach außen. Du musst nichts erzwingen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.choose": {
+    "text": "Was möchtest du ausprobieren?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.room.label": {
+    "text": "Umgebung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.room.steps": {
+    "text": [
+      "Schau dich langsam um. Such dir einen Gegenstand aus.",
+      "Beschreib ihn leise oder in Gedanken: Farbe, Form, Material.",
+      "Such dir einen zweiten Gegenstand. Was ist anders an ihm?",
+      "Finde drei Dinge in einer bestimmten Farbe, zum Beispiel Blau."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.contact.label": {
+    "text": "Kontaktpunkte",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.contact.steps": {
+    "text": [
+      "Spür deine Füße auf dem Boden. Drück sie leicht hinein.",
+      "Spür, wo dein Körper aufliegt: Stuhl, Sofa, Wand.",
+      "Leg die Hände auf deine Oberschenkel oder einen Tisch. Wie fühlt sich die Oberfläche an?",
+      "Bemerk die Temperatur der Luft auf deiner Haut."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Prüfen: Kontaktpunkte lenken teils auf den Körper. Für Personen mit starkem Körperfokus evtl. ungeeignet – ggf. nicht als Standard anbieten."
+  },
+  "grounding.sound.label": {
+    "text": "Geräusche",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.sound.steps": {
+    "text": [
+      "Hör hin: Welches Geräusch ist am lautesten?",
+      "Welches ist am leisesten?",
+      "Gibt es ein Geräusch, das du erst jetzt bemerkst?"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.54321.label": {
+    "text": "5-4-3-2-1",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.54321.badge": {
+    "text": "Verbreitete Übung, nicht speziell für Panikattacken geprüft",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Konzept 5.3: darf nicht als validierte Behandlung dargestellt werden."
+  },
+  "grounding.54321.steps": {
+    "text": [
+      "Nenne 5 Dinge, die du siehst.",
+      "Nenne 4 Dinge, die du fühlen kannst.",
+      "Nenne 3 Dinge, die du hörst.",
+      "Nenne 2 Dinge, die du riechst – oder die du magst.",
+      "Nenne 1 Sache, die du schmeckst – oder bemerk einen Atemzug."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "grounding.done": {
+    "text": "Du hast die Übung abgeschlossen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

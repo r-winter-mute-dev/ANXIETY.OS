@@ -1,0 +1,17 @@
+{
+  "simple.steps": {
+    "text": [
+      "Du musst gerade nichts lösen.",
+      "Stell beide Füße auf den Boden. Spür, dass er dich trägt.",
+      "Das Gefühl ist gerade sehr stark. Gefühle verändern sich mit der Zeit – auch dieses.",
+      "Wenn du magst, probier eine Übung aus. Wenn nicht, ist das auch in Ordnung."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Für den Fall 'Alles ist zu viel': möglichst wenig Text, eine Aussage pro Bildschirm. Satz 3 bitte prüfen (keine Aussage über Dauer)."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "breathing.title": {
+    "text": "Sanfte Atemhilfe",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "breathing.intro": {
+    "text": "Ein freiwilliges Angebot. Du musst nichts davon tun.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "WHO: Entspannungsverfahren nur konditional empfohlen, niedrige Evidenzsicherheit. Daher nicht als erste Option präsentiert.",
+    "refs": [
+      "who-mhgap-2023"
+    ]
+  },
+  "breathing.rules": {
+    "text": [
+      "Atme so, wie es für dich angenehm ist – nicht tiefer als sonst.",
+      "Du musst nicht mit dem Kreis mitatmen.",
+      "Wenn dir unwohl wird: hör auf und atme normal weiter."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Gestaltungsprinzipien aus Konzept 5.5: keine erzwungenen tiefen Atemzüge, keine Atempausen."
+  },
+  "breathing.start": {
+    "text": "Starten",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "breathing.stop": {
+    "text": "Beenden",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "breathing.in": {
+    "text": "Ein",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "breathing.out": {
+    "text": "Langsam aus",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "breathing.timing": {
+    "text": "",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Entwurfsparameter: 4 s ein, 6 s aus, keine Pause. Bitte fachlich prüfen.",
+    "inSeconds": 4,
+    "outSeconds": 6
+  },
+  "breathing.after": {
+    "text": "Atme jetzt einfach normal weiter.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

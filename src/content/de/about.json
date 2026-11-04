@@ -1,0 +1,88 @@
+{
+  "about.title": {
+    "text": "Über ANXIETY.OS",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.what": {
+    "text": "ANXIETY.OS ist ein Entwurf für eine Selbsthilfe-Anwendung bei akuter Angst. Sie orientiert sich an Prinzipien der kognitiven Verhaltenstherapie.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.draft": {
+    "text": "Alle Inhalte sind ein Entwurf und wurden noch nicht von Fachpersonal geprüft.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.not": {
+    "text": "Die App stellt keine Diagnose, behandelt keine Erkrankung und ersetzt keine ärztliche oder psychotherapeutische Hilfe. Ob sie in akuten Situationen hilft, ist bisher nicht untersucht.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.privacy.title": {
+    "text": "Datenschutz",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.privacy": {
+    "text": [
+      "Keine Registrierung, kein Tracking, keine Cookies, keine Drittanbieter.",
+      "Deine Eingaben bleiben nur im Arbeitsspeicher dieses Browser-Tabs und werden beim Beenden gelöscht.",
+      "Beim Laden der Seite entstehen beim Hosting-Anbieter technische Zugriffsdaten (z. B. IP-Adresse)."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Letzten Punkt an den tatsächlichen Hoster anpassen, sobald feststeht."
+  },
+  "about.progress": {
+    "text": "Fachlich freigegeben: {approved} von {total} Einträgen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.offline": {
+    "text": "Nach dem ersten Laden funktioniert die App auch ohne Internet.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "about.sources.title": {
+    "text": "Fachliche Grundlagen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

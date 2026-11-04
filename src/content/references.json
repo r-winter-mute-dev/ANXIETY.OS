@@ -1,0 +1,101 @@
+{
+  "clark1986": {
+    "citation": "Clark, D. M. (1986). A cognitive approach to panic. Behaviour Research and Therapy, 24(4), 461–470.",
+    "url": "https://doi.org/10.1016/0005-7967(86)90011-2",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "who-mhgap-2023": {
+    "citation": "World Health Organization (2023). Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders (3rd ed.).",
+    "url": "https://www.who.int/publications/i/item/9789240084278",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "who-selfhelp-2026": {
+    "citation": "World Health Organization (2026). Psychological self-help interventions: delivering self-help for individuals, featuring Step-by-Step and Doing What Matters in Times of Stress.",
+    "url": "https://www.who.int/publications/i/item/9789240120785",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nice-cg113": {
+    "citation": "NICE (2011, zuletzt aktualisiert 2019). Generalised anxiety disorder and panic disorder in adults: management (CG113).",
+    "url": "https://www.nice.org.uk/guidance/cg113",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "guth2023": {
+    "citation": "Guth, M., Wiebe, A., Philipsen, A. (2023). Digitale Gesundheitsanwendungen mit psychotherapeutischem Fokus. Der Nervenarzt, 94(3), 250–261.",
+    "url": "https://doi.org/10.1007/s00115-023-01446-y",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "s3-angst-2021": {
+    "citation": "Bandelow, B. et al. (2021). The German Guidelines for the treatment of anxiety disorders: first revision. Eur Arch Psychiatry Clin Neurosci.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8490968/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "116117-112": {
+    "citation": "Kassenärztliche Bundesvereinigung: 116117 oder 112? (116117.de)",
+    "url": "https://www.116117.de/de/aerztlicher-bereitschaftsdienst.php",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "kbv-116117": {
+    "citation": "Kassenärztliche Bundesvereinigung: Der Patientenservice 116117.",
+    "url": "https://www.kbv.de/positionen/dossiers/notfallversorgung/patientenservice-116117",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "telefonseelsorge": {
+    "citation": "TelefonSeelsorge Deutschland e. V.",
+    "url": "https://www.telefonseelsorge.de/telefon/",
+    "checked": "2026-11-04",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}
