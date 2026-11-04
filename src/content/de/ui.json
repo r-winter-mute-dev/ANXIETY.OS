@@ -72,13 +72,14 @@
     }
   },
   "emergency.bar": {
-    "text": "Notfall – Hilfe rufen",
+    "text": "Hilfe & Notrufnummern",
     "review": {
       "status": "draft",
       "reviewer": null,
       "date": null,
       "comment": null
-    }
+    },
+    "note": "Bewusst neutral gestaltet (keine rote Fläche, dezente Größe), um bei bestehender Angst keine zusätzliche Alarmwirkung zu erzeugen. Bitte prüfen: Ist der Zugang so noch ausreichend auffindbar?"
   },
   "input.private": {
     "text": "Wird nicht gespeichert.",

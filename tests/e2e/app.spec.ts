@@ -30,7 +30,7 @@ test('Sicherheitsfrage "Ja/unsicher" führt zu den Notrufnummern', async ({ page
 
 test('Notfall-Leiste ist auf jedem Bildschirm des Ablaufs erreichbar', async ({ page }) => {
   await page.goto('/');
-  const bar = btn(page, 'Notfall – Hilfe rufen');
+  const bar = btn(page, 'Hilfe & Notrufnummern');
   await expect(bar).toBeVisible();
   await btn(page, 'Ich habe gerade starke Angst').click();
   await expect(bar).toBeVisible();

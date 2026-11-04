@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--s3);
-    border-color: var(--danger);
+    border-color: var(--line-strong);
   }
   .warn p {
     margin: 0;
