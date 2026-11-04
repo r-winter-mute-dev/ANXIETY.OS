@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="ANXIETY.OS – Ein ruhiger Ort, wenn die Angst laut wird">
+  <defs>
+    <pattern id="raster" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.6" fill="#2a2a2a"/>
+    </pattern>
+    <linearGradient id="verlauf" x1="0" x2="1">
+      <stop offset="0" stop-color="#121212"/>
+      <stop offset="1" stop-color="#0c0c0c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#verlauf)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#raster)"/>
+  <!-- Welle: von unruhig zu ruhig -->
+  <path d="M0 318 C24 292 44 344 70 318 S116 296 140 318 S190 334 220 318 H262" fill="none" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="262" cy="318" r="7" fill="none" stroke="#686868" stroke-width="3"/>
+  <path d="M1200 70 H990 L950 110 H860" fill="none" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="860" cy="110" r="7" fill="none" stroke="#94e2d5" stroke-width="3"/>
+  <!-- Logo: Atemkreis -->
+  <circle cx="200" cy="170" r="84" fill="none" stroke="#94e2d5" stroke-width="12" opacity="0.35"/>
+  <circle cx="200" cy="170" r="48" fill="none" stroke="#94e2d5" stroke-width="16"/>
+  <text x="318" y="190" font-family="Atkinson Hyperlegible, Segoe UI, Helvetica, Arial, sans-serif" font-size="84" font-weight="700" fill="#e6e6e6">ANXIETY.OS</text>
+  <text x="322" y="244" font-family="Atkinson Hyperlegible, Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#a0a0a0">Ein ruhiger Ort, wenn die Angst laut wird</text>
+  <!-- Entwurfs-Markierung -->
+  <rect x="322" y="270" width="300" height="38" rx="19" fill="none" stroke="#f9e2af" stroke-width="2"/>
+  <text x="472" y="296" text-anchor="middle" font-family="Atkinson Hyperlegible, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#f9e2af">ENTWURF · UNGEPRÜFT</text>
+  <!-- Atemwellen -->
+  <circle cx="1040" cy="230" r="58" fill="none" stroke="#94e2d5" stroke-width="2" opacity="0.15"/>
+  <circle cx="1040" cy="230" r="40" fill="none" stroke="#94e2d5" stroke-width="2" opacity="0.3"/>
+  <circle cx="1040" cy="230" r="22" fill="#94e2d5" opacity="0.18"/>
+  <circle cx="1040" cy="230" r="11" fill="#b9efe6"/>
+</svg>

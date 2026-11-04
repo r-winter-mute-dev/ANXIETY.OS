@@ -1,4 +1,4 @@
-name: Pages
+name: Seite auf GitHub Pages veröffentlichen
 
 # Veröffentlicht den Entwurfs-Build (mit Entwurfs-Banner) auf GitHub Pages.
 # Voraussetzung: Settings → Pages → Source: "GitHub Actions".
