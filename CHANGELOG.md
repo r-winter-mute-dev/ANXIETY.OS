@@ -2,6 +2,11 @@
 
 Alle Inhalte sind weiterhin **Entwurf – nicht fachlich geprüft**. Versionsnummern nach [SemVer](https://semver.org/lang/de/); vor 1.0 kann sich alles ändern.
 
+## [Unveröffentlicht]
+
+### Geändert
+- **Lizenz:** Code unter MIT (`LICENSE`), Inhalte, Dokumentation und Grafiken unter CC BY 4.0 (`LICENSE-CONTENT`). Bis 0.2.0 galt CC0 1.0; für diese Fassungen bleibt es dabei.
+
 ## [0.2.0] – 2026-11-04
 
 ### Neu

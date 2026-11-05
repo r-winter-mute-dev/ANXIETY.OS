@@ -94,5 +94,14 @@
       "date": null,
       "comment": null
     }
+  },
+  "about.license": {
+    "text": "Code: MIT-Lizenz. Inhalte: CC BY 4.0 (Namensnennung). Änderungen an den Inhalten müssen kenntlich gemacht werden.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }
