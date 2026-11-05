@@ -12,7 +12,8 @@
   <img src="https://img.shields.io/badge/Status-Entwurf,_nicht_fachlich_geprüft-f9e2af?labelColor=2a2a2a" alt="Status: Entwurf, nicht fachlich geprüft">
   <img src="https://img.shields.io/badge/kostenlos-ohne_Anmeldung-94e2d5?labelColor=2a2a2a" alt="Kostenlos, ohne Anmeldung">
   <img src="https://img.shields.io/badge/funktioniert-offline-94e2d5?labelColor=2a2a2a" alt="Funktioniert offline">
-  <img src="https://img.shields.io/badge/Lizenz-CC0_1.0-a0a0a0?labelColor=2a2a2a" alt="Lizenz: CC0 1.0">
+  <img src="https://img.shields.io/badge/Code-MIT-a0a0a0?labelColor=2a2a2a" alt="Code: MIT">
+  <img src="https://img.shields.io/badge/Inhalte-CC_BY_4.0-a0a0a0?labelColor=2a2a2a" alt="Inhalte: CC BY 4.0">
 </p>
 
 <p align="center">
@@ -185,5 +186,11 @@ Repository forken, unter **Settings → Pages** als Quelle **GitHub Actions** w�
 
 | Was | Lizenz |
 | --- | --- |
-| Inhalte und Code | [CC0 1.0](LICENSE): gemeinfrei, ohne Bedingungen nutzbar |
+| Code | [MIT](LICENSE): frei nutzbar, auch kommerziell, Copyright-Hinweis bleibt erhalten |
+| Inhalte (`src/content/`), Dokumentation, Grafiken | [CC BY 4.0](LICENSE-CONTENT): frei nutzbar mit Namensnennung; Änderungen müssen kenntlich gemacht werden |
+| Zitierte Studien und Leitlinien | bei den jeweiligen Rechteinhabern; im Projekt stehen nur bibliografische Angaben |
+| Farben | [Catppuccin](https://catppuccin.com) Mocha und Latte (MIT) |
 | Schrift | Systemschriften des Geräts, keine eingebundenen Schriftdateien |
+
+> [!IMPORTANT]
+> Die Inhalte sind ein Entwurf und nicht fachlich geprüft. Wer sie weiterverwendet, macht Änderungen bitte kenntlich und erweckt nicht den Eindruck, eine veränderte Fassung sei geprüft. Versionen bis 0.2.0 waren unter CC0 1.0 veröffentlicht und bleiben es.

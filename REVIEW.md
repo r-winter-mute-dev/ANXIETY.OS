@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 291 Einträgen freigegeben · 291 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 292 Einträgen freigegeben · 292 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -26,6 +26,7 @@
 | `about.offline` | Nach dem ersten Laden funktioniert die App auch ohne Internet. | ⬜ Entwurf |  |  |
 | `about.sources.title` | Fachliche Grundlagen | ⬜ Entwurf |  |  |
 | `about.version` | Version {version} | ⬜ Entwurf |  |  |
+| `about.license` | Code: MIT-Lizenz. Inhalte: CC BY 4.0 (Namensnennung). Änderungen an den Inhalten müssen kenntlich gemacht werden. | ⬜ Entwurf |  |  |
 
 ## `breathing.json`
 
