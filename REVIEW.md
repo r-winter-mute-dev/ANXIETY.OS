@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 292 Einträgen freigegeben · 292 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 310 Einträgen freigegeben · 310 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -59,6 +59,23 @@
 | `choose.ex.breathing` | Sanfte Atemhilfe | ⬜ Entwurf |  |  |
 | `choose.ex.simple` | Ein einfacher Schritt | ⬜ Entwurf |  |  |
 | `choose.ex.symptoms` | Körpersignale verstehen | ⬜ Entwurf |  |  |
+| `choose.ex.distract` | Ablenken | ⬜ Entwurf |  |  |
+
+## `distract.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `distract.title` | Ablenken | ⬜ Entwurf |  |  |
+| `distract.intro` | Ablenkung kann helfen, eine starke Welle der Angst zu überstehen. Wähle etwas, das dich beschäftigt, aber nicht überfordert. Die Angst darf dabei da sein. | ⬜ Entwurf | Belege stammen aus Studien zu Ablenkung während Expositionstherapie (überwiegend spezifische Phobien), nicht aus Panikattacken. Übertragung auf die Akutsituation ist eine Annahme. Ablenkung kann als Sicherheitsverhalten Angst langfristig aufrechterhalten (Clark 1986). Laut Parrish et al. (2008) ist sie weniger problematisch, wenn sie Selbstwirksamkeit stärkt, nicht zu viel Aufmerksamkeit bindet und keine falsche Sicherheitszuschreibung fördert ('Nur weil ich gezählt habe, ist nichts passiert'). 'Die Angst darf dabei da sein' soll das abfedern. Bitte prüfen. | `podina2013`, `parrish2008`, `clark1986` |
+| `distract.choose` | Was passt gerade? | ⬜ Entwurf |  |  |
+| `distract.count.label` | Rückwärts zählen | ⬜ Entwurf |  |  |
+| `distract.count.steps` | 1. Zähl leise oder in Gedanken von 100 rückwärts, in Dreierschritten: 100, 97, 94 …<br>2. Ist das gerade zu schwer? Dann zähl einfach von 50 rückwärts, Zahl für Zahl.<br>3. Verzählt? Das macht nichts. Fang bei irgendeiner Zahl neu an.<br>4. Mach so lange weiter, wie es dir guttut. | ⬜ Entwurf | Dreier- statt der üblichen Siebenerschritte und eine leichtere Alternative: Aufgaben, die zu viel Aufmerksamkeit fordern, sind unter starker Angst schwer durchzuhalten (Parrish et al. 2008, Kriterium 'keine übermäßigen Aufmerksamkeitsressourcen'). | `parrish2008` |
+| `distract.abc.label` | ABC-Spiel | ⬜ Entwurf |  |  |
+| `distract.abc.steps` | 1. Such dir ein Thema aus: Tiere, Städte, Vornamen oder Essen.<br>2. Finde zu jedem Buchstaben etwas. A wie Affe, B wie Bär …<br>3. Fällt dir bei einem Buchstaben nichts ein, nimm einfach den nächsten.<br>4. Wie weit kommst du? Danach kannst du ein neues Thema nehmen. | ⬜ Entwurf | Verbreitete Ablenkungsübung in der Praxis [Trainingswissen]; keine spezifische Studie gefunden. |  |
+| `distract.way.label` | Ein vertrauter Weg | ⬜ Entwurf |  |  |
+| `distract.way.steps` | 1. Denk an einen Weg, den du gut kennst: zum Bäcker, zur Arbeit oder durch deine Wohnung.<br>2. Geh ihn in Gedanken langsam ab. Was siehst du als Erstes?<br>3. Was kommt danach? Türen, Kurven, Ampeln, Geschäfte, eins nach dem anderen.<br>4. Was hörst oder riechst du unterwegs?<br>5. Wo endet der Weg? Bleib dort einen Moment. | ⬜ Entwurf | Vorstellungsbasierte Ablenkung [Trainingswissen]; Fachquelle fehlt. Kann bei Menschen, deren Angst an Wege oder Orte gebunden ist (Agoraphobie), ungeeignet sein: bitte prüfen. |  |
+| `distract.colors.label` | Farben suchen | ⬜ Entwurf |  |  |
+| `distract.colors.steps` | 1. Such um dich herum etwas Rotes.<br>2. Jetzt etwas Gelbes oder Oranges.<br>3. Etwas Grünes.<br>4. Etwas Blaues.<br>5. Zum Schluss etwas Lila oder Rosa. Hast du alle Farben gefunden? | ⬜ Entwurf | Äußere Ablenkung. In einer Expositionsstudie verringerte äußere Ablenkung die Angst am stärksten (Oliver & Page 2008, n = 50, Blut-Spritzen-Phobie). Überschneidet sich mit Grounding. | `oliver2008` |
 
 ## `emergency.json`
 
@@ -143,6 +160,7 @@
 | `learn.practice.reframe` | Gedanken prüfen | ⬜ Entwurf |  |  |
 | `learn.practice.simple` | Ganz einfache Schritte | ⬜ Entwurf |  |  |
 | `learn.practice.done` | Gut gemacht. Du kannst die Übung jederzeit wiederholen. | ⬜ Entwurf |  |  |
+| `learn.practice.distract` | Ablenken | ⬜ Entwurf |  |  |
 
 ## `rating.json`
 
@@ -229,6 +247,8 @@
 | `start.settings` | Darstellung anpassen | ⬜ Entwurf |  |  |
 | `start.update` | Eine neue Version ist verfügbar. | ⬜ Entwurf |  |  |
 | `start.update.button` | Jetzt aktualisieren | ⬜ Entwurf |  |  |
+| `start.quick.title` | Direkt zu einer Übung | ⬜ Entwurf |  |  |
+| `start.quick.hint` | Ohne Fragen vorher. Hilfe und Notrufnummern findest du immer unten. | ⬜ Entwurf | Abweichung vom Konzept (Phase 1 Sicherheitsabfrage, Phase 2 Einschätzung) auf Wunsch des Projektinhabers: Schnellzugang überspringt beides. Der Hilfe-Knopf bleibt auf jedem Bildschirm. Bitte fachlich bestätigen. |  |
 
 ## `symptoms.json`
 
@@ -383,3 +403,6 @@
 | `berliner-krisendienst` | Berliner Krisendienst: Die Standorte und ihre Telefonnummern. [Primärquelle] | https://www.berliner-krisendienst.de/ich-brauche-hilfe/ | 2026-11-04 | ⬜ Entwurf |
 | `depressionshilfe-suche` | Stiftung Deutsche Depressionshilfe und Suizidprävention: Beratungsstellen und Krisendienste (Suche). | https://www.deutsche-depressionshilfe.de/depression-infos-und-hilfe/wo-finde-ich-hilfe/krisendienste-und-beratungsstellen | 2026-11-04 | ⬜ Entwurf |
 | `gesundbund-krisen` | gesund.bund.de (Bundesministerium für Gesundheit): Anlaufstellen bei psychischen Krisen. | https://gesund.bund.de/wege-im-gesundheitswesen/erwachsenenleben/notfaelle/psychische-krisen | 2026-11-04 | ⬜ Entwurf |
+| `podina2013` | Podină, I. R., Koster, E. H. W., Philippot, P., Dethier, V., David, D. O. (2013). Optimal attentional focus during exposure in specific phobia: A meta-analysis. Clinical Psychology Review, 33(8), 1172–1183. [Meta-Analyse] | https://doi.org/10.1016/j.cpr.2013.10.002 | 2026-11-06 | ⬜ Entwurf |
+| `parrish2008` | Parrish, C. L., Radomsky, A. S., Dugas, M. J. (2008). Anxiety-control strategies: is there room for neutralization in successful exposure treatment? Clinical Psychology Review, 28(8), 1400–1412. [Review; Seitenzahlen bitte verifizieren] | https://doi.org/10.1016/j.cpr.2008.07.007 | 2026-11-06 | ⬜ Entwurf |
+| `oliver2008` | Oliver, N. S., Page, A. C. (2008). Effects of internal and external distraction and focus during exposure to blood-injury-injection stimuli. Journal of Anxiety Disorders, 22(2), 283–291. | https://doi.org/10.1016/j.janxdis.2007.01.006 | 2026-11-06 | ⬜ Entwurf |

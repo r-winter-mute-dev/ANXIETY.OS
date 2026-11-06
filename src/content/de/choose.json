@@ -117,5 +117,14 @@
       "date": null,
       "comment": null
     }
+  },
+  "choose.ex.distract": {
+    "text": "Ablenken",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

@@ -405,5 +405,38 @@
       "date": null,
       "comment": null
     }
+  },
+  "podina2013": {
+    "citation": "Podină, I. R., Koster, E. H. W., Philippot, P., Dethier, V., David, D. O. (2013). Optimal attentional focus during exposure in specific phobia: A meta-analysis. Clinical Psychology Review, 33(8), 1172–1183. [Meta-Analyse]",
+    "url": "https://doi.org/10.1016/j.cpr.2013.10.002",
+    "checked": "2026-11-06",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "parrish2008": {
+    "citation": "Parrish, C. L., Radomsky, A. S., Dugas, M. J. (2008). Anxiety-control strategies: is there room for neutralization in successful exposure treatment? Clinical Psychology Review, 28(8), 1400–1412. [Review; Seitenzahlen bitte verifizieren]",
+    "url": "https://doi.org/10.1016/j.cpr.2008.07.007",
+    "checked": "2026-11-06",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "oliver2008": {
+    "citation": "Oliver, N. S., Page, A. C. (2008). Effects of internal and external distraction and focus during exposure to blood-injury-injection stimuli. Journal of Anxiety Disorders, 22(2), 283–291.",
+    "url": "https://doi.org/10.1016/j.janxdis.2007.01.006",
+    "checked": "2026-11-06",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

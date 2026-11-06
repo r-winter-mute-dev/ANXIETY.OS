@@ -1,0 +1,139 @@
+{
+  "distract.title": {
+    "text": "Ablenken",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.intro": {
+    "text": "Ablenkung kann helfen, eine starke Welle der Angst zu überstehen. Wähle etwas, das dich beschäftigt, aber nicht überfordert. Die Angst darf dabei da sein.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Belege stammen aus Studien zu Ablenkung während Expositionstherapie (überwiegend spezifische Phobien), nicht aus Panikattacken. Übertragung auf die Akutsituation ist eine Annahme. Ablenkung kann als Sicherheitsverhalten Angst langfristig aufrechterhalten (Clark 1986). Laut Parrish et al. (2008) ist sie weniger problematisch, wenn sie Selbstwirksamkeit stärkt, nicht zu viel Aufmerksamkeit bindet und keine falsche Sicherheitszuschreibung fördert ('Nur weil ich gezählt habe, ist nichts passiert'). 'Die Angst darf dabei da sein' soll das abfedern. Bitte prüfen.",
+    "refs": [
+      "podina2013",
+      "parrish2008",
+      "clark1986"
+    ]
+  },
+  "distract.choose": {
+    "text": "Was passt gerade?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.count.label": {
+    "text": "Rückwärts zählen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.count.steps": {
+    "text": [
+      "Zähl leise oder in Gedanken von 100 rückwärts, in Dreierschritten: 100, 97, 94 …",
+      "Ist das gerade zu schwer? Dann zähl einfach von 50 rückwärts, Zahl für Zahl.",
+      "Verzählt? Das macht nichts. Fang bei irgendeiner Zahl neu an.",
+      "Mach so lange weiter, wie es dir guttut."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Dreier- statt der üblichen Siebenerschritte und eine leichtere Alternative: Aufgaben, die zu viel Aufmerksamkeit fordern, sind unter starker Angst schwer durchzuhalten (Parrish et al. 2008, Kriterium 'keine übermäßigen Aufmerksamkeitsressourcen').",
+    "refs": [
+      "parrish2008"
+    ]
+  },
+  "distract.abc.label": {
+    "text": "ABC-Spiel",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.abc.steps": {
+    "text": [
+      "Such dir ein Thema aus: Tiere, Städte, Vornamen oder Essen.",
+      "Finde zu jedem Buchstaben etwas. A wie Affe, B wie Bär …",
+      "Fällt dir bei einem Buchstaben nichts ein, nimm einfach den nächsten.",
+      "Wie weit kommst du? Danach kannst du ein neues Thema nehmen."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Verbreitete Ablenkungsübung in der Praxis [Trainingswissen]; keine spezifische Studie gefunden."
+  },
+  "distract.way.label": {
+    "text": "Ein vertrauter Weg",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.way.steps": {
+    "text": [
+      "Denk an einen Weg, den du gut kennst: zum Bäcker, zur Arbeit oder durch deine Wohnung.",
+      "Geh ihn in Gedanken langsam ab. Was siehst du als Erstes?",
+      "Was kommt danach? Türen, Kurven, Ampeln, Geschäfte, eins nach dem anderen.",
+      "Was hörst oder riechst du unterwegs?",
+      "Wo endet der Weg? Bleib dort einen Moment."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Vorstellungsbasierte Ablenkung [Trainingswissen]; Fachquelle fehlt. Kann bei Menschen, deren Angst an Wege oder Orte gebunden ist (Agoraphobie), ungeeignet sein: bitte prüfen."
+  },
+  "distract.colors.label": {
+    "text": "Farben suchen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "distract.colors.steps": {
+    "text": [
+      "Such um dich herum etwas Rotes.",
+      "Jetzt etwas Gelbes oder Oranges.",
+      "Etwas Grünes.",
+      "Etwas Blaues.",
+      "Zum Schluss etwas Lila oder Rosa. Hast du alle Farben gefunden?"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Äußere Ablenkung. In einer Expositionsstudie verringerte äußere Ablenkung die Angst am stärksten (Oliver & Page 2008, n = 50, Blut-Spritzen-Phobie). Überschneidet sich mit Grounding.",
+    "refs": [
+      "oliver2008"
+    ]
+  }
+}

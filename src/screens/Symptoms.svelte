@@ -5,7 +5,7 @@
   import SymptomDetail from '../components/SymptomDetail.svelte';
   import { nav } from '../lib/nav.svelte';
   import { orderSymptoms } from '../lib/routes';
-  import { finishExercise, startExercise } from '../lib/start-exercise';
+  import { finishExercise, switchExercise } from '../lib/start-exercise';
   import { block, t, list } from '../lib/content';
 
   const ORDER = list('symptoms.order');
@@ -100,7 +100,7 @@
         <button class="primary" onclick={() => next(i)}>
           {i + 1 < queue.length ? t('symptoms.ask.more.continue') : t('symptoms.ask.more.finish')}
         </button>
-        <button class="secondary" onclick={() => startExercise('grounding')}>{t('symptoms.ask.more.ground')}</button>
+        <button class="secondary" onclick={() => switchExercise('grounding')}>{t('symptoms.ask.more.ground')}</button>
         <button class="secondary" onclick={() => nav.go('emergency')}>{t('emergency.bar')}</button>
       {/snippet}
     </Screen>
@@ -109,7 +109,7 @@
       <p class="explain">{t('symptoms.done.text')}</p>
       {#snippet actions()}
         <button class="primary" onclick={finishExercise}>{t('symptoms.done.next')}</button>
-        <button class="secondary" onclick={() => startExercise('grounding')}>{t('symptoms.done.ground')}</button>
+        <button class="secondary" onclick={() => switchExercise('grounding')}>{t('symptoms.done.ground')}</button>
       {/snippet}
     </Screen>
   {/if}

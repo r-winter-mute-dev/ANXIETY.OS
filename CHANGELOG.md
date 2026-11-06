@@ -4,6 +4,10 @@ Alle Inhalte sind weiterhin **Entwurf – nicht fachlich geprüft**. Versionsnum
 
 ## [Unveröffentlicht]
 
+### Neu
+- **Schnellzugang auf der Startseite:** Ablenken, Im Raum ankommen, Sanfte Atemhilfe, Körpersignale verstehen und Ein einfacher Schritt direkt nutzbar, ohne Sicherheitsfrage und Einschätzung. Am Ende zurück zur Startseite.
+- **Neue Übung „Ablenken“** mit vier Varianten: Rückwärts zählen, ABC-Spiel, Farben suchen, Ein vertrauter Weg. Auch im Ablauf und unter „In Ruhe üben“.
+
 ### Geändert
 - **Lizenz:** Code unter MIT (`LICENSE`), Inhalte, Dokumentation und Grafiken unter CC BY 4.0 (`LICENSE-CONTENT`). Bis 0.2.0 galt CC0 1.0; für diese Fassungen bleibt es dabei.
 

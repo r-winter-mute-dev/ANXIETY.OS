@@ -34,6 +34,7 @@ Die sinnvolle Reihenfolge:
 - [ ] 🔴 **Krisenpfad bei Suizidgedanken prüfen lassen.** Die App zeigt 112, TelefonSeelsorge, die Krisendienste Bayern und Berlin sowie eine Suche für andere Regionen. Reicht das, oder braucht es einen eigenen, ruhigeren Bildschirm? Berlin: Widerspruch bei der überregionalen Nummer (030 390 63 10 laut Anbieter, 030 390 63 00 laut berlin.de) klären.
 - [ ] 🔴 **Sicherheitsfrage am Anfang fachlich bestätigen:** Auswahl der drei Punkte, Wortlaut und die Entscheidung, nur eine Frage statt einer Symptomliste zu stellen
 - [ ] 🔴 **Körpersignale in der Akutphase fachlich bewerten:** Hilft die Erklärung während einer Attacke, oder wirkt sie wie Rückversicherung? Wortlaut der Warnzeichen prüfen (bewusst ohne Krankheitsnamen). Für diesen Einsatz gibt es keine Studien.
+- [ ] 🔴 **Schnellzugang und Ablenkung fachlich bewerten:** Ist es vertretbar, Sicherheitsfrage und Einschätzung zu überspringen? Fördert Ablenkung in der Attacke Sicherheitsverhalten? Die Studien dazu stammen aus der Expositionstherapie (Podină et al. 2013), nicht aus Panikattacken.
 - [ ] 🔴 **Bewusste Abweichungen vom Konzept bestätigen** (Tabelle in der [README](README.md#bewusste-entscheidungen))
 
 ### Rechtlich

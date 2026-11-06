@@ -79,5 +79,24 @@
       "date": null,
       "comment": null
     }
+  },
+  "start.quick.title": {
+    "text": "Direkt zu einer Übung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.quick.hint": {
+    "text": "Ohne Fragen vorher. Hilfe und Notrufnummern findest du immer unten.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Abweichung vom Konzept (Phase 1 Sicherheitsabfrage, Phase 2 Einschätzung) auf Wunsch des Projektinhabers: Schnellzugang überspringt beides. Der Hilfe-Knopf bleibt auf jedem Bildschirm. Bitte fachlich bestätigen."
   }
 }

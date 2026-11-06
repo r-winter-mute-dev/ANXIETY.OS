@@ -282,3 +282,39 @@ test('Helles Farbschema ist barrierefrei (Start und Hilfe)', async ({ page }) =>
   await btn(page, 'Hilfe & Notrufnummern').click();
   await axe(page);
 });
+
+async function finishSteps(page: Page) {
+  for (let i = 0; i < 12; i++) {
+    const done = btn(page, 'Fertig');
+    if (await done.isVisible()) return done.click();
+    await btn(page, 'Weiter').click();
+  }
+}
+
+test('Schnellzugang: Ablenken direkt von der Startseite, ohne Fragen, zurück zum Start', async ({ page }) => {
+  await page.goto('./');
+  await expect(page.getByRole('heading', { name: 'Direkt zu einer Übung' })).toBeVisible();
+  await axe(page);
+  await btn(page, 'Ablenken').click();
+  await expect(heading(page)).toHaveText('Ablenken');
+  await expect(btn(page, 'Hilfe & Notrufnummern')).toBeVisible();
+  await btn(page, 'Rückwärts zählen').click();
+  await expect(page.getByText(/100, 97, 94/)).toBeVisible();
+  await finishSteps(page);
+  await expect(heading(page)).toHaveText('Was brauchst du gerade?');
+  await expect(page.getByText(/Wie stark ist deine Angst/)).toHaveCount(0);
+});
+
+test('Schnellzugang: Wechsel Körpersignale → Grounding behält den Modus', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Körpersignale verstehen').click();
+  await btn(page, /Zittern/).click();
+  await btn(page, 'Erklär es mir').click();
+  await btn(page, 'Weiter').click();
+  await btn(page, 'Etwas weniger').click();
+  await expect(heading(page)).toHaveText('Du hast deine Körpersignale eingeordnet');
+  await btn(page, /Grounding|Raum|Hier und Jetzt|ankommen/).first().click();
+  await btn(page, 'Ein Gegenstand').click();
+  await finishSteps(page);
+  await expect(heading(page)).toHaveText('Was brauchst du gerade?');
+});
