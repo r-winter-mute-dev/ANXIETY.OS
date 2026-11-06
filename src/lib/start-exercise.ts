@@ -1,26 +1,44 @@
 import { nav, session } from './nav.svelte';
 import type { Exercise } from './routes';
 
+/** Aus dem kompletten Ablauf (nach Einschätzung und Auswahl). */
 export function startExercise(ex: Exercise) {
-  session.practice = false;
+  session.mode = 'flow';
   session.exercise = ex;
   nav.go(ex);
 }
 
-/** Übungsmodus: dieselben Übungen, aber ohne Einschätzung und ohne Abschluss-Ablauf. */
+/** Direkt von der Startseite: ohne Sicherheitsfrage und Einschätzung, am Ende zurück zum Start. */
+export function startQuick(ex: Exercise) {
+  begin('quick', ex);
+}
+
+/** Übungsmodus aus „Angst verstehen“: ohne Einschätzung, am Ende zurück. */
 export function startPractice(ex: Exercise) {
-  session.practice = true;
+  begin('practice', ex);
+}
+
+function begin(mode: 'quick' | 'practice', ex: Exercise) {
+  session.mode = mode;
+  session.returnDepth = nav.depth;
   session.exercise = ex;
   nav.go(ex);
 }
 
-/** Nach jeder Übung: erneute Selbsteinschätzung (Konzept Phase 5) – außer im Übungsmodus. */
+/** Wechsel aus einer Übung in eine andere (z. B. Körpersignale → Grounding), Modus bleibt erhalten. */
+export function switchExercise(ex: Exercise) {
+  session.exercise = ex;
+  nav.go(ex);
+}
+
+/** Nach jeder Übung: im Ablauf erneute Selbsteinschätzung (Konzept Phase 5), sonst zurück. */
 export function finishExercise() {
-  if (session.practice) {
-    session.practice = false;
-    session.exercise = null;
-    nav.back();
+  if (session.mode === 'flow') {
+    nav.go('ratingPost');
     return;
   }
-  nav.go('ratingPost');
+  const d = session.returnDepth;
+  session.mode = 'flow';
+  session.exercise = null;
+  nav.backTo(d);
 }

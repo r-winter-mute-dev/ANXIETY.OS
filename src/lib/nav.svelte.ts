@@ -6,10 +6,16 @@ class Session {
   pre = $state<number | null>(null);
   post = $state<number | null>(null);
   exercise = $state<Exercise | null>(null);
-  /** Übungsmodus aus „Angst verstehen“: ohne Einschätzung vorher/nachher. */
-  practice = $state(false);
+  /**
+   * flow: kompletter Ablauf mit Einschätzung vorher/nachher.
+   * quick: direkt von der Startseite, practice: aus „Angst verstehen“ – beide ohne Einschätzung.
+   */
+  mode = $state<'flow' | 'quick' | 'practice'>('flow');
+  /** Verlaufstiefe, zu der eine Schnell- oder Übungs-Übung am Ende zurückkehrt. */
+  returnDepth = 0;
   reset() {
-    this.practice = false;
+    this.mode = 'flow';
+    this.returnDepth = 0;
     this.pre = null;
     this.post = null;
     this.exercise = null;
@@ -35,6 +41,16 @@ class Nav {
     this.#depth++;
     this.screen = s;
     history.pushState({ s, d: this.#depth }, '');
+  }
+
+  get depth() {
+    return this.#depth;
+  }
+
+  /** Zurück zu einer früheren Verlaufstiefe (z. B. Startseite oder „Angst verstehen“). */
+  backTo(depth: number) {
+    const n = this.#depth - depth;
+    if (n > 0) history.go(-n);
   }
 
   back() {

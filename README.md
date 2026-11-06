@@ -43,6 +43,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | **Auch ohne Netz** | Nach dem ersten Aufruf läuft die App offline und lässt sich wie eine App auf den Startbildschirm legen. |
 | **Kein Konto, kein Tracking** | Deine Eingaben sind beim Beenden weg. Gespeichert wird nur, wenn du die Darstellung anpasst. |
 | **Anpassbar** | Schriftgröße, Zeilenabstand, Bewegung und Farben (dunkel: Catppuccin Mocha, hell: Catppuccin Latte). |
+| **Direkt loslegen** | Auf der Startseite stehen Übungen zum Ablenken und Beruhigen, ohne Fragen vorher. |
 | **In Ruhe üben** | Unter „Angst verstehen“ lassen sich alle Übungen ohne Einschätzung vorher und nachher ausprobieren. |
 
 ## Ablauf
@@ -102,6 +103,7 @@ Einige Stellen weichen vom ursprünglichen Konzept ab. Die Fachperson soll sie g
 | Texteingabe beim Gedankenprüfen | **Alles per Antippen**, Text optional | Bei starker Angst ist Schreiben oft kaum möglich. |
 | Atemübung als gleichwertige Option | **An letzter Stelle** in der Übungsliste | Die Evidenz für Atemübungen bei Angst ist schwach (WHO 2023: bedingte Empfehlung). |
 | Körperfokus → Aufmerksamkeit nach außen (6.1) | **Körpersignale einzeln erklären**, Grounding danach als Angebot | Wunsch des Projektinhabers. Psychoedukation über Körpersymptome senkt Angstsensitivität, die Studien dazu fanden aber in ruhigem Zustand statt. Für den Einsatz während einer Attacke gibt es keine Studien. Deshalb nur ein Durchgang, Warnzeichen ohne Krankheitsnamen, Ausweg bei „stärker“. |
+| Immer zuerst Sicherheitsfrage und Einschätzung (Phase 1–2) | **Schnellzugang auf der Startseite:** Ablenken, Grounding, Atemhilfe, Körpersignale, einfacher Schritt direkt, ohne Fragen | Wunsch des Projektinhabers: In einer Attacke ist jeder zusätzliche Bildschirm eine Hürde. Der Hilfe-Knopf bleibt überall sichtbar, Brustschmerz zeigt weiter zuerst die 112. Der vollständige Ablauf bleibt der große Hauptknopf. |
 | Roter Notfall-Knopf | **Ruhiger, neutraler Knopf** „Hilfe & Notrufnummern“ | Rot wirkt bei bestehender Angst alarmierend. Auf dem Hilfe-Bildschirm bleibt die 112 deutlich hervorgehoben. |
 
 ## Entstehung

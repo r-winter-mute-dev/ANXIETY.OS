@@ -7,7 +7,7 @@
   import type { Exercise } from '../lib/routes';
 
   const topics = ['function', 'cycle', 'feeling', 'avoid', 'help'] as const;
-  const practice: Exercise[] = ['grounding', 'breathing', 'reframe', 'simple'];
+  const practice: Exercise[] = ['grounding', 'distract', 'breathing', 'reframe', 'simple'];
 </script>
 
 <Screen title={t('learn.title')} lead={t('learn.intro')}>

@@ -18,7 +18,7 @@ describe('Ablauflogik', () => {
 
   it('Atemhilfe wird nicht als erste Übung angeboten', () => {
     expect(EXERCISE_ORDER[0]).not.toBe('breathing');
-    expect(new Set(EXERCISE_ORDER)).toEqual(new Set([...Object.values(NEED_TO_EXERCISE), 'grounding']));
+    expect(new Set(EXERCISE_ORDER)).toEqual(new Set([...Object.values(NEED_TO_EXERCISE), 'grounding', 'distract']));
   });
 
   it('Notfall-Leiste ist nur auf dem Hilfe-Bildschirm ausgeblendet', () => {

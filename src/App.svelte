@@ -17,6 +17,7 @@
   import Learn from './screens/Learn.svelte';
   import About from './screens/About.svelte';
   import Settings from './screens/Settings.svelte';
+  import Distract from './screens/Distract.svelte';
   import { nav } from './lib/nav.svelte';
   import { HIDE_EMERGENCY_BAR } from './lib/routes';
   import { isDraft } from './lib/content';
@@ -43,6 +44,7 @@
       {:else if nav.screen === 'learn'}<Learn />
       {:else if nav.screen === 'about'}<About />
       {:else if nav.screen === 'settings'}<Settings />
+      {:else if nav.screen === 'distract'}<Distract />
       {/if}
     {/key}
   </main>
