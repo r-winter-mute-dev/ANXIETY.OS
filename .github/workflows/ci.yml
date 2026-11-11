@@ -8,6 +8,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    # Offizielles Playwright-Image: Browser und Systempakete sind schon drin.
+    # Kein apt-get mehr nötig, das bei Paketspiegel-Ausfällen die CI blockiert hat.
+    # Version muss zu @playwright/test in package-lock.json passen.
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+      options: --user 1001
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,7 +23,6 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
-      - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       # Derselbe Build wie auf GitHub Pages (Unterpfad), inkl. Offline-Test
       - name: E2E unter dem Pages-Unterpfad
