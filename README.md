@@ -38,7 +38,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | **Ein Schritt pro Bildschirm** | Eine Frage oder eine Anweisung, ein großer Knopf. Nichts, worüber du nachdenken musst. |
 | **Alles per Antippen** | Auch beim Gedankenprüfen. Eigener Text ist erlaubt, aber nie nötig. |
 | **Du entscheidest** | Jede Übung ist freiwillig, jederzeit abbrechbar und hat kein Zeitlimit. |
-| **Ein ruhiger Ort** | Dunkle, gedämpfte Farben mit einem leisen violetten Schimmer. Sprache, die erlaubt statt anweist. Keine Nummernflut. |
+| **Ein ruhiger Ort** | Dunkle, gedämpfte Farben mit einem leisen violetten Schimmer und einer gezeichneten Szene, die sich langsam bewegt. Sprache, die erlaubt statt anweist. Keine Nummernflut. Bei reduzierter Bewegung steht die Szene still. |
 | **Hilfe immer erreichbar** | Oben auf jedem Bildschirm führt ein leiser Link „Hilfe“ zu einer eigenen Seite mit allen Diensten: Notfall sichtbar, alles andere aufklappbar. |
 | **Keine Überraschungen** | Keine Töne, keine plötzlichen Bewegungen. Wer im System oder in der App reduzierte Bewegung einstellt, sieht die Atemhilfe ohne Animation. |
 | **Auch ohne Netz** | Nach dem ersten Aufruf läuft die App offline und lässt sich wie eine App auf den Startbildschirm legen. |
@@ -52,6 +52,7 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | Phase | Was passiert |
 | :---: | --- |
 | 1 | **Ankommen:** „Hier darfst du sein.“ Keine Notfallfrage, keine Skala. |
+| 1a | **Eine kleine Reise** (freiwillig, etwa eine Minute): vier Stationen zu einem ruhigen Ort – eine schwebende Insel, eine Brücke aus Glas, eine stille Stadt, ein Baum aus Kristall. Die Szene im Hintergrund rückt mit jeder Station näher, das Leuchten wird wärmer. Jederzeit überspringbar. |
 | 2 | **Sortieren: Was ist gerade da?** Körper, Gedanken, ein zu großes Gefühl, alles durcheinander oder „weiß nicht genau“. |
 | 3 | **Anerkennen:** ein Satz, der sagt, dass das da sein darf, dann zwei kleine nächste Schritte zur Auswahl |
 | 4 | **Eine Übung**, oder eine andere deiner Wahl |

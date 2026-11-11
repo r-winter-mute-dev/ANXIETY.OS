@@ -1,20 +1,15 @@
 <script lang="ts">
   import Screen from '../components/Screen.svelte';
-  import { nav, session } from '../lib/nav.svelte';
+  import { nav } from '../lib/nav.svelte';
   import { startExercise } from '../lib/start-exercise';
-  import { FEELINGS, type Feeling, type Exercise } from '../lib/routes';
+  import type { Exercise } from '../lib/routes';
   import { t } from '../lib/content';
   import { update } from '../lib/update.svelte';
 
   const quick: Exercise[] = ['grounding', 'distract', 'simple', 'breathing'];
-
-  function pick(f: Feeling) {
-    session.feeling = f;
-    nav.go('sort');
-  }
 </script>
 
-<Screen title={t('start.title')} lead={t('start.lead')} showNav={false}>
+<Screen title={t('start.title')} lead={t('start.lead')} showNav={false} hero>
   {#if update.available}
     <div class="card update" role="status">
       <p>{t('start.update')}</p>
@@ -22,16 +17,13 @@
     </div>
   {/if}
 
-  <section aria-labelledby="q">
-    <h2 id="q">{t('start.question')}</h2>
-    <p class="muted small hint">{t('start.question.hint')}</p>
-    <div class="options">
-      {#each FEELINGS as f}
-        <button class="option" onclick={() => pick(f)}>{t(`sort.${f}.label`)}</button>
-      {/each}
-      <button class="option soft" onclick={() => nav.go('dark')}>{t('sort.dark')}</button>
-    </div>
-  </section>
+  <div class="go">
+    <button class="primary big" onclick={() => nav.go('journey')}>
+      {t('start.journey')}
+      <small>{t('start.journey.sub')}</small>
+    </button>
+    <button class="secondary" onclick={() => nav.go('ask')}>{t('start.direct')}</button>
+  </div>
 
   <section aria-labelledby="quick">
     <h2 id="quick">{t('start.quick.title')}</h2>
@@ -60,15 +52,25 @@
     flex-direction: column;
     gap: var(--s2);
   }
+  .go {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
+  }
+  .primary.big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .primary small {
+    font-weight: 400;
+    font-size: var(--fs-s);
+    opacity: 0.8;
+    margin-top: 2px;
+  }
   section h2 {
     margin: 0;
-  }
-  .hint {
-    margin: var(--s1) 0 var(--s3);
-  }
-  .options .soft {
-    color: var(--muted);
-    border-style: dashed;
   }
   .chips {
     display: flex;

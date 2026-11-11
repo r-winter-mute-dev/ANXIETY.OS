@@ -35,6 +35,7 @@ Die sinnvolle Reihenfolge:
 - [ ] 🔴 **Körpersignale in der Akutphase fachlich bewerten:** Hilft die Erklärung während einer Attacke, oder wirkt sie wie Rückversicherung? Wortlaut der Warnzeichen prüfen (bewusst ohne Krankheitsnamen). Für diesen Einsatz gibt es keine Studien.
 - [ ] 🔴 **Umbau zum ruhigen Ort fachlich bewerten:** Ist es vertretbar, ohne Notfallfrage und ohne Angst-Skala zu starten? Warnzeichen stehen jetzt auf der Hilfe-Seite und bei den Körpersignalen, Suizidgedanken sind eine eigene Auswahl auf der Startseite. Wortlaut der Suizid-Seite nach Safe-Messaging-Kriterien prüfen.
 - [ ] 🔴 **Brustschmerz: Zeitkriterium?** Herz-Notfallhinweise nennen oft eine Dauer (z. B. über 5 Minuten). Panik-Brustschmerz kann ebenfalls länger dauern. Mit Kardiologie klären, ob und wie ein solches Kriterium in die App gehört.
+- [ ] 🔴 **Die Reise (geführte Vorstellung) fachlich bewerten:** Hilft eine Imagination in akuter Angst, oder kann sie bei Unwirklichkeitsgefühl (Derealisation) ungünstig sein? Die Stationen enthalten deshalb kleine Anker ins Hier und Jetzt (Atem, Auflagefläche) und sind überspringbar.
 - [ ] 🔴 **Ablenkung fachlich bewerten:** Fördert Ablenkung in der Attacke Sicherheitsverhalten? Die Studien dazu stammen aus der Expositionstherapie (Podină et al. 2013), nicht aus Panikattacken.
 - [ ] 🔴 **Bewusste Abweichungen vom Konzept bestätigen** (Tabelle in der [README](README.md#bewusste-entscheidungen))
 

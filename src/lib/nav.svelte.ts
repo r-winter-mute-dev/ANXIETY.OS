@@ -6,6 +6,8 @@ class Session {
   exercise = $state<Exercise | null>(null);
   /** Antwort auf „Was ist gerade da?“ – nur im Arbeitsspeicher. */
   feeling = $state<Feeling | null>(null);
+  /** Station der Reise (für die Szene im Hintergrund). */
+  journeyStep = $state(0);
   /** quick: aus dem Sortieren oder direkt; practice: aus „Angst verstehen“. */
   mode = $state<'quick' | 'practice'>('quick');
   /** Verlaufstiefe, zu der eine Schnell- oder Übungs-Übung am Ende zurückkehrt. */
@@ -13,6 +15,7 @@ class Session {
   reset() {
     this.mode = 'quick';
     this.feeling = null;
+    this.journeyStep = 0;
     this.returnDepth = 0;
     this.exercise = null;
   }

@@ -34,3 +34,16 @@ describe('Ablauflogik', () => {
     expect(orderSymptoms(['unbekannt'], order)).toEqual([]);
   });
 });
+
+describe('Szene: der Ort rückt näher', () => {
+  it('Start ist fern, die Reise führt Station für Station heran, der Halt leuchtet', async () => {
+    const { stageFor } = await import('../../src/lib/routes');
+    expect(stageFor('start')).toBe(0);
+    expect([0, 1, 2, 3].map((i) => stageFor('journey', i))).toEqual([0, 1, 2, 3]);
+    expect(stageFor('journey', 9)).toBe(3);
+    expect(stageFor('sort')).toBe(3);
+    expect(stageFor('grounding')).toBe(3);
+    expect(stageFor('quickEnd')).toBe(4);
+    expect(stageFor('emergency')).toBe(0);
+  });
+});

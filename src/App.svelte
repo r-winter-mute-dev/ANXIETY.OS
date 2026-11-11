@@ -17,12 +17,17 @@
   import Dark from './screens/Dark.svelte';
   import { keepAwake } from './lib/wakelock';
   import { nav } from './lib/nav.svelte';
-  import { EXERCISE_SCREENS } from './lib/routes';
+  import { EXERCISE_SCREENS, HERO_SCREENS, stageFor } from './lib/routes';
+  import { session } from './lib/nav.svelte';
+  import Scene from './components/Scene.svelte';
+  import Journey from './screens/Journey.svelte';
+  import Ask from './screens/Ask.svelte';
   import { isDraft } from './lib/content';
 
   $effect(() => keepAwake(EXERCISE_SCREENS.has(nav.screen)));
 </script>
 
+<Scene stage={stageFor(nav.screen, session.journeyStep)} hero={HERO_SCREENS.has(nav.screen)} />
 <div class="shell">
   {#if isDraft}<DraftBanner />{/if}
   <main>
@@ -41,6 +46,8 @@
       {:else if nav.screen === 'distract'}<Distract />
       {:else if nav.screen === 'quickEnd'}<QuickEnd />
       {:else if nav.screen === 'sort'}<Sort />
+      {:else if nav.screen === 'journey'}<Journey />
+      {:else if nav.screen === 'ask'}<Ask />
       {:else if nav.screen === 'dark'}<Dark />
       {/if}
     {/key}
