@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800" viewBox="0 0 1200 1800" role="img" aria-label="Sparse stars and nebula accents">
+<defs>
+<linearGradient id="rock" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#dce0ef"/><stop offset="1" stop-color="#a6adc8"/></linearGradient>
+<linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaafe0"/><stop offset=".52" stop-color="#b49be8"/><stop offset="1" stop-color="#8fa9e8"/></linearGradient>
+<linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c5cbe0"/><stop offset="1" stop-color="#939bb8"/></linearGradient>
+</defs>
+
+<g id="sky">
+ <g fill="#8fa9e8" opacity=".82">
+  <path d="M235 248l8 19 19 8 -19 8 -8 19 -8 -19 -19 -8 19 -8Z"/>
+  <path d="M935 320l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6Z"/>
+  <path d="M835 180l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5Z"/>
+  <circle cx="360" cy="210" r="5"/><circle cx="780" cy="265" r="5"/><circle cx="1000" cy="455" r="4"/>
+  <circle cx="190" cy="430" r="4"/><circle cx="510" cy="150" r="4"/><circle cx="720" cy="120" r="4"/>
+ </g>
+ <g fill="none" stroke="#a98bdd" stroke-width="5" opacity=".35">
+  <path d="M190 350 Q330 280 460 330 T720 315 T1010 360"/>
+  <path d="M280 455 Q420 390 550 430 T830 415"/>
+ </g>
+ <g fill="#f5c2e7" opacity=".55"><circle cx="290" cy="320" r="3"/><circle cx="650" cy="220" r="3"/><circle cx="890" cy="430" r="3"/></g>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800" viewBox="0 0 1200 1800" role="img" aria-label="Floating stone island with marble veins">
+<defs>
+<linearGradient id="rock" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#dce0ef"/><stop offset="1" stop-color="#a6adc8"/></linearGradient>
+<linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaafe0"/><stop offset=".52" stop-color="#b49be8"/><stop offset="1" stop-color="#8fa9e8"/></linearGradient>
+<linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c5cbe0"/><stop offset="1" stop-color="#939bb8"/></linearGradient>
+</defs>
+
+<g id="island">
+ <path d="M145 770 Q205 730 275 740 Q340 690 415 715 Q490 680 570 710 Q650 675 725 710 Q815 680 885 730 Q980 710 1055 775 Q1035 835 980 875 L930 935 900 1030 855 995 820 1135 775 1090 735 1235 690 1185 650 1320 605 1230 560 1345 520 1210 475 1270 440 1120 395 1160 360 1025 315 1060 285 950 225 910 185 845Z"
+ fill="url(#rock)" stroke="#7f89ad" stroke-width="9" stroke-linejoin="round"/>
+ <path d="M150 770 Q220 730 275 745 Q350 695 415 720 Q500 685 570 715 Q650 685 725 715 Q815 685 885 735 Q985 715 1050 775"
+ fill="none" stroke="#a4aed0" stroke-width="13" stroke-linecap="round"/>
+ <path d="M180 800 Q320 850 405 810 T570 840 Q660 875 735 825 T950 815" fill="none" stroke="#bac2de" stroke-width="17" opacity=".65"/>
+ <g fill="none" stroke="#8f99bd" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M250 795 Q305 835 355 815 L400 850 455 835 500 890"/>
+  <path d="M455 755 Q420 800 455 830 L435 880 480 930"/>
+  <path d="M700 765 Q665 815 700 855 L670 905 710 955"/>
+  <path d="M845 790 Q805 840 840 875 L810 925"/>
+  <path d="M330 915 Q380 900 405 950 L390 1005"/>
+  <path d="M565 1000 L600 965 635 990 660 955"/>
+  <path d="M745 1030 L780 995 805 1010"/>
+ </g>
+ <g fill="none" stroke="#a4aed0" stroke-width="3" opacity=".6">
+  <path d="M220 785 Q270 765 315 790"/><path d="M520 745 Q560 730 600 750"/>
+  <path d="M900 855 Q945 835 980 855"/><path d="M470 1090 l28 30"/>
+ </g>
+ <path d="M270 870 Q600 960 925 870" fill="none" stroke="#a6adc8" stroke-width="13" opacity=".5"/>
+</g>
+</svg>
