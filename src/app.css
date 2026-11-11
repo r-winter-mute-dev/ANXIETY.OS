@@ -123,6 +123,8 @@ body {
   min-height: 100dvh;
 }
 .shell {
+  position: relative;
+  z-index: 1;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;

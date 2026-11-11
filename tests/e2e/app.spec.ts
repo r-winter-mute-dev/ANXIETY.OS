@@ -11,6 +11,11 @@ async function axe(page: Page) {
   expect(r.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target).join(', ')}`)).toEqual([]);
 }
 
+async function ask(page: Page) {
+  await btn(page, 'Gleich zur Frage: Was ist gerade da?').click();
+  await expect(heading(page)).toHaveText('Was ist gerade da?');
+}
+
 async function finishSteps(page: Page) {
   for (let i = 0; i < 12; i++) {
     const done = btn(page, 'Fertig');
@@ -29,7 +34,7 @@ test('Entwurfs-Banner ist sichtbar und nicht schließbar', async ({ page }) => {
 test('Start: ankommen, keine Notfallfrage, keine Skala', async ({ page }) => {
   await page.goto('./');
   await expect(heading(page)).toHaveText(START);
-  await expect(page.getByRole('heading', { name: 'Was ist gerade da?' })).toBeVisible();
+  await expect(btn(page, /Komm mit/)).toBeVisible();
   await expect(page.getByText(/Trifft etwas davon/)).toHaveCount(0);
   await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
   await axe(page);
@@ -37,6 +42,7 @@ test('Start: ankommen, keine Notfallfrage, keine Skala', async ({ page }) => {
 
 test('Sortieren: anerkennen, zwei Schritte, Übung, kurzer Halt', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Alles ist durcheinander').click();
   await expect(heading(page)).toHaveText('Alles ist durcheinander');
   await expect(page.getByText(/fangen wir ganz klein an/)).toBeVisible();
@@ -52,6 +58,7 @@ test('Sortieren: anerkennen, zwei Schritte, Übung, kurzer Halt', async ({ page 
 
 test('Sortieren: „Etwas anderes“ zeigt alle übrigen Übungen', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Ich weiß es nicht genau').click();
   await btn(page, 'Etwas anderes').click();
   await expect(btn(page, 'Sanfte Atemhilfe')).toBeVisible();
@@ -60,6 +67,7 @@ test('Sortieren: „Etwas anderes“ zeigt alle übrigen Übungen', async ({ pag
 
 test('Gedanken prüfen: nur per Antippen', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Meine Gedanken rasen').click();
   await btn(page, 'Gedanken prüfen').click();
   await btn(page, 'Ich verliere gleich die Kontrolle.').click();
@@ -76,6 +84,7 @@ test('Gedanken prüfen: nur per Antippen', async ({ page }) => {
 test('Hilfe-Link ist auf jedem Bildschirm, Zurück führt an dieselbe Stelle', async ({ page }) => {
   await page.goto('./');
   await expect(help(page)).toBeVisible();
+  await ask(page);
   await btn(page, 'Ein Gefühl ist gerade zu groß').click();
   await expect(help(page)).toBeVisible();
   await btn(page, 'Ein einfacher Schritt').click();
@@ -114,6 +123,7 @@ test('Hilfe-Seite: Notfall sichtbar, alles andere aufklappbar', async ({ page })
 
 test('Suizidgedanken: ruhige Seite mit direktem Anruf', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Ich denke daran, nicht mehr leben zu wollen').click();
   await expect(heading(page)).toHaveText('Danke, dass du das sagst.');
   await expect(page.locator('a[href="tel:08001110111"]')).toBeVisible();
@@ -154,8 +164,11 @@ test('Grounding und Atemhilfe sind abbrechbar', async ({ page }) => {
 
 test('Browser-Zurück funktioniert', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Mein Körper macht mir Angst').click();
   await expect(heading(page)).toHaveText('Mein Körper macht mir Angst');
+  await page.goBack();
+  await expect(heading(page)).toHaveText('Was ist gerade da?');
   await page.goBack();
   await expect(heading(page)).toHaveText(START);
 });
@@ -178,6 +191,7 @@ test('Keine Anfragen an fremde Server, kein Speicher', async ({ page }) => {
     if (!r.url().startsWith('http://localhost:4173')) foreign.push(r.url());
   });
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Meine Gedanken rasen').click();
   await btn(page, 'Ablenken').click();
   const stored = await page.evaluate(() => ({
@@ -206,6 +220,7 @@ test('Offline nach erstem Laden', async ({ page, context }) => {
 
 test('Körpersignale: Auswahl, Erklärung, Nachfrage, nächstes Signal', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Mein Körper macht mir Angst').click();
   await btn(page, 'Körpersignale verstehen').click();
   await expect(heading(page)).toHaveText('Was spürst du gerade?');
@@ -236,6 +251,7 @@ test('Körpersignale: Auswahl, Erklärung, Nachfrage, nächstes Signal', async (
 
 test('Körpersignale: Brustschmerz kommt zuerst und zeigt 112 vor der Erklärung', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Mein Körper macht mir Angst').click();
   await btn(page, 'Körpersignale verstehen').click();
   await btn(page, /Herzrasen/).click();
@@ -250,6 +266,7 @@ test('Körpersignale: Brustschmerz kommt zuerst und zeigt 112 vor der Erklärung
 
 test('Körpersignale: Wechsel zum Grounding behält den kurzen Halt', async ({ page }) => {
   await page.goto('./');
+  await ask(page);
   await btn(page, 'Mein Körper macht mir Angst').click();
   await btn(page, 'Körpersignale verstehen').click();
   await btn(page, /Zittern/).click();
@@ -313,9 +330,47 @@ test('Helles Farbschema ist barrierefrei (Start, Sortieren, Hilfe)', async ({ pa
   await page.emulateMedia({ colorScheme: 'light' });
   await page.goto('./');
   await axe(page);
+  await ask(page);
+  await axe(page);
   await btn(page, 'Ein Gefühl ist gerade zu groß').click();
   await axe(page);
   await help(page).click();
   await page.getByText('Hilfe in deiner Region').click();
   await axe(page);
+});
+
+test('Reise: vier Stationen, die Szene rückt näher, endet bei der Frage', async ({ page }) => {
+  await page.goto('./');
+  const scene = page.locator('.scene');
+  await expect(scene).toHaveAttribute('data-stage', '0');
+  await btn(page, /Komm mit/).click();
+  await expect(heading(page)).toHaveText('Ein ruhiger Ort');
+  await expect(page.getByText(/schwebt eine Insel/)).toBeVisible();
+  await axe(page);
+  for (const stage of ['1', '2', '3']) {
+    await btn(page, 'Weitergehen').click();
+    await expect(scene).toHaveAttribute('data-stage', stage);
+  }
+  await expect(page.getByText(/Baum aus Kristall/)).toBeVisible();
+  await btn(page, /Zurück/).click();
+  await expect(scene).toHaveAttribute('data-stage', '2');
+  await btn(page, 'Weitergehen').click();
+  await btn(page, 'Hier ankommen').click();
+  await expect(heading(page)).toHaveText('Was ist gerade da?');
+  await btn(page, 'Ich weiß es nicht genau').click();
+  await btn(page, 'Ein einfacher Schritt').click();
+  await finishSteps(page);
+  await expect(scene).toHaveAttribute('data-stage', '4');
+});
+
+test('Reise lässt sich jederzeit überspringen', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, /Komm mit/).click();
+  await btn(page, 'Direkt zur Frage').click();
+  await expect(heading(page)).toHaveText('Was ist gerade da?');
+});
+
+test('Szene ist reine Dekoration und für Screenreader verborgen', async ({ page }) => {
+  await page.goto('./');
+  await expect(page.locator('.scene')).toHaveAttribute('aria-hidden', 'true');
 });

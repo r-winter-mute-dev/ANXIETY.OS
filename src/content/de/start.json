@@ -9,7 +9,7 @@
     }
   },
   "start.lead": {
-    "text": "Du musst nichts lösen und nichts beweisen. Wenn du magst, sortieren wir zusammen, was gerade da ist – so langsam, wie du willst.",
+    "text": "Du musst nichts lösen und nichts beweisen. Wenn du magst, nehme ich dich mit an einen ruhigen Ort. Dort sortieren wir zusammen, was gerade da ist.",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -92,6 +92,33 @@
   },
   "start.update.button": {
     "text": "Jetzt aktualisieren",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.journey": {
+    "text": "Komm mit",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.journey.sub": {
+    "text": "Eine kurze Reise, etwa eine Minute",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.direct": {
+    "text": "Gleich zur Frage: Was ist gerade da?",
     "review": {
       "status": "draft",
       "reviewer": null,

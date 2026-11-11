@@ -1,0 +1,68 @@
+{
+  "journey.stations": {
+    "text": [
+      "Weit draußen schwebt eine Insel. Du musst nichts tun. Schau einfach hin.",
+      "Eine Brücke aus Glas führt hinüber. Du gehst langsam, Schritt für Schritt. Manchmal ist das Gehen wichtiger als das Ankommen.",
+      "In der Mitte liegt eine stille Stadt. Hier sammelt sich, was schwer ist. Du darfst es kurz absetzen.",
+      "Auf dem Platz steht ein Baum aus Kristall. Er leuchtet leise. Hier darfst du sein – so lange, bis du bereit bist, weiterzugehen."
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Geführte Vorstellung (Imagery) nach einem Text des Projektinhabers, bewusst ohne Bilder von Leere, Nichts oder Schrecken. Evidenz für Imagery speziell in akuter Panik ist schwach; bei Unwirklichkeitsgefühl (Derealisation) kann Vorstellung ungünstig sein. Deshalb jederzeit überspringbar. Bitte fachlich prüfen."
+  },
+  "journey.hints": {
+    "text": [
+      "Wenn du magst, lass den Atem ein wenig langsamer ausströmen. Er muss nicht tiefer werden.",
+      "Du bestimmst das Tempo. Nichts hier läuft dir weg.",
+      "Spür kurz, wo dein Körper gerade aufliegt: Boden, Stuhl, Bett.",
+      ""
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Hinweis 1 entspricht der Atemregel der Atemhilfe (nicht tiefer atmen). Hinweis 3 verankert im Hier und Jetzt, als Gegengewicht zur Vorstellung."
+  },
+  "journey.title": {
+    "text": "Ein ruhiger Ort",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "journey.next": {
+    "text": "Weitergehen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "journey.arrive": {
+    "text": "Hier ankommen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "journey.skip": {
+    "text": "Direkt zur Frage",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

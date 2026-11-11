@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 320 Einträgen freigegeben · 320 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 329 Einträgen freigegeben · 329 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -133,6 +133,17 @@
 | `grounding.object.label` | Ein Gegenstand | ⬜ Entwurf |  |  |
 | `grounding.object.steps` | 1. Nimm einen Gegenstand in die Hand oder schau dir einen genau an.<br>2. Welche Farbe hat er? Gibt es mehrere Farbtöne?<br>3. Wie fühlt er sich an: glatt, rau, warm, kalt?<br>4. Wie schwer ist er? Hat er einen Geruch?<br>5. Beschreib ihn so, als müsstest du ihn jemandem erklären, der ihn nie gesehen hat. | ⬜ Entwurf | Konzept 5.3: Beschreibung neutraler Gegenstände. |  |
 
+## `journey.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `journey.stations` | 1. Weit draußen schwebt eine Insel. Du musst nichts tun. Schau einfach hin.<br>2. Eine Brücke aus Glas führt hinüber. Du gehst langsam, Schritt für Schritt. Manchmal ist das Gehen wichtiger als das Ankommen.<br>3. In der Mitte liegt eine stille Stadt. Hier sammelt sich, was schwer ist. Du darfst es kurz absetzen.<br>4. Auf dem Platz steht ein Baum aus Kristall. Er leuchtet leise. Hier darfst du sein – so lange, bis du bereit bist, weiterzugehen. | ⬜ Entwurf | Geführte Vorstellung (Imagery) nach einem Text des Projektinhabers, bewusst ohne Bilder von Leere, Nichts oder Schrecken. Evidenz für Imagery speziell in akuter Panik ist schwach; bei Unwirklichkeitsgefühl (Derealisation) kann Vorstellung ungünstig sein. Deshalb jederzeit überspringbar. Bitte fachlich prüfen. |  |
+| `journey.hints` | 1. Wenn du magst, lass den Atem ein wenig langsamer ausströmen. Er muss nicht tiefer werden.<br>2. Du bestimmst das Tempo. Nichts hier läuft dir weg.<br>3. Spür kurz, wo dein Körper gerade aufliegt: Boden, Stuhl, Bett.<br>4.  | ⬜ Entwurf | Hinweis 1 entspricht der Atemregel der Atemhilfe (nicht tiefer atmen). Hinweis 3 verankert im Hier und Jetzt, als Gegengewicht zur Vorstellung. |  |
+| `journey.title` | Ein ruhiger Ort | ⬜ Entwurf |  |  |
+| `journey.next` | Weitergehen | ⬜ Entwurf |  |  |
+| `journey.arrive` | Hier ankommen | ⬜ Entwurf |  |  |
+| `journey.skip` | Direkt zur Frage | ⬜ Entwurf |  |  |
+
 ## `learn.json`
 
 | ID | Text | Status | Hinweis | Quellen |
@@ -244,7 +255,7 @@
 | ID | Text | Status | Hinweis | Quellen |
 |---|---|---|---|---|
 | `start.title` | Hier darfst du sein. | ⬜ Entwurf |  |  |
-| `start.lead` | Du musst nichts lösen und nichts beweisen. Wenn du magst, sortieren wir zusammen, was gerade da ist – so langsam, wie du willst. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. |  |
+| `start.lead` | Du musst nichts lösen und nichts beweisen. Wenn du magst, nehme ich dich mit an einen ruhigen Ort. Dort sortieren wir zusammen, was gerade da ist. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. |  |
 | `start.question` | Was ist gerade da? | ⬜ Entwurf |  |  |
 | `start.question.hint` | Wähl, was am ehesten passt. Es gibt kein Falsch. | ⬜ Entwurf |  |  |
 | `start.quick.title` | Oder einfach etwas tun | ⬜ Entwurf |  |  |
@@ -254,6 +265,9 @@
 | `start.about` | Über diese App und ihre Grenzen | ⬜ Entwurf |  |  |
 | `start.update` | Eine neue Version ist verfügbar. | ⬜ Entwurf |  |  |
 | `start.update.button` | Jetzt aktualisieren | ⬜ Entwurf |  |  |
+| `start.journey` | Komm mit | ⬜ Entwurf |  |  |
+| `start.journey.sub` | Eine kurze Reise, etwa eine Minute | ⬜ Entwurf |  |  |
+| `start.direct` | Gleich zur Frage: Was ist gerade da? | ⬜ Entwurf |  |  |
 
 ## `symptoms.json`
 

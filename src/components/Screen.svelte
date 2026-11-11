@@ -10,6 +10,7 @@
     lead,
     onback,
     showNav = true,
+    hero = false,
     children,
     actions,
   }: {
@@ -18,6 +19,8 @@
     /** Eigene Zurück-Logik (z. B. vorheriger Schritt einer Übung). */
     onback?: () => void;
     showNav?: boolean;
+    /** Platz oben für die Szene (Start, Reise). */
+    hero?: boolean;
     children?: Snippet;
     actions?: Snippet;
   } = $props();
@@ -46,6 +49,7 @@
       {/if}
     </div>
   </div>
+  {#if hero}<div class="hero-space"></div>{/if}
   <h1 tabindex="-1" bind:this={heading}>{title}</h1>
   {#if lead}<p class="lead">{lead}</p>{/if}
   {#if children}<div class="body">{@render children()}</div>{/if}
@@ -74,6 +78,10 @@
   }
   h1 {
     outline: none;
+  }
+  .hero-space {
+    height: clamp(150px, 30vh, 280px);
+    flex: none;
   }
   .body {
     display: flex;
