@@ -1,0 +1,20 @@
+/* Optional ambient motion. Apply classes to SVG root groups via your renderer. */
+@keyframes crystal-breathe {
+  0%, 100% { opacity: .58; }
+  50% { opacity: 1; }
+}
+@keyframes sky-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -5px, 0); }
+}
+@keyframes star-twinkle {
+  0%, 100% { opacity: .55; }
+  50% { opacity: .95; }
+}
+.tree-light { animation: crystal-breathe 4.8s ease-in-out infinite; transform-origin: 50% 50%; }
+.sky-layer { animation: sky-drift 18s ease-in-out infinite; }
+.sky-layer .twinkle { animation: star-twinkle 5s ease-in-out infinite; }
+/* Respect accessibility settings. */
+@media (prefers-reduced-motion: reduce) {
+  .tree-light, .sky-layer, .sky-layer .twinkle { animation: none !important; }
+}

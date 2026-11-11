@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800" viewBox="0 0 1200 1800" role="img" aria-label="Arched bridge with books on its railing">
+<defs>
+<linearGradient id="rock" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#313244"/><stop offset="1" stop-color="#11111b"/></linearGradient>
+<linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5c2e7"/><stop offset=".52" stop-color="#cba6f7"/><stop offset="1" stop-color="#b4befe"/></linearGradient>
+<linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#45465c"/><stop offset="1" stop-color="#242436"/></linearGradient>
+</defs>
+
+<g id="bridge" stroke-linejoin="round">
+ <path d="M155 682 Q600 815 1045 682" fill="none" stroke="#242436" stroke-width="48"/>
+ <path d="M155 674 Q600 807 1045 674" fill="none" stroke="#6c7086" stroke-width="9"/>
+ <path d="M190 680 L190 570 M290 708 L290 600 M390 736 L390 628 M490 762 L490 655 M590 775 L590 665 M690 762 L690 655 M790 736 L790 628 M890 708 L890 600 M990 680 L990 570"
+ fill="none" stroke="#6c7086" stroke-width="8"/>
+ <path d="M190 570 Q590 645 990 570" fill="none" stroke="#9399b2" stroke-width="8"/>
+ <g stroke="#6c7086" stroke-width="5">
+  <path d="M330 720 V622 L372 630 V732Z" fill="#313244"/>
+  <path d="M378 733 V612 L425 620 V745Z" fill="#45465c"/>
+  <path d="M780 745 V620 L828 612 V733Z" fill="#313244"/>
+  <path d="M835 732 V630 L877 622 V720Z" fill="#45465c"/>
+ </g>
+ <g fill="none" stroke="#cba6f7" stroke-width="4" opacity=".9">
+  <path d="M341 645l19 3 M389 638l23 4 M792 638l23 -4 M847 645l19 -3"/>
+ </g>
+ <path d="M155 682 Q600 815 1045 682" fill="none" stroke="#9399b2" stroke-width="3" opacity=".65"/>
+</g>
+</svg>
