@@ -8,7 +8,8 @@ export default defineConfig({
   testDir: 'tests/e2e',
   fullyParallel: true,
   reporter: 'list',
-  use: { baseURL: url, ...devices['Pixel 7'] },
+  // Reduzierte Bewegung: axe misst Kontraste sonst mitten im Einblenden der Bildschirme.
+  use: { baseURL: url, ...devices['Pixel 7'], contextOptions: { reducedMotion: 'reduce' } },
   webServer: {
     command: 'npx vite preview --port 4173 --strictPort',
     url,

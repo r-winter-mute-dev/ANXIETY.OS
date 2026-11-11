@@ -1,6 +1,6 @@
 {
   "quickend.title": {
-    "text": "Kurzer Abschluss",
+    "text": "Kurzer Halt",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -9,16 +9,17 @@
     }
   },
   "quickend.text": {
-    "text": "Du hast aktiv etwas getan. Die Angst muss dafür nicht ganz weg sein.",
+    "text": "Du hast etwas für dich getan. Die Angst muss dafür nicht ganz weg sein – manchmal ist das Gehen wichtiger als das Ankommen.",
     "review": {
       "status": "draft",
       "reviewer": null,
       "date": null,
       "comment": null
-    }
+    },
+    "note": "Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. Der Satz zum Gehen stammt aus diesem Text."
   },
   "quickend.again": {
-    "text": "Noch eine Übung",
+    "text": "Zurück zum Anfang",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -44,5 +45,17 @@
       "comment": null
     },
     "note": "Ersatz für die Einschätzung vorher/nachher im Schnellzugang: nur eine freiwillige Rückmeldung, damit bei Verschlechterung der Weg zur Hilfe sichtbar wird (Konzept Phase 5)."
+  },
+  "quickend.followup": {
+    "text": "Wenn Angstattacken öfter vorkommen, sprich mit deiner Hausarztpraxis oder einer psychotherapeutischen Praxis.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "s3-angst-2021"
+    ]
   }
 }

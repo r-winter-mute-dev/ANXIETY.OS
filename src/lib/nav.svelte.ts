@@ -1,23 +1,19 @@
 // Navigation mit Browser-Verlauf, damit die Zurück-Taste (z. B. Android) wie erwartet funktioniert.
 // Es wird nichts gespeichert: Der Sitzungszustand lebt nur im Arbeitsspeicher dieses Tabs.
-import type { Exercise, Screen } from './routes';
+import type { Exercise, Feeling, Screen } from './routes';
 
 class Session {
-  pre = $state<number | null>(null);
-  post = $state<number | null>(null);
   exercise = $state<Exercise | null>(null);
-  /**
-   * flow: kompletter Ablauf mit Einschätzung vorher/nachher.
-   * quick: direkt von der Startseite, practice: aus „Angst verstehen“ – beide ohne Einschätzung.
-   */
-  mode = $state<'flow' | 'quick' | 'practice'>('flow');
+  /** Antwort auf „Was ist gerade da?“ – nur im Arbeitsspeicher. */
+  feeling = $state<Feeling | null>(null);
+  /** quick: aus dem Sortieren oder direkt; practice: aus „Angst verstehen“. */
+  mode = $state<'quick' | 'practice'>('quick');
   /** Verlaufstiefe, zu der eine Schnell- oder Übungs-Übung am Ende zurückkehrt. */
   returnDepth = 0;
   reset() {
-    this.mode = 'flow';
+    this.mode = 'quick';
+    this.feeling = null;
     this.returnDepth = 0;
-    this.pre = null;
-    this.post = null;
     this.exercise = null;
   }
 }

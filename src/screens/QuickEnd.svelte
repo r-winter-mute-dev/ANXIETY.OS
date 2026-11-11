@@ -11,14 +11,14 @@
   {#if worse}
     <div class="card warn" role="status">
       <p>{t('quickend.worse.text')}</p>
-      <button class="secondary strong" onclick={() => nav.go('emergency')}>{t('emergency.bar')}</button>
+      <button class="secondary strong" onclick={() => nav.go('emergency')}>{t('nav.help.page')}</button>
     </div>
   {/if}
-  <p class="muted">{t('end.followup')}</p>
+  <p class="muted">{t('quickend.followup')}</p>
   {#snippet actions()}
     <button class="primary" onclick={() => nav.home()}>{t('quickend.again')}</button>
     {#if !worse}
-      <button class="secondary" onclick={() => (worse = true)}>{t('quickend.worse')}</button>
+      <button class="quiet" onclick={() => (worse = true)}>{t('quickend.worse')}</button>
     {/if}
   {/snippet}
 </Screen>

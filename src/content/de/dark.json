@@ -1,0 +1,71 @@
+{
+  "dark.title": {
+    "text": "Danke, dass du das sagst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "dark.text": {
+    "text": "Solche Gedanken können in sehr schweren Momenten kommen. Damit musst du nicht allein bleiben. Bei der TelefonSeelsorge hört dir jetzt jemand zu – anonym, kostenlos, rund um die Uhr.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Formulierung nach Prinzipien sicherer Kommunikation: anerkennen, nicht bewerten, konkrete Hilfe anbieten. Fachlich prüfen.",
+    "refs": [
+      "telefonseelsorge"
+    ]
+  },
+  "dark.call": {
+    "text": "TelefonSeelsorge anrufen: 0800 111 0 111",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "tel": "08001110111"
+  },
+  "dark.danger": {
+    "text": "Wenn du in Gefahr bist, dir jetzt etwas anzutun: ruf die 112.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "dark.call112": {
+    "text": "112 anrufen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "tel": "112"
+  },
+  "dark.write": {
+    "text": "Lieber schreiben oder andere Wege",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "dark.stay": {
+    "text": "Du kannst auch hierbleiben und eine kleine Übung machen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

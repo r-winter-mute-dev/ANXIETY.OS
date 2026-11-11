@@ -1,6 +1,6 @@
 {
   "start.title": {
-    "text": "Was brauchst du gerade?",
+    "text": "Hier darfst du sein.",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -8,8 +8,36 @@
       "comment": null
     }
   },
-  "start.acute": {
-    "text": "Ich habe gerade starke Angst",
+  "start.lead": {
+    "text": "Du musst nichts lösen und nichts beweisen. Wenn du magst, sortieren wir zusammen, was gerade da ist – so langsam, wie du willst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden."
+  },
+  "start.question": {
+    "text": "Was ist gerade da?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.question.hint": {
+    "text": "Wähl, was am ehesten passt. Es gibt kein Falsch.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.quick.title": {
+    "text": "Oder einfach etwas tun",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -35,26 +63,17 @@
       "comment": null
     }
   },
-  "start.about": {
-    "text": "Über diese App und ihre Grenzen",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "start.note": {
-    "text": "Alles hier ist freiwillig. Du kannst jederzeit aufhören.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
   "start.settings": {
     "text": "Darstellung anpassen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "start.about": {
+    "text": "Über diese App und ihre Grenzen",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -79,24 +98,5 @@
       "date": null,
       "comment": null
     }
-  },
-  "start.quick.title": {
-    "text": "Direkt zu einer Übung",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "start.quick.hint": {
-    "text": "Ohne Fragen vorher. Hilfe und Notrufnummern findest du immer unten.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    },
-    "note": "Abweichung vom Konzept (Phase 1 Sicherheitsabfrage, Phase 2 Einschätzung) auf Wunsch des Projektinhabers: Schnellzugang überspringt beides. Der Hilfe-Knopf bleibt auf jedem Bildschirm. Bitte fachlich bestätigen."
   }
 }

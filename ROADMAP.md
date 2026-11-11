@@ -32,11 +32,10 @@ Die sinnvolle Reihenfolge:
 
 - [ ] 🔴 **Review aller 291 Einträge** (Textbausteine und Quellen, siehe [REVIEW.md](REVIEW.md)) durch eine Fachperson aus Psychotherapie oder Psychiatrie
 - [ ] 🔴 **Krisenpfad bei Suizidgedanken prüfen lassen.** Die App zeigt 112, TelefonSeelsorge, die Krisendienste Bayern und Berlin sowie eine Suche für andere Regionen. Reicht das, oder braucht es einen eigenen, ruhigeren Bildschirm? Berlin: Widerspruch bei der überregionalen Nummer (030 390 63 10 laut Anbieter, 030 390 63 00 laut berlin.de) klären.
-- [ ] 🔴 **Sicherheitsfrage am Anfang fachlich bestätigen:** Auswahl der drei Punkte, Wortlaut und die Entscheidung, nur eine Frage statt einer Symptomliste zu stellen
 - [ ] 🔴 **Körpersignale in der Akutphase fachlich bewerten:** Hilft die Erklärung während einer Attacke, oder wirkt sie wie Rückversicherung? Wortlaut der Warnzeichen prüfen (bewusst ohne Krankheitsnamen). Für diesen Einsatz gibt es keine Studien.
-- [ ] 🔴 **Sicherheitsfrage auf Übertriage prüfen:** „Gefühl, das Bewusstsein zu verlieren“ und „Beschwerden sind neu“ treffen bei vielen Panikattacken zu, besonders bei der ersten. Dann landet die Person sofort bei den Notrufnummern. Ist das gewollt, oder braucht es eine Abstufung (112 vs. 116 117)?
+- [ ] 🔴 **Umbau zum ruhigen Ort fachlich bewerten:** Ist es vertretbar, ohne Notfallfrage und ohne Angst-Skala zu starten? Warnzeichen stehen jetzt auf der Hilfe-Seite und bei den Körpersignalen, Suizidgedanken sind eine eigene Auswahl auf der Startseite. Wortlaut der Suizid-Seite nach Safe-Messaging-Kriterien prüfen.
 - [ ] 🔴 **Brustschmerz: Zeitkriterium?** Herz-Notfallhinweise nennen oft eine Dauer (z. B. über 5 Minuten). Panik-Brustschmerz kann ebenfalls länger dauern. Mit Kardiologie klären, ob und wie ein solches Kriterium in die App gehört.
-- [ ] 🔴 **Schnellzugang und Ablenkung fachlich bewerten:** Ist es vertretbar, Sicherheitsfrage und Einschätzung zu überspringen? Fördert Ablenkung in der Attacke Sicherheitsverhalten? Die Studien dazu stammen aus der Expositionstherapie (Podină et al. 2013), nicht aus Panikattacken.
+- [ ] 🔴 **Ablenkung fachlich bewerten:** Fördert Ablenkung in der Attacke Sicherheitsverhalten? Die Studien dazu stammen aus der Expositionstherapie (Podină et al. 2013), nicht aus Panikattacken.
 - [ ] 🔴 **Bewusste Abweichungen vom Konzept bestätigen** (Tabelle in der [README](README.md#bewusste-entscheidungen))
 
 ### Rechtlich

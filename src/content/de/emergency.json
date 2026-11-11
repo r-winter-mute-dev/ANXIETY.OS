@@ -1,6 +1,6 @@
 {
   "emergency.title": {
-    "text": "Hol dir jetzt Hilfe",
+    "text": "Hilfe",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -9,7 +9,108 @@
     }
   },
   "emergency.lead": {
-    "text": "Bei Lebensgefahr – oder wenn du unsicher bist – ruf die 112.",
+    "text": "Hier findest du Menschen und Dienste, die helfen. Du musst nichts davon nutzen – aber du darfst.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden."
+  },
+  "emergency.now.title": {
+    "text": "Wenn es ein Notfall ist",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.now.signs": {
+    "text": [
+      "starke Brustschmerzen oder schwere Atemnot",
+      "Beschwerden, die ganz neu sind oder sich anders anfühlen als sonst",
+      "Ohnmacht oder Bewusstlosigkeit",
+      "akute Gefahr, dir etwas anzutun"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Übernommen aus der früheren Sicherheitsfrage (Konzept Phase 1), jetzt nur noch hier und bei den passenden Körpersignalen. 'Gefühl, das Bewusstsein zu verlieren' ersetzt durch tatsächliche Ohnmacht, um Übertriage zu vermeiden – bitte prüfen.",
+    "refs": [
+      "nice-cg113",
+      "116117-112"
+    ]
+  },
+  "emergency.now.unsure": {
+    "text": "Wenn du unsicher bist, ist es in Ordnung, die 112 zu rufen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.talk.title": {
+    "text": "Mit jemandem reden",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.ts.label": {
+    "text": "TelefonSeelsorge – anonym, kostenlos, rund um die Uhr",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.116117.desc": {
+    "text": "Ärztlicher Bereitschaftsdienst: wenn es nicht lebensbedrohlich ist, aber nicht bis zur nächsten Sprechstunde warten kann.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.write.title": {
+    "text": "Lieber schreiben",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.crisis.title": {
+    "text": "Hilfe in deiner Region",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.wait.title": {
+    "text": "Während du wartest",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.notalone": {
+    "text": "Wenn möglich: Sag einer Person in deiner Nähe Bescheid.",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -27,18 +128,6 @@
     },
     "tel": "112"
   },
-  "emergency.112.desc": {
-    "text": "Rettungsdienst. Bei lebensbedrohlichen Beschwerden, z. B. starken Brustschmerzen, schwerer Atemnot, Bewusstseinsstörung oder Suizidgefahr.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    },
-    "refs": [
-      "116117-112"
-    ]
-  },
   "emergency.116117.label": {
     "text": "116 117 – Ärztlicher Bereitschaftsdienst",
     "review": {
@@ -48,39 +137,6 @@
       "comment": null
     },
     "tel": "116117"
-  },
-  "emergency.116117.desc": {
-    "text": "Wenn es nicht lebensbedrohlich ist, aber nicht bis zur nächsten Sprechstunde warten kann. Kostenlos, rund um die Uhr.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    },
-    "refs": [
-      "116117-112"
-    ]
-  },
-  "emergency.ts.label": {
-    "text": "TelefonSeelsorge",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "emergency.ts.desc": {
-    "text": "Zum Reden in einer Krise. Kostenlos, anonym, rund um die Uhr.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    },
-    "refs": [
-      "telefonseelsorge"
-    ]
   },
   "emergency.ts.numbers": {
     "text": [
@@ -102,45 +158,6 @@
       "08001110111",
       "08001110222",
       "116123"
-    ]
-  },
-  "emergency.notalone": {
-    "text": "Wenn möglich: Sag einer Person in deiner Nähe Bescheid.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "emergency.back": {
-    "text": "Zurück",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "emergency.crisis.title": {
-    "text": "Psychiatrische Krisendienste",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "emergency.crisis.lead": {
-    "text": "Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    },
-    "refs": [
-      "gesundbund-krisen"
     ]
   },
   "emergency.crisis.bayern": {
@@ -193,14 +210,17 @@
       "comment": null
     }
   },
-  "emergency.write.title": {
-    "text": "Wenn Sprechen gerade schwerfällt",
+  "emergency.crisis.lead": {
+    "text": "Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert.",
     "review": {
       "status": "draft",
       "reviewer": null,
       "date": null,
       "comment": null
-    }
+    },
+    "refs": [
+      "gesundbund-krisen"
+    ]
   },
   "emergency.write.nora": {
     "text": "nora – die offizielle Notruf-App der Bundesländer: Notruf an 110 und 112 ohne Sprechen, auch per Chat. Muss vorher eingerichtet werden. Bis dahin gilt die 112.",
@@ -244,15 +264,6 @@
   },
   "emergency.write.open": {
     "text": "Öffnet eine externe Seite",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "emergency.wait.title": {
-    "text": "Während du wartest",
     "review": {
       "status": "draft",
       "reviewer": null,

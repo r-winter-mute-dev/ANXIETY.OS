@@ -101,7 +101,7 @@
           {i + 1 < queue.length ? t('symptoms.ask.more.continue') : t('symptoms.ask.more.finish')}
         </button>
         <button class="secondary" onclick={() => switchExercise('grounding')}>{t('symptoms.ask.more.ground')}</button>
-        <button class="secondary" onclick={() => nav.go('emergency')}>{t('emergency.bar')}</button>
+        <button class="secondary" onclick={() => nav.go('emergency')}>{t('nav.help.page')}</button>
       {/snippet}
     </Screen>
   {:else}

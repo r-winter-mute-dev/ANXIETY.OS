@@ -4,6 +4,14 @@ Alle Inhalte sind weiterhin **Entwurf – nicht fachlich geprüft**. Versionsnum
 
 ## [Unveröffentlicht]
 
+### Umbau: ein ruhiger Ort
+- **Startseite „Hier darfst du sein.“** mit der Frage „Was ist gerade da?“. Sicherheitsfrage, Angst-Skala und Bedarfsauswahl entfallen.
+- **Sortieren:** jede Antwort wird anerkannt und bekommt zwei kleine nächste Schritte.
+- **Suizidgedanken** als eigene, ruhige Auswahl mit TelefonSeelsorge und 112.
+- **Hilfe-Seite** statt Notfall-Leiste: Notfall sichtbar, Reden, Schreiben und regionale Dienste aufklappbar. Erreichbar über einen leisen Link „Hilfe“ oben.
+- **Design:** tieferes Dunkel, Mauve statt Teal, leiser violetter Schimmer, weichere Formen, sanftes Einblenden. Entwurfshinweis schmal statt Warnblock.
+- Nach jeder Übung ein **kurzer Halt** ohne Skala.
+
 ### Neu
 - **Schnellzugang auf der Startseite:** Ablenken, Im Raum ankommen, Sanfte Atemhilfe, Körpersignale verstehen und Ein einfacher Schritt direkt nutzbar, ohne Sicherheitsfrage und Einschätzung. Am Ende zurück zur Startseite.
 - **Neue Übung „Ablenken“** mit vier Varianten: Rückwärts zählen, ABC-Spiel, Farben suchen, Ein vertrauter Weg. Auch im Ablauf und unter „In Ruhe üben“.

@@ -10,8 +10,8 @@
   {/each}
 </div>
 <div class="ends muted">
-  <span>{t('rating.low')}</span>
-  <span>{t('rating.high')}</span>
+  <span>{t('scale.low')}</span>
+  <span>{t('scale.high')}</span>
 </div>
 
 <style>

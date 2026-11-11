@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 321 Einträgen freigegeben · 321 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 320 Einträgen freigegeben · 320 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -46,20 +46,24 @@
 
 | ID | Text | Status | Hinweis | Quellen |
 |---|---|---|---|---|
-| `choose.title` | Was ist gerade am stärksten? | ⬜ Entwurf |  |  |
-| `choose.thoughts` | Meine Gedanken rasen – ich befürchte etwas Schlimmes | ⬜ Entwurf |  |  |
-| `choose.body` | Mein Körper macht mir Angst | ⬜ Entwurf | Führt zu 'Körpersignale verstehen' (Symptome einzeln erklären). Abweichung von Konzept 6.1 (dort: externe Orientierung); Grounding wird am Ende angeboten. |  |
-| `choose.breath` | Mein Atem fühlt sich unruhig an | ⬜ Entwurf |  |  |
-| `choose.overwhelm` | Alles ist zu viel | ⬜ Entwurf |  |  |
-| `choose.hint` | Du kannst danach jederzeit etwas anderes ausprobieren. | ⬜ Entwurf | Zuordnung nach Konzept 6.1: Gedanken → Neubewertung, Körperfokus → Grounding, Atem → Atemhilfe, Überforderung → einfache Handlungsanweisung. Keine diagnostische Ableitung. |  |
-| `choose.other` | Alle Übungen anzeigen | ⬜ Entwurf |  |  |
-| `choose.all.title` | Welche Übung möchtest du? | ⬜ Entwurf |  |  |
 | `choose.ex.reframe` | Gedanken prüfen | ⬜ Entwurf |  |  |
 | `choose.ex.grounding` | Im Raum ankommen | ⬜ Entwurf |  |  |
 | `choose.ex.breathing` | Sanfte Atemhilfe | ⬜ Entwurf |  |  |
 | `choose.ex.simple` | Ein einfacher Schritt | ⬜ Entwurf |  |  |
 | `choose.ex.symptoms` | Körpersignale verstehen | ⬜ Entwurf |  |  |
 | `choose.ex.distract` | Ablenken | ⬜ Entwurf |  |  |
+
+## `dark.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `dark.title` | Danke, dass du das sagst. | ⬜ Entwurf |  |  |
+| `dark.text` | Solche Gedanken können in sehr schweren Momenten kommen. Damit musst du nicht allein bleiben. Bei der TelefonSeelsorge hört dir jetzt jemand zu – anonym, kostenlos, rund um die Uhr. | ⬜ Entwurf | Formulierung nach Prinzipien sicherer Kommunikation: anerkennen, nicht bewerten, konkrete Hilfe anbieten. Fachlich prüfen. | `telefonseelsorge` |
+| `dark.call` | TelefonSeelsorge anrufen: 0800 111 0 111 | ⬜ Entwurf |  |  |
+| `dark.danger` | Wenn du in Gefahr bist, dir jetzt etwas anzutun: ruf die 112. | ⬜ Entwurf |  |  |
+| `dark.call112` | 112 anrufen | ⬜ Entwurf |  |  |
+| `dark.write` | Lieber schreiben oder andere Wege | ⬜ Entwurf |  |  |
+| `dark.stay` | Du kannst auch hierbleiben und eine kleine Übung machen. | ⬜ Entwurf |  |  |
 
 ## `distract.json`
 
@@ -81,43 +85,31 @@
 
 | ID | Text | Status | Hinweis | Quellen |
 |---|---|---|---|---|
-| `emergency.title` | Hol dir jetzt Hilfe | ⬜ Entwurf |  |  |
-| `emergency.lead` | Bei Lebensgefahr – oder wenn du unsicher bist – ruf die 112. | ⬜ Entwurf |  |  |
-| `emergency.112.label` | 112 – Notruf | ⬜ Entwurf |  |  |
-| `emergency.112.desc` | Rettungsdienst. Bei lebensbedrohlichen Beschwerden, z. B. starken Brustschmerzen, schwerer Atemnot, Bewusstseinsstörung oder Suizidgefahr. | ⬜ Entwurf |  | `116117-112` |
-| `emergency.116117.label` | 116 117 – Ärztlicher Bereitschaftsdienst | ⬜ Entwurf |  |  |
-| `emergency.116117.desc` | Wenn es nicht lebensbedrohlich ist, aber nicht bis zur nächsten Sprechstunde warten kann. Kostenlos, rund um die Uhr. | ⬜ Entwurf |  | `116117-112` |
-| `emergency.ts.label` | TelefonSeelsorge | ⬜ Entwurf |  |  |
-| `emergency.ts.desc` | Zum Reden in einer Krise. Kostenlos, anonym, rund um die Uhr. | ⬜ Entwurf |  | `telefonseelsorge` |
-| `emergency.ts.numbers` | 1. 0800 111 0 111<br>2. 0800 111 0 222<br>3. 116 123 | ⬜ Entwurf | Nummern am 04.11.2026 auf telefonseelsorge.de geprüft. | `telefonseelsorge` |
+| `emergency.title` | Hilfe | ⬜ Entwurf |  |  |
+| `emergency.lead` | Hier findest du Menschen und Dienste, die helfen. Du musst nichts davon nutzen – aber du darfst. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. |  |
+| `emergency.now.title` | Wenn es ein Notfall ist | ⬜ Entwurf |  |  |
+| `emergency.now.signs` | 1. starke Brustschmerzen oder schwere Atemnot<br>2. Beschwerden, die ganz neu sind oder sich anders anfühlen als sonst<br>3. Ohnmacht oder Bewusstlosigkeit<br>4. akute Gefahr, dir etwas anzutun | ⬜ Entwurf | Übernommen aus der früheren Sicherheitsfrage (Konzept Phase 1), jetzt nur noch hier und bei den passenden Körpersignalen. 'Gefühl, das Bewusstsein zu verlieren' ersetzt durch tatsächliche Ohnmacht, um Übertriage zu vermeiden – bitte prüfen. | `nice-cg113`, `116117-112` |
+| `emergency.now.unsure` | Wenn du unsicher bist, ist es in Ordnung, die 112 zu rufen. | ⬜ Entwurf |  |  |
+| `emergency.talk.title` | Mit jemandem reden | ⬜ Entwurf |  |  |
+| `emergency.ts.label` | TelefonSeelsorge – anonym, kostenlos, rund um die Uhr | ⬜ Entwurf |  |  |
+| `emergency.116117.desc` | Ärztlicher Bereitschaftsdienst: wenn es nicht lebensbedrohlich ist, aber nicht bis zur nächsten Sprechstunde warten kann. | ⬜ Entwurf |  |  |
+| `emergency.write.title` | Lieber schreiben | ⬜ Entwurf |  |  |
+| `emergency.crisis.title` | Hilfe in deiner Region | ⬜ Entwurf |  |  |
+| `emergency.wait.title` | Während du wartest | ⬜ Entwurf |  |  |
 | `emergency.notalone` | Wenn möglich: Sag einer Person in deiner Nähe Bescheid. | ⬜ Entwurf |  |  |
-| `emergency.back` | Zurück | ⬜ Entwurf |  |  |
-| `emergency.crisis.title` | Psychiatrische Krisendienste | ⬜ Entwurf |  |  |
-| `emergency.crisis.lead` | Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert. | ⬜ Entwurf |  | `gesundbund-krisen` |
+| `emergency.112.label` | 112 – Notruf | ⬜ Entwurf |  |  |
+| `emergency.116117.label` | 116 117 – Ärztlicher Bereitschaftsdienst | ⬜ Entwurf |  |  |
+| `emergency.ts.numbers` | 1. 0800 111 0 111<br>2. 0800 111 0 222<br>3. 116 123 | ⬜ Entwurf | Nummern am 04.11.2026 auf telefonseelsorge.de geprüft. | `telefonseelsorge` |
 | `emergency.crisis.bayern` | Bayern: 0800 655 3000 – kostenlos, rund um die Uhr, nur aus Bayern erreichbar | ⬜ Entwurf |  | `krisendienste-bayern` |
 | `emergency.crisis.berlin` | Berlin: Berliner Krisendienst, 030 390 63 10 (Öffnungszeiten der Standorte auf der Website) | ⬜ Entwurf | Widerspruch: berlin.de nennt 030 390 63 00 als überregionale Nummer, die Seite des Berliner Krisendienstes 030 390 63 10. Übernommen wurde die Angabe des Anbieters. Bitte vor Release erneut prüfen. | `berliner-krisendienst` |
 | `emergency.crisis.other` | Andere Regionen: Krisendienste und Sozialpsychiatrische Dienste in deiner Nähe findest du über die Suche der Stiftung Deutsche Depressionshilfe. | ⬜ Entwurf |  | `depressionshilfe-suche`, `gesundbund-krisen` |
 | `emergency.crisis.link` | Zur Suche (öffnet eine externe Seite) | ⬜ Entwurf |  |  |
-| `emergency.write.title` | Wenn Sprechen gerade schwerfällt | ⬜ Entwurf |  |  |
+| `emergency.crisis.lead` | Krisendienste beraten bei seelischen Notlagen und vermitteln Hilfe vor Ort. Sie sind je nach Bundesland unterschiedlich organisiert. | ⬜ Entwurf |  | `gesundbund-krisen` |
 | `emergency.write.nora` | nora – die offizielle Notruf-App der Bundesländer: Notruf an 110 und 112 ohne Sprechen, auch per Chat. Muss vorher eingerichtet werden. Bis dahin gilt die 112. | ⬜ Entwurf | Registrierung per SMS, teils Bestätigungsanruf oder POSTIDENT nötig; daher nur als Vorbereitung sinnvoll, nicht in der akuten Situation. | `nora` |
 | `emergency.write.krisenchat` | krisenchat – für alle unter 25: rund um die Uhr per Chat oder WhatsApp, kostenlos. | ⬜ Entwurf |  | `krisenchat` |
 | `emergency.write.ts` | TelefonSeelsorge schriftlich: Mail oder Chat nach anonymer Anmeldung. Chats laufen über Termine, Antworten auf Mails können einige Tage dauern. | ⬜ Entwurf |  | `ts-online` |
 | `emergency.write.open` | Öffnet eine externe Seite | ⬜ Entwurf |  |  |
-| `emergency.wait.title` | Während du wartest | ⬜ Entwurf |  |  |
 | `emergency.wait.text` | Wenn du Hilfe gerufen hast oder dich etwas beruhigen möchtest, kannst du eine kurze Übung machen. | ⬜ Entwurf | Soll nach einem Anruf die Wartezeit überbrücken. Bitte prüfen, ob das Angebot hier jemanden vom Anrufen abhalten könnte; deshalb steht es ganz unten. |  |
-
-## `end.json`
-
-| ID | Text | Status | Hinweis | Quellen |
-|---|---|---|---|---|
-| `end.title` | Kurzer Abschluss | ⬜ Entwurf |  |  |
-| `end.compare` | Vorher: {pre} · Jetzt: {post} | ⬜ Entwurf |  |  |
-| `end.neutral` | Egal, wie sich die Zahl verändert hat: Du hast aktiv etwas getan. | ⬜ Entwurf | Keine Wirksamkeitsaussage aus Vorher/Nachher (Konzept 10.2). |  |
-| `end.higher` | Wenn die Angst stärker geworden ist oder du dir Sorgen machst, hol dir Unterstützung. | ⬜ Entwurf |  |  |
-| `end.again` | Andere Übung ausprobieren | ⬜ Entwurf |  |  |
-| `end.finish` | Beenden | ⬜ Entwurf |  |  |
-| `end.followup` | Wenn Angstattacken öfter vorkommen, sprich mit deiner Hausarztpraxis oder einer psychotherapeutischen Praxis. | ⬜ Entwurf |  | `s3-angst-2021` |
-| `end.cleared` | Deine Eingaben wurden nicht gespeichert und sind jetzt gelöscht. | ⬜ Entwurf |  |  |
 
 ## `grounding.json`
 
@@ -169,21 +161,12 @@
 
 | ID | Text | Status | Hinweis | Quellen |
 |---|---|---|---|---|
-| `quickend.title` | Kurzer Abschluss | ⬜ Entwurf |  |  |
-| `quickend.text` | Du hast aktiv etwas getan. Die Angst muss dafür nicht ganz weg sein. | ⬜ Entwurf |  |  |
-| `quickend.again` | Noch eine Übung | ⬜ Entwurf |  |  |
+| `quickend.title` | Kurzer Halt | ⬜ Entwurf |  |  |
+| `quickend.text` | Du hast etwas für dich getan. Die Angst muss dafür nicht ganz weg sein – manchmal ist das Gehen wichtiger als das Ankommen. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. Der Satz zum Gehen stammt aus diesem Text. |  |
+| `quickend.again` | Zurück zum Anfang | ⬜ Entwurf |  |  |
 | `quickend.worse` | Es ist schlimmer geworden | ⬜ Entwurf |  |  |
 | `quickend.worse.text` | Das kann passieren. Wenn du dir Sorgen machst oder es nicht nachlässt, hol dir Unterstützung. | ⬜ Entwurf | Ersatz für die Einschätzung vorher/nachher im Schnellzugang: nur eine freiwillige Rückmeldung, damit bei Verschlechterung der Weg zur Hilfe sichtbar wird (Konzept Phase 5). |  |
-
-## `rating.json`
-
-| ID | Text | Status | Hinweis | Quellen |
-|---|---|---|---|---|
-| `rating.pre.title` | Wie stark ist deine Angst gerade? | ⬜ Entwurf |  |  |
-| `rating.post.title` | Und wie stark ist sie jetzt? | ⬜ Entwurf |  |  |
-| `rating.low` | 0 = keine Angst | ⬜ Entwurf |  |  |
-| `rating.high` | 10 = stärkste vorstellbare | ⬜ Entwurf |  |  |
-| `rating.hint` | Eine grobe Einschätzung reicht. Es gibt keine falsche Antwort. | ⬜ Entwurf | Skala 0–10 entspricht dem Messparameter aus Konzept 10.2 (subjektive Angstintensität). |  |
+| `quickend.followup` | Wenn Angstattacken öfter vorkommen, sprich mit deiner Hausarztpraxis oder einer psychotherapeutischen Praxis. | ⬜ Entwurf |  | `s3-angst-2021` |
 
 ## `reframe.json`
 
@@ -207,16 +190,6 @@
 | `reframe.summary.thought` | Dein Gedanke | ⬜ Entwurf |  |  |
 | `reframe.summary.alt` | Eine ausgewogenere Sicht | ⬜ Entwurf |  |  |
 | `reframe.summary.note` | Diese Sicht muss sich nicht sofort richtig anfühlen. | ⬜ Entwurf |  |  |
-
-## `safety.json`
-
-| ID | Text | Status | Hinweis | Quellen |
-|---|---|---|---|---|
-| `safety.title` | Kurz vorab: Trifft etwas davon gerade zu? | ⬜ Entwurf |  |  |
-| `safety.items` | 1. Die Beschwerden sind neu oder deutlich anders als bei früheren Angstzuständen.<br>2. Starke Brustschmerzen, schwere Atemnot, oder du hast das Gefühl, das Bewusstsein zu verlieren.<br>3. Du hast Gedanken, dir das Leben zu nehmen oder dir etwas anzutun. | ⬜ Entwurf | Bewusst nur eine Frage statt Symptom-Checkliste (wiederholtes Symptom-Prüfen kann als Sicherheitsverhalten wirken). Punkt 2 orientiert sich an den 112-Fällen auf 116117.de. Bitte prüfen: Auswahl, Wortlaut, ob 'unsicher' korrekt zum Hilfe-Bildschirm führt. | `116117-112` |
-| `safety.yes` | Ja, etwas davon – oder ich bin unsicher | ⬜ Entwurf |  |  |
-| `safety.no` | Nein, nichts davon | ⬜ Entwurf |  |  |
-| `safety.hint` | Diese Frage ersetzt keine ärztliche Einschätzung. | ⬜ Entwurf |  |  |
 
 ## `settings.json`
 
@@ -247,21 +220,40 @@
 |---|---|---|---|---|
 | `simple.steps` | 1. Du musst gerade nichts lösen.<br>2. Stell beide Füße auf den Boden. Spür, dass er dich trägt.<br>3. Das Gefühl ist gerade sehr stark. Gefühle verändern sich mit der Zeit – auch dieses.<br>4. Wenn du magst, probier eine Übung aus. Wenn nicht, ist das auch in Ordnung. | ⬜ Entwurf | Für den Fall 'Alles ist zu viel': möglichst wenig Text, eine Aussage pro Bildschirm. Satz 3 bitte prüfen (keine Aussage über Dauer). |  |
 
+## `sort.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `sort.next` | Was möchtest du als Nächstes ausprobieren? | ⬜ Entwurf |  |  |
+| `sort.all` | Etwas anderes | ⬜ Entwurf |  |  |
+| `sort.all.title` | Alle Übungen | ⬜ Entwurf |  |  |
+| `sort.dark` | Ich denke daran, nicht mehr leben zu wollen | ⬜ Entwurf | Ersetzt den Suizid-Punkt der früheren Sicherheitsfrage. Bewusst als normale Auswahl, ruhig formuliert, damit niemand ihn überspringen muss, um weiterzukommen. Bitte fachlich prüfen (Safe Messaging). |  |
+| `sort.body.label` | Mein Körper macht mir Angst | ⬜ Entwurf |  |  |
+| `sort.body.ack` | Dein Körper ist gerade im Alarmmodus. Das fühlt sich bedrohlich an – und jedes dieser Signale hat eine Erklärung. | ⬜ Entwurf |  |  |
+| `sort.thoughts.label` | Meine Gedanken rasen | ⬜ Entwurf |  |  |
+| `sort.thoughts.ack` | Gedanken können sich in der Angst überschlagen. Du musst ihnen nicht hinterherlaufen. | ⬜ Entwurf |  |  |
+| `sort.feeling.label` | Ein Gefühl ist gerade zu groß | ⬜ Entwurf |  |  |
+| `sort.feeling.ack` | Das Gefühl ist gerade sehr stark. Es darf da sein. Gefühle verändern sich mit der Zeit – auch dieses. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. |  |
+| `sort.chaos.label` | Alles ist durcheinander | ⬜ Entwurf |  |  |
+| `sort.chaos.ack` | Dann fangen wir ganz klein an. Du musst gerade nichts sortiert bekommen, ein Schritt reicht. | ⬜ Entwurf |  |  |
+| `sort.unknown.label` | Ich weiß es nicht genau | ⬜ Entwurf |  |  |
+| `sort.unknown.ack` | Das ist in Ordnung. Nicht alles, was man fühlt, hat sofort einen Namen. | ⬜ Entwurf |  |  |
+
 ## `start.json`
 
 | ID | Text | Status | Hinweis | Quellen |
 |---|---|---|---|---|
-| `start.title` | Was brauchst du gerade? | ⬜ Entwurf |  |  |
-| `start.acute` | Ich habe gerade starke Angst | ⬜ Entwurf |  |  |
+| `start.title` | Hier darfst du sein. | ⬜ Entwurf |  |  |
+| `start.lead` | Du musst nichts lösen und nichts beweisen. Wenn du magst, sortieren wir zusammen, was gerade da ist – so langsam, wie du willst. | ⬜ Entwurf | Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden. |  |
+| `start.question` | Was ist gerade da? | ⬜ Entwurf |  |  |
+| `start.question.hint` | Wähl, was am ehesten passt. Es gibt kein Falsch. | ⬜ Entwurf |  |  |
+| `start.quick.title` | Oder einfach etwas tun | ⬜ Entwurf |  |  |
 | `start.learn` | Angst verstehen | ⬜ Entwurf |  |  |
 | `start.learn.sub` | Für ruhigere Momente | ⬜ Entwurf |  |  |
-| `start.about` | Über diese App und ihre Grenzen | ⬜ Entwurf |  |  |
-| `start.note` | Alles hier ist freiwillig. Du kannst jederzeit aufhören. | ⬜ Entwurf |  |  |
 | `start.settings` | Darstellung anpassen | ⬜ Entwurf |  |  |
+| `start.about` | Über diese App und ihre Grenzen | ⬜ Entwurf |  |  |
 | `start.update` | Eine neue Version ist verfügbar. | ⬜ Entwurf |  |  |
 | `start.update.button` | Jetzt aktualisieren | ⬜ Entwurf |  |  |
-| `start.quick.title` | Direkt zu einer Übung | ⬜ Entwurf |  |  |
-| `start.quick.hint` | Ohne Fragen vorher. Hilfe und Notrufnummern findest du immer unten. | ⬜ Entwurf | Abweichung vom Konzept (Phase 1 Sicherheitsabfrage, Phase 2 Einschätzung) auf Wunsch des Projektinhabers: Schnellzugang überspringt beides. Der Hilfe-Knopf bleibt auf jedem Bildschirm. Bitte fachlich bestätigen. |  |
 
 ## `symptoms.json`
 
@@ -369,11 +361,13 @@
 | `nav.next` | Weiter | ⬜ Entwurf |  |  |
 | `nav.skip` | Überspringen | ⬜ Entwurf |  |  |
 | `nav.done` | Fertig | ⬜ Entwurf |  |  |
-| `emergency.bar` | Hilfe & Notrufnummern | ⬜ Entwurf | Bewusst neutral gestaltet (keine rote Fläche, dezente Größe), um bei bestehender Angst keine zusätzliche Alarmwirkung zu erzeugen. Bitte prüfen: Ist der Zugang so noch ausreichend auffindbar? |  |
 | `input.private` | Wird nicht gespeichert. | ⬜ Entwurf |  |  |
 | `a11y.step` | Schritt {n} von {total} | ⬜ Entwurf |  |  |
+| `nav.help` | Hilfe | ⬜ Entwurf |  |  |
+| `nav.help.page` | Zur Hilfe-Seite | ⬜ Entwurf |  |  |
 | `a11y.scale` | Skala von 0 bis 10 | ⬜ Entwurf |  |  |
-| `a11y.emergency` | Notfall | ⬜ Entwurf |  |  |
+| `scale.low` | 0 = gar nicht | ⬜ Entwurf |  |  |
+| `scale.high` | 10 = am stärksten | ⬜ Entwurf |  |  |
 
 ## Quellen (`src/content/references.json`)
 

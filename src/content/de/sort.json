@@ -1,0 +1,130 @@
+{
+  "sort.next": {
+    "text": "Was möchtest du als Nächstes ausprobieren?",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.all": {
+    "text": "Etwas anderes",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.all.title": {
+    "text": "Alle Übungen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.dark": {
+    "text": "Ich denke daran, nicht mehr leben zu wollen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ersetzt den Suizid-Punkt der früheren Sicherheitsfrage. Bewusst als normale Auswahl, ruhig formuliert, damit niemand ihn überspringen muss, um weiterzukommen. Bitte fachlich prüfen (Safe Messaging)."
+  },
+  "sort.body.label": {
+    "text": "Mein Körper macht mir Angst",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.body.ack": {
+    "text": "Dein Körper ist gerade im Alarmmodus. Das fühlt sich bedrohlich an – und jedes dieser Signale hat eine Erklärung.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.thoughts.label": {
+    "text": "Meine Gedanken rasen",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.thoughts.ack": {
+    "text": "Gedanken können sich in der Angst überschlagen. Du musst ihnen nicht hinterherlaufen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.feeling.label": {
+    "text": "Ein Gefühl ist gerade zu groß",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.feeling.ack": {
+    "text": "Das Gefühl ist gerade sehr stark. Es darf da sein. Gefühle verändern sich mit der Zeit – auch dieses.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ton orientiert an einem Text des Projektinhabers: Erlaubnis statt Anweisung, nichts muss gelöst werden."
+  },
+  "sort.chaos.label": {
+    "text": "Alles ist durcheinander",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.chaos.ack": {
+    "text": "Dann fangen wir ganz klein an. Du musst gerade nichts sortiert bekommen, ein Schritt reicht.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.unknown.label": {
+    "text": "Ich weiß es nicht genau",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "sort.unknown.ack": {
+    "text": "Das ist in Ordnung. Nicht alles, was man fühlt, hat sofort einen Namen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  }
+}

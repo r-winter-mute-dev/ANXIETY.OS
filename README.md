@@ -27,7 +27,7 @@
 >
 > **Im Notfall: 112.** Zum Reden in einer Krise: TelefonSeelsorge **0800 111 0 111**, **0800 111 0 222** oder **116 123**, kostenlos und rund um die Uhr.
 
-**ANXIETY.OS** ist eine kostenlose Akuthilfe im Browser für Momente, in denen die Angst überhand nimmt. Du musst nichts lesen, nichts verstehen und nichts aufschreiben. Die App fragt kurz, was gerade am stärksten ist, und bietet dir dann einen einzigen passenden nächsten Schritt an.
+**ANXIETY.OS** ist ein ruhiger Ort im Browser für Momente, in denen die Angst überhand nimmt. Hier darfst du sein: Du musst nichts lösen, nichts beweisen und nichts aufschreiben. Die App hilft dir, zu sortieren, was gerade da ist, und bietet dir dann einen kleinen nächsten Schritt an.
 
 Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am besten untersuchten Behandlung bei Angststörungen.
 
@@ -38,24 +38,26 @@ Die Übungen beruhen auf Prinzipien der kognitiven Verhaltenstherapie, der am be
 | **Ein Schritt pro Bildschirm** | Eine Frage oder eine Anweisung, ein großer Knopf. Nichts, worüber du nachdenken musst. |
 | **Alles per Antippen** | Auch beim Gedankenprüfen. Eigener Text ist erlaubt, aber nie nötig. |
 | **Du entscheidest** | Jede Übung ist freiwillig, jederzeit abbrechbar und hat kein Zeitlimit. |
-| **Hilfe immer erreichbar** | Unten auf jedem Bildschirm führt ein ruhiger Knopf zu den Notrufnummern, ohne Alarmfarben. |
+| **Ein ruhiger Ort** | Dunkle, gedämpfte Farben mit einem leisen violetten Schimmer. Sprache, die erlaubt statt anweist. Keine Nummernflut. |
+| **Hilfe immer erreichbar** | Oben auf jedem Bildschirm führt ein leiser Link „Hilfe“ zu einer eigenen Seite mit allen Diensten: Notfall sichtbar, alles andere aufklappbar. |
 | **Keine Überraschungen** | Keine Töne, keine plötzlichen Bewegungen. Wer im System oder in der App reduzierte Bewegung einstellt, sieht die Atemhilfe ohne Animation. |
 | **Auch ohne Netz** | Nach dem ersten Aufruf läuft die App offline und lässt sich wie eine App auf den Startbildschirm legen. |
 | **Kein Konto, kein Tracking** | Deine Eingaben sind beim Beenden weg. Gespeichert wird nur, wenn du die Darstellung anpasst. |
 | **Anpassbar** | Schriftgröße, Zeilenabstand, Bewegung und Farben (dunkel: Catppuccin Mocha, hell: Catppuccin Latte). |
-| **Direkt loslegen** | Auf der Startseite stehen Übungen zum Ablenken und Beruhigen, ohne Fragen vorher. |
+| **Direkt loslegen** | Unter „Oder einfach etwas tun“ starten Übungen ohne jede Frage. |
 | **In Ruhe üben** | Unter „Angst verstehen“ lassen sich alle Übungen ohne Einschätzung vorher und nachher ausprobieren. |
 
 ## Ablauf
 
 | Phase | Was passiert |
 | :---: | --- |
-| 1 | **Eine kurze Sicherheitsfrage:** Trifft etwas zu, das ärztliche Hilfe braucht? Bei „Ja“ oder „unsicher“ zeigt die App sofort die Notrufnummern. |
-| 2 | **Wie stark ist die Angst gerade?** Skala von 0 bis 10, überspringbar. |
-| 3 | **Was ist am stärksten?** Gedanken, Körper, Atem oder „alles ist zu viel“. |
-| 4 | **Eine passende Übung**, oder eine andere deiner Wahl |
-| 5 | **Und jetzt?** Erneute Einschätzung, ohne Bewertung |
-| 6 | **Kurzer Abschluss** mit Hinweisen, wo es weitere Unterstützung gibt |
+| 1 | **Ankommen:** „Hier darfst du sein.“ Keine Notfallfrage, keine Skala. |
+| 2 | **Sortieren: Was ist gerade da?** Körper, Gedanken, ein zu großes Gefühl, alles durcheinander oder „weiß nicht genau“. |
+| 3 | **Anerkennen:** ein Satz, der sagt, dass das da sein darf, dann zwei kleine nächste Schritte zur Auswahl |
+| 4 | **Eine Übung**, oder eine andere deiner Wahl |
+| 5 | **Kurzer Halt:** keine Bewertung. Wenn es schlimmer geworden ist, zeigt die App den Weg zur Hilfe. |
+
+Wer an Suizid denkt, kann das auf der Startseite direkt auswählen und kommt zu einer ruhigen Seite mit der TelefonSeelsorge und der 112.
 
 ## Module
 
@@ -99,12 +101,11 @@ Einige Stellen weichen vom ursprünglichen Konzept ab. Die Fachperson soll sie g
 
 | Konzept | Umsetzung | Warum |
 | --- | --- | --- |
-| Sicherheitsprüfung mit Symptomabfrage | **Eine einzige Frage** mit drei Punkten | Wiederholtes Prüfen von Körpersymptomen kann die Angst selbst verstärken. Außerdem ist es eine Hürde weniger. |
+| Sicherheitsprüfung (Phase 1) und Angst-Skala (Phase 2, 5) | **Ankommen und Sortieren statt Triage.** Warnzeichen stehen auf der Hilfe-Seite und bei den passenden Körpersignalen (Brustschmerz zuerst mit 112). Suizidgedanken sind eine eigene, ruhige Auswahl. | Entscheidung des Projektinhabers: Die App soll sich wie ein sicherer Ort anfühlen. Eine Notfallfrage vorneweg traf auf viele normale Panikattacken zu und schickte Menschen sofort zu Notrufnummern. **Muss fachlich bestätigt werden.** |
 | Texteingabe beim Gedankenprüfen | **Alles per Antippen**, Text optional | Bei starker Angst ist Schreiben oft kaum möglich. |
 | Atemübung als gleichwertige Option | **An letzter Stelle** in der Übungsliste | Die Evidenz für Atemübungen bei Angst ist schwach (WHO 2023: bedingte Empfehlung). |
 | Körperfokus → Aufmerksamkeit nach außen (6.1) | **Körpersignale einzeln erklären**, Grounding danach als Angebot | Wunsch des Projektinhabers. Psychoedukation über Körpersymptome senkt Angstsensitivität, die Studien dazu fanden aber in ruhigem Zustand statt. Für den Einsatz während einer Attacke gibt es keine Studien. Deshalb nur ein Durchgang, Warnzeichen ohne Krankheitsnamen, Ausweg bei „stärker“. |
-| Immer zuerst Sicherheitsfrage und Einschätzung (Phase 1–2) | **Schnellzugang auf der Startseite:** Ablenken, Grounding, Atemhilfe, Körpersignale, einfacher Schritt direkt, ohne Fragen | Wunsch des Projektinhabers: In einer Attacke ist jeder zusätzliche Bildschirm eine Hürde. Der Hilfe-Knopf bleibt überall sichtbar, Brustschmerz zeigt weiter zuerst die 112. Der vollständige Ablauf bleibt der große Hauptknopf. |
-| Roter Notfall-Knopf | **Ruhiger, neutraler Knopf** „Hilfe & Notrufnummern“ | Rot wirkt bei bestehender Angst alarmierend. Auf dem Hilfe-Bildschirm bleibt die 112 deutlich hervorgehoben. |
+| Notfall-Knopf auf jedem Bildschirm | **Leiser Link „Hilfe“** oben, alle Dienste auf einer eigenen Seite | Viele Nummern auf einmal wirken bei Angst überfordernd. Die 112 bleibt auf der Hilfe-Seite deutlich sichtbar, alles andere ist aufklappbar. |
 
 ## Entstehung
 
