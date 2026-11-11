@@ -1,35 +1,31 @@
 import { describe, expect, it } from 'vitest';
-import { afterSafety, anxietyIncreased, EXERCISE_ORDER, HIDE_EMERGENCY_BAR, NEED_TO_EXERCISE, orderSymptoms } from '../../src/lib/routes';
+import { EXERCISE_ORDER, EXERCISE_SCREENS, FEELINGS, HIDE_HELP_LINK, NEXT_STEPS, orderSymptoms } from '../../src/lib/routes';
 
 describe('Ablauflogik', () => {
-  it('Sicherheitsfrage: "ja/unsicher" führt immer zur Hilfe', () => {
-    expect(afterSafety('yes')).toBe('emergency');
-    expect(afterSafety('no')).toBe('ratingPre');
+  it('Sortieren: jede Antwort bekommt zwei verschiedene nächste Schritte', () => {
+    for (const f of FEELINGS) {
+      const [a, b] = NEXT_STEPS[f];
+      expect(a).not.toBe(b);
+      expect(EXERCISE_ORDER).toContain(a);
+      expect(EXERCISE_ORDER).toContain(b);
+    }
   });
 
-  it('Adaptionsprinzip (Konzept 6.1, Körperfokus → Körpersignale)', () => {
-    expect(NEED_TO_EXERCISE).toEqual({
-      thoughts: 'reframe',
-      body: 'symptoms',
-      breath: 'breathing',
-      overwhelm: 'simple',
-    });
+  it('Körperfokus führt zuerst zu den Körpersignalen', () => {
+    expect(NEXT_STEPS.body[0]).toBe('symptoms');
   });
 
-  it('Atemhilfe wird nicht als erste Übung angeboten', () => {
-    expect(EXERCISE_ORDER[0]).not.toBe('breathing');
-    expect(new Set(EXERCISE_ORDER)).toEqual(new Set([...Object.values(NEED_TO_EXERCISE), 'grounding', 'distract']));
+  it('Atemhilfe wird nie zuerst angeboten', () => {
+    expect(EXERCISE_ORDER.at(-1)).toBe('breathing');
+    for (const f of FEELINGS) expect(NEXT_STEPS[f][0]).not.toBe('breathing');
   });
 
-  it('Notfall-Leiste ist nur auf dem Hilfe-Bildschirm ausgeblendet', () => {
-    expect([...HIDE_EMERGENCY_BAR]).toEqual(['emergency']);
+  it('jede Übung ist ein Übungs-Bildschirm (Bildschirm bleibt an)', () => {
+    for (const ex of EXERCISE_ORDER) expect(EXERCISE_SCREENS.has(ex)).toBe(true);
   });
 
-  it('Anstieg wird nur bei zwei Werten erkannt', () => {
-    expect(anxietyIncreased(4, 6)).toBe(true);
-    expect(anxietyIncreased(6, 4)).toBe(false);
-    expect(anxietyIncreased(5, 5)).toBe(false);
-    expect(anxietyIncreased(null, 8)).toBe(false);
+  it('Hilfe-Link fehlt nur dort, wo selbst Hilfe steht', () => {
+    expect([...HIDE_HELP_LINK].sort()).toEqual(['dark', 'emergency']);
   });
 
   it('Brustschmerz wird immer zuerst erklärt, Reihenfolge folgt der Vorgabe', () => {

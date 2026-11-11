@@ -1,40 +1,43 @@
-/* Ruhig, kontrastreich, ohne Überraschungen (Konzept Abschnitt 7).
+/* Ein ruhiger Ort: dunkel, gedämpft, ein leiser violetter Schimmer statt Alarmfarben.
    Systemschriften: keine externen Fonts, keine Datenübertragung an Dritte. */
 :root {
   /* Catppuccin Mocha – https://catppuccin.com/palette */
-  --bg: #1e1e2e; /* base */
-  --surface: #313244; /* surface0 */
-  --surface-2: #45475a; /* surface1 */
-  --line: #45475a; /* surface1 */
-  --line-strong: #6c7086; /* overlay0 */
+  --bg: #181825; /* mantle */
+  --surface: #1e1e2e; /* base */
+  --surface-2: #313244; /* surface0 */
+  --line: #313244; /* surface0 */
+  --line-strong: #585b70; /* surface2 */
   --text: #cdd6f4; /* text */
   --muted: #a6adc8; /* subtext0 */
-  --accent: #94e2d5; /* teal */
-  --accent-soft: rgba(148, 226, 213, 0.2);
+  --accent: #cba6f7; /* mauve */
+  --accent-soft: rgba(203, 166, 247, 0.14);
   --on-accent: #11111b; /* crust */
+  --glow-1: rgba(203, 166, 247, 0.13); /* mauve */
+  --glow-2: rgba(137, 180, 250, 0.06); /* blue */
   --danger: #f38ba8; /* red */
-  --on-danger: #11111b; /* crust */
+  --on-danger: #11111b;
   --draft: #f9e2af; /* yellow */
-  --on-draft: #11111b; /* crust */
+  --draft-bg: rgba(249, 226, 175, 0.08);
 
   --s1: 4px;
   --s2: 8px;
   --s3: 12px;
   --s4: 16px;
   --s5: 24px;
-  --gap: var(--s4);
-  --radius: 14px;
+  --gap: 20px;
+  --radius: 18px;
+  --radius-s: 12px;
   --maxw: 34rem;
 
   --fs-s: 0.9375rem;
   --fs-m: 1.0625rem;
-  --fs-l: 1.25rem;
+  --fs-l: 1.1875rem;
   --fs-xl: 1.5rem;
 
   color-scheme: dark;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
   font-size: 106.25%; /* 17px Basis */
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--text);
   background: var(--bg);
   -webkit-text-size-adjust: 100%;
@@ -46,17 +49,19 @@
   --bg: #eff1f5; /* base */
   --surface: #e6e9ef; /* mantle */
   --surface-2: #dce0e8; /* crust */
-  --line: #bcc0cc; /* surface1 */
+  --line: #ccd0da; /* surface0 */
   --line-strong: #7c7f93; /* overlay2 */
   --text: #4c4f69; /* text */
   --muted: #5c5f77; /* subtext1 (subtext0 erreicht 4,5:1 nicht) */
-  --accent: #0b6b70; /* teal, abgedunkelt für WCAG-AA-Kontrast */
-  --accent-soft: rgba(11, 107, 112, 0.14);
+  --accent: #6f2dbd; /* mauve, abgedunkelt für WCAG-AA-Kontrast */
+  --accent-soft: rgba(111, 45, 189, 0.12);
   --on-accent: #ffffff;
+  --glow-1: rgba(136, 57, 239, 0.08);
+  --glow-2: rgba(30, 102, 245, 0.04);
   --danger: #d20f39; /* red */
   --on-danger: #ffffff;
-  --draft: #df8e1d; /* yellow */
-  --on-draft: #11111b;
+  --draft: #7c4a03; /* yellow, stark abgedunkelt für Text */
+  --draft-bg: rgba(223, 142, 29, 0.12);
   color-scheme: light;
 }
 @media (prefers-color-scheme: light) {
@@ -64,17 +69,19 @@
   --bg: #eff1f5; /* base */
   --surface: #e6e9ef; /* mantle */
   --surface-2: #dce0e8; /* crust */
-  --line: #bcc0cc; /* surface1 */
+  --line: #ccd0da; /* surface0 */
   --line-strong: #7c7f93; /* overlay2 */
   --text: #4c4f69; /* text */
   --muted: #5c5f77; /* subtext1 (subtext0 erreicht 4,5:1 nicht) */
-  --accent: #0b6b70; /* teal, abgedunkelt für WCAG-AA-Kontrast */
-  --accent-soft: rgba(11, 107, 112, 0.14);
+  --accent: #6f2dbd; /* mauve, abgedunkelt für WCAG-AA-Kontrast */
+  --accent-soft: rgba(111, 45, 189, 0.12);
   --on-accent: #ffffff;
+  --glow-1: rgba(136, 57, 239, 0.08);
+  --glow-2: rgba(30, 102, 245, 0.04);
   --danger: #d20f39; /* red */
   --on-danger: #ffffff;
-  --draft: #df8e1d; /* yellow */
-  --on-draft: #11111b;
+  --draft: #7c4a03; /* yellow, stark abgedunkelt für Text */
+  --draft-bg: rgba(223, 142, 29, 0.12);
   color-scheme: light;
   }
 }
@@ -87,12 +94,12 @@
   font-size: 131.25%;
 }
 :root[data-spacing='wide'] {
-  line-height: 1.85;
-  --gap: var(--s5);
+  line-height: 1.9;
+  --gap: 28px;
 }
 :root[data-spacing='wide'] p,
 :root[data-spacing='wide'] li {
-  line-height: 1.85;
+  line-height: 1.9;
 }
 
 * {
@@ -105,6 +112,12 @@ body {
 }
 body {
   min-height: 100dvh;
+  /* Leiser Schimmer, kein Bild, keine Bewegung */
+  background:
+    radial-gradient(120% 60% at 50% -10%, var(--glow-1), transparent 70%),
+    radial-gradient(100% 50% at 50% 110%, var(--glow-2), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
 }
 #app {
   min-height: 100dvh;
@@ -119,7 +132,7 @@ main {
   width: 100%;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: var(--s4) var(--s4) var(--s5);
+  padding: var(--s3) var(--s5) calc(var(--s5) + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
 }
@@ -128,15 +141,16 @@ main > * {
 }
 
 h1 {
-  font-size: 1.625rem;
+  font-size: 1.75rem;
   line-height: 1.25;
-  font-weight: 650;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   margin: var(--s2) 0 0;
 }
 h2 {
   font-size: var(--fs-l);
-  line-height: 1.3;
-  font-weight: 600;
+  line-height: 1.35;
+  font-weight: 500;
   margin: var(--s3) 0 0;
 }
 p {
@@ -145,6 +159,7 @@ p {
 .lead {
   font-size: var(--fs-l);
   color: var(--muted);
+  line-height: 1.6;
 }
 .muted {
   color: var(--muted);
@@ -156,7 +171,7 @@ a {
   color: var(--accent);
 }
 
-/* Bedienelemente: groß, eindeutig, mindestens 48px hoch */
+/* Bedienelemente: groß, weich, mindestens 48px hoch */
 button {
   font: inherit;
   cursor: pointer;
@@ -173,36 +188,39 @@ button:disabled {
 }
 .primary,
 .secondary,
-.emergency,
 .option,
 .quiet {
   min-height: 56px;
-  padding: var(--s3) var(--s4);
+  padding: var(--s3) var(--s5);
   border-radius: var(--radius);
   font-size: var(--fs-m);
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
-  line-height: 1.3;
+  line-height: 1.35;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 .primary {
   background: var(--accent);
   color: var(--on-accent);
+  font-weight: 600;
 }
 .primary.big {
-  min-height: 80px;
+  min-height: 72px;
   font-size: var(--fs-l);
 }
 .secondary {
   background: var(--surface-2);
   color: var(--text);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .secondary.strong {
-  border-width: 2px;
+  border-color: var(--line-strong);
 }
 .secondary small,
 .option small {
@@ -214,35 +232,33 @@ button:disabled {
 .quiet {
   background: transparent;
   color: var(--muted);
-  font-weight: 500;
   min-height: 48px;
-  padding: var(--s2);
-}
-/* Dauerhafter Hilfe-Zugang: bewusst ruhig, keine Alarmfarbe */
-.emergency {
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--line-strong);
-  font-weight: 500;
-  font-size: var(--fs-s);
-  min-height: 48px;
+  padding: var(--s2) var(--s3);
 }
 
 .options {
   display: flex;
   flex-direction: column;
-  gap: var(--s3);
+  gap: var(--s2);
 }
 .option {
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--line);
-  font-weight: 500;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding: var(--s4) var(--s5);
+}
+.option:hover,
+.chip:hover {
+  border-color: var(--line-strong);
+}
+.option:active,
+.chip:active {
+  background: var(--accent-soft);
 }
 .option.dashed {
   border-style: dashed;
@@ -254,17 +270,19 @@ button:disabled {
   border-radius: 999px;
   background: var(--surface);
   color: var(--text);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
+  transition: border-color 0.2s ease;
 }
 .chip[aria-pressed='true'] {
   background: var(--accent);
+  border-color: var(--accent);
   color: var(--on-accent);
 }
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: var(--s4);
+  padding: var(--s4) var(--s5);
 }
 
 .field {
@@ -277,7 +295,7 @@ textarea {
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   padding: var(--s3);
   resize: vertical;
 }
@@ -292,6 +310,21 @@ textarea {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Bildschirme erscheinen sanft statt schlagartig */
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.screen {
+  animation: arrive 0.45s ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {

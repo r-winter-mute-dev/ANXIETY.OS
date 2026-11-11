@@ -40,6 +40,20 @@ describe('Inhalte', () => {
     expect(s['symptoms.brust.alert']).toBeTruthy();
   });
 
+  it('Suizidgedanken: Anruf bei der TelefonSeelsorge und 112 direkt erreichbar', () => {
+    const d = data.byFile['dark.json'];
+    expect(d['dark.call'].tel).toBe('08001110111');
+    expect(d['dark.call112'].tel).toBe('112');
+  });
+
+  it('Sortieren: jede Antwort hat Text und Anerkennung', () => {
+    const s = data.byFile['sort.json'];
+    for (const f of ['body', 'thoughts', 'feeling', 'chaos', 'unknown']) {
+      expect(s[`sort.${f}.label`]).toBeTruthy();
+      expect(s[`sort.${f}.ack`]).toBeTruthy();
+    }
+  });
+
   it('Notrufnummern sind korrekt hinterlegt', () => {
     const e = data.byFile['emergency.json'];
     expect(e['emergency.112.label'].tel).toBe('112');

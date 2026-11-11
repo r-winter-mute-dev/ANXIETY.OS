@@ -82,7 +82,7 @@ class Settings {
     const light =
       this.value.theme === 'latte' ||
       (this.value.theme === 'system' && typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: light)').matches);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#eff1f5' : '#1e1e2e');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#eff1f5' : '#181825');
   }
 
   get reducedMotion() {
