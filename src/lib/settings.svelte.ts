@@ -78,6 +78,11 @@ class Settings {
     el.dataset.spacing = this.value.spacing;
     el.dataset.motion = this.value.motion;
     el.dataset.theme = this.value.theme;
+    // Browserleiste passend zum Farbschema
+    const light =
+      this.value.theme === 'latte' ||
+      (this.value.theme === 'system' && typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: light)').matches);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#eff1f5' : '#1e1e2e');
   }
 
   get reducedMotion() {

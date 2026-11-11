@@ -3,7 +3,7 @@
   import CycleDiagram from '../components/CycleDiagram.svelte';
   import { nav } from '../lib/nav.svelte';
   import { startPractice } from '../lib/start-exercise';
-  import { t } from '../lib/content';
+  import { t, list } from '../lib/content';
   import type { Exercise } from '../lib/routes';
 
   const topics = ['function', 'cycle', 'feeling', 'avoid', 'help'] as const;
@@ -20,11 +20,17 @@
     </article>
   {/each}
   <section class="card practice">
+    <h2>{t('learn.prepare.title')}</h2>
+    <ul>
+      {#each list('learn.prepare.steps') as s}<li>{s}</li>{/each}
+    </ul>
+  </section>
+  <section class="card practice">
     <h2>{t('learn.practice.title')}</h2>
     <p>{t('learn.practice.text')}</p>
     <div class="options">
       {#each practice as ex}
-        <button class="option" onclick={() => startPractice(ex)}>{t(`learn.practice.${ex}`)}</button>
+        <button class="option" onclick={() => startPractice(ex)}>{t(`choose.ex.${ex}`)}</button>
       {/each}
     </div>
   </section>
@@ -33,6 +39,13 @@
 <style>
   .practice h2 {
     margin-top: 0;
+  }
+  .practice ul {
+    margin: var(--s3) 0 0;
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
   }
   .practice .options {
     margin-top: var(--s3);

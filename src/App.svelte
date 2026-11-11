@@ -18,9 +18,13 @@
   import About from './screens/About.svelte';
   import Settings from './screens/Settings.svelte';
   import Distract from './screens/Distract.svelte';
+  import QuickEnd from './screens/QuickEnd.svelte';
+  import { keepAwake } from './lib/wakelock';
   import { nav } from './lib/nav.svelte';
-  import { HIDE_EMERGENCY_BAR } from './lib/routes';
+  import { EXERCISE_SCREENS, HIDE_EMERGENCY_BAR } from './lib/routes';
   import { isDraft } from './lib/content';
+
+  $effect(() => keepAwake(EXERCISE_SCREENS.has(nav.screen)));
 </script>
 
 <div class="shell">
@@ -45,6 +49,7 @@
       {:else if nav.screen === 'about'}<About />
       {:else if nav.screen === 'settings'}<Settings />
       {:else if nav.screen === 'distract'}<Distract />
+      {:else if nav.screen === 'quickEnd'}<QuickEnd />
       {/if}
     {/key}
   </main>

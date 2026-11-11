@@ -234,7 +234,7 @@ test('Krisendienste und Suche sind auf der Hilfe-Seite', async ({ page }) => {
 test('Grounding: neue Varianten Orientierung und Gegenstand', async ({ page }) => {
   await page.goto('./');
   await btn(page, 'Angst verstehen').click();
-  await btn(page, 'Im Hier und Jetzt ankommen').click();
+  await btn(page, 'Im Raum ankommen').click();
   await expect(btn(page, 'Wo bin ich?')).toBeVisible();
   await btn(page, 'Ein Gegenstand').click();
   await expect(page.getByText(/Nimm einen Gegenstand/)).toBeVisible();
@@ -244,7 +244,7 @@ test('Grounding: neue Varianten Orientierung und Gegenstand', async ({ page }) =
 test('Übungsmodus: keine Einschätzung, zurück zu „Angst verstehen“', async ({ page }) => {
   await page.goto('./');
   await btn(page, 'Angst verstehen').click();
-  await btn(page, 'Ganz einfache Schritte').click();
+  await btn(page, 'Ein einfacher Schritt').click();
   for (let i = 0; i < 12; i++) {
     const done = btn(page, 'Fertig');
     if (await done.isVisible()) {
@@ -301,6 +301,8 @@ test('Schnellzugang: Ablenken direkt von der Startseite, ohne Fragen, zurück zu
   await btn(page, 'Rückwärts zählen').click();
   await expect(page.getByText(/100, 97, 94/)).toBeVisible();
   await finishSteps(page);
+  await expect(heading(page)).toHaveText('Kurzer Abschluss');
+  await btn(page, 'Noch eine Übung').click();
   await expect(heading(page)).toHaveText('Was brauchst du gerade?');
   await expect(page.getByText(/Wie stark ist deine Angst/)).toHaveCount(0);
 });
@@ -316,5 +318,31 @@ test('Schnellzugang: Wechsel Körpersignale → Grounding behält den Modus', as
   await btn(page, /Grounding|Raum|Hier und Jetzt|ankommen/).first().click();
   await btn(page, 'Ein Gegenstand').click();
   await finishSteps(page);
+  await expect(heading(page)).toHaveText('Kurzer Abschluss');
+  await btn(page, 'Noch eine Übung').click();
   await expect(heading(page)).toHaveText('Was brauchst du gerade?');
+});
+
+test('Schnellzugang: „schlimmer geworden“ zeigt den Weg zur Hilfe', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Ein einfacher Schritt').click();
+  await finishSteps(page);
+  await expect(heading(page)).toHaveText('Kurzer Abschluss');
+  await btn(page, 'Es ist schlimmer geworden').click();
+  await expect(page.getByRole('status')).toContainText('hol dir Unterstützung');
+  await axe(page);
+  await page.getByRole('main').getByRole('button', { name: 'Hilfe & Notrufnummern' }).click();
+  await expect(heading(page)).toHaveText('Hol dir jetzt Hilfe');
+});
+
+test('Hilfe-Seite: schriftliche Wege und Übung während des Wartens', async ({ page }) => {
+  await page.goto('./');
+  await btn(page, 'Hilfe & Notrufnummern').click();
+  await expect(page.getByRole('link', { name: /nora/ })).toHaveAttribute('href', /nora-notruf\.de/);
+  await expect(page.getByRole('link', { name: /krisenchat/ })).toHaveAttribute('href', /krisenchat\.de/);
+  await expect(page.getByRole('link', { name: /TelefonSeelsorge schriftlich/ })).toHaveAttribute('href', /online\.telefonseelsorge\.de/);
+  await axe(page);
+  await page.getByRole('main').getByRole('button', { name: 'Ein einfacher Schritt' }).click();
+  await finishSteps(page);
+  await expect(heading(page)).toHaveText('Kurzer Abschluss');
 });

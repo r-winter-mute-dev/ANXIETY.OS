@@ -192,5 +192,82 @@
       "date": null,
       "comment": null
     }
+  },
+  "emergency.write.title": {
+    "text": "Wenn Sprechen gerade schwerfällt",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.write.nora": {
+    "text": "nora – die offizielle Notruf-App der Bundesländer: Notruf an 110 und 112 ohne Sprechen, auch per Chat. Muss vorher eingerichtet werden. Bis dahin gilt die 112.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Registrierung per SMS, teils Bestätigungsanruf oder POSTIDENT nötig; daher nur als Vorbereitung sinnvoll, nicht in der akuten Situation.",
+    "refs": [
+      "nora"
+    ],
+    "url": "https://www.nora-notruf.de/de-as/was-ist-nora"
+  },
+  "emergency.write.krisenchat": {
+    "text": "krisenchat – für alle unter 25: rund um die Uhr per Chat oder WhatsApp, kostenlos.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "krisenchat"
+    ],
+    "url": "https://www.krisenchat.de/"
+  },
+  "emergency.write.ts": {
+    "text": "TelefonSeelsorge schriftlich: Mail oder Chat nach anonymer Anmeldung. Chats laufen über Termine, Antworten auf Mails können einige Tage dauern.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "refs": [
+      "ts-online"
+    ],
+    "url": "https://online.telefonseelsorge.de/"
+  },
+  "emergency.write.open": {
+    "text": "Öffnet eine externe Seite",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.wait.title": {
+    "text": "Während du wartest",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "emergency.wait.text": {
+    "text": "Wenn du Hilfe gerufen hast oder dich etwas beruhigen möchtest, kannst du eine kurze Übung machen.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Soll nach einem Anruf die Wartezeit überbrücken. Bitte prüfen, ob das Angebot hier jemanden vom Anrufen abhalten könnte; deshalb steht es ganz unten."
   }
 }

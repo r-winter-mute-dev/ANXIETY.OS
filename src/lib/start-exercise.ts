@@ -37,6 +37,11 @@ export function finishExercise() {
     nav.go('ratingPost');
     return;
   }
+  if (session.mode === 'quick') {
+    // Kurzer Abschluss ohne Skala, mit Weg zur Hilfe, falls es schlimmer geworden ist.
+    nav.go('quickEnd');
+    return;
+  }
   const d = session.returnDepth;
   session.mode = 'flow';
   session.exercise = null;
