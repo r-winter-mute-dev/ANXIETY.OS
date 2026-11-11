@@ -7,7 +7,8 @@ https://creativecommons.org/licenses/by/4.0/deed.de
 Gilt für:
   - alle Textbausteine in src/content/ (Texte, Hinweise, Quellenangaben)
   - die Dokumentation: README.md, ROADMAP.md, REVIEW.md, CHANGELOG.md
-  - Grafiken: docs/banner.svg, public/icon.svg, public/icon-192.png, public/icon-512.png
+  - Grafiken: docs/banner.svg, public/icon.svg, public/icon-192.png, public/icon-512.png,
+    die Szenen-Ebenen in docs/scene/ und ihre Umsetzung in src/components/Scene.svelte
 
 Der Programmcode steht unter der MIT-Lizenz (siehe LICENSE).
 
