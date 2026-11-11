@@ -438,5 +438,38 @@
       "date": null,
       "comment": null
     }
+  },
+  "ts-online": {
+    "citation": "TelefonSeelsorge Deutschland: Mail- und Chatseelsorge, Häufige Fragen. [Primärquelle]",
+    "url": "https://online.telefonseelsorge.de/haeufige-fragen",
+    "checked": "2026-11-11",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "krisenchat": {
+    "citation": "krisenchat gGmbH: Krisenberatung per Chat für alle unter 25. [Primärquelle]",
+    "url": "https://www.krisenchat.de/",
+    "checked": "2026-11-11",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "nora": {
+    "citation": "nora – offizielle Notruf-App der Bundesländer (Ministerium des Innern NRW): Was ist nora? / FAQ. [Primärquelle]",
+    "url": "https://www.nora-notruf.de/de-as/was-ist-nora",
+    "checked": "2026-11-11",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
   }
 }

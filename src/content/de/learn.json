@@ -173,8 +173,8 @@
     },
     "note": "Begründung: Übung in angstfreien Phasen erleichtert die Anwendung unter Stress (Konzept 5.1 / Psychoedukation). Bitte Formulierung und Beleg prüfen."
   },
-  "learn.practice.grounding": {
-    "text": "Im Hier und Jetzt ankommen",
+  "learn.prepare.title": {
+    "text": "Vorbereitet sein",
     "review": {
       "status": "draft",
       "reviewer": null,
@@ -182,49 +182,20 @@
       "comment": null
     }
   },
-  "learn.practice.breathing": {
-    "text": "Ruhig atmen",
+  "learn.prepare.steps": {
+    "text": [
+      "Probier die Übungen unten einmal in Ruhe aus. Merk dir eine, die dir gutgetan hat.",
+      "Leg ANXIETY.OS auf deinen Startbildschirm. Nach dem ersten Öffnen funktioniert es auch ohne Internet.",
+      "Wenn dir Sprechen in einer Attacke schwerfällt: Richte die Notruf-App nora vorher ein.",
+      "Überleg dir eine Person, die du anrufen oder der du schreiben kannst, und sag ihr vorher Bescheid.",
+      "Lies die Erklärungen zu den Körpersignalen in einem ruhigen Moment."
+    ],
     "review": {
       "status": "draft",
       "reviewer": null,
       "date": null,
       "comment": null
-    }
-  },
-  "learn.practice.reframe": {
-    "text": "Gedanken prüfen",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "learn.practice.simple": {
-    "text": "Ganz einfache Schritte",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "learn.practice.done": {
-    "text": "Gut gemacht. Du kannst die Übung jederzeit wiederholen.",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
-  },
-  "learn.practice.distract": {
-    "text": "Ablenken",
-    "review": {
-      "status": "draft",
-      "reviewer": null,
-      "date": null,
-      "comment": null
-    }
+    },
+    "note": "Vorbereitung in ruhigen Phasen als Teil der Psychoedukation; 'eine Person vorher informieren' entspricht dem Hinweis 'Sag einer Person in deiner Nähe Bescheid'. Bitte prüfen."
   }
 }

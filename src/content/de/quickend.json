@@ -1,0 +1,48 @@
+{
+  "quickend.title": {
+    "text": "Kurzer Abschluss",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "quickend.text": {
+    "text": "Du hast aktiv etwas getan. Die Angst muss dafür nicht ganz weg sein.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "quickend.again": {
+    "text": "Noch eine Übung",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "quickend.worse": {
+    "text": "Es ist schlimmer geworden",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    }
+  },
+  "quickend.worse.text": {
+    "text": "Das kann passieren. Wenn du dir Sorgen machst oder es nicht nachlässt, hol dir Unterstützung.",
+    "review": {
+      "status": "draft",
+      "reviewer": null,
+      "date": null,
+      "comment": null
+    },
+    "note": "Ersatz für die Einschätzung vorher/nachher im Schnellzugang: nur eine freiwillige Rückmeldung, damit bei Verschlechterung der Weg zur Hilfe sichtbar wird (Konzept Phase 5)."
+  }
+}

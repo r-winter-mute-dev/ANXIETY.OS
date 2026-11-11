@@ -2,7 +2,7 @@
 
 > Diese Datei wird automatisch aus `src/content/` erzeugt (`npm run review`). Nicht von Hand bearbeiten.
 
-**Stand:** 0 von 310 Einträgen freigegeben · 310 Entwurf · 0 Änderung nötig
+**Stand:** 0 von 321 Einträgen freigegeben · 321 Entwurf · 0 Änderung nötig
 
 ## So funktioniert die Prüfung
 
@@ -98,6 +98,13 @@
 | `emergency.crisis.berlin` | Berlin: Berliner Krisendienst, 030 390 63 10 (Öffnungszeiten der Standorte auf der Website) | ⬜ Entwurf | Widerspruch: berlin.de nennt 030 390 63 00 als überregionale Nummer, die Seite des Berliner Krisendienstes 030 390 63 10. Übernommen wurde die Angabe des Anbieters. Bitte vor Release erneut prüfen. | `berliner-krisendienst` |
 | `emergency.crisis.other` | Andere Regionen: Krisendienste und Sozialpsychiatrische Dienste in deiner Nähe findest du über die Suche der Stiftung Deutsche Depressionshilfe. | ⬜ Entwurf |  | `depressionshilfe-suche`, `gesundbund-krisen` |
 | `emergency.crisis.link` | Zur Suche (öffnet eine externe Seite) | ⬜ Entwurf |  |  |
+| `emergency.write.title` | Wenn Sprechen gerade schwerfällt | ⬜ Entwurf |  |  |
+| `emergency.write.nora` | nora – die offizielle Notruf-App der Bundesländer: Notruf an 110 und 112 ohne Sprechen, auch per Chat. Muss vorher eingerichtet werden. Bis dahin gilt die 112. | ⬜ Entwurf | Registrierung per SMS, teils Bestätigungsanruf oder POSTIDENT nötig; daher nur als Vorbereitung sinnvoll, nicht in der akuten Situation. | `nora` |
+| `emergency.write.krisenchat` | krisenchat – für alle unter 25: rund um die Uhr per Chat oder WhatsApp, kostenlos. | ⬜ Entwurf |  | `krisenchat` |
+| `emergency.write.ts` | TelefonSeelsorge schriftlich: Mail oder Chat nach anonymer Anmeldung. Chats laufen über Termine, Antworten auf Mails können einige Tage dauern. | ⬜ Entwurf |  | `ts-online` |
+| `emergency.write.open` | Öffnet eine externe Seite | ⬜ Entwurf |  |  |
+| `emergency.wait.title` | Während du wartest | ⬜ Entwurf |  |  |
+| `emergency.wait.text` | Wenn du Hilfe gerufen hast oder dich etwas beruhigen möchtest, kannst du eine kurze Übung machen. | ⬜ Entwurf | Soll nach einem Anruf die Wartezeit überbrücken. Bitte prüfen, ob das Angebot hier jemanden vom Anrufen abhalten könnte; deshalb steht es ganz unten. |  |
 
 ## `end.json`
 
@@ -155,12 +162,18 @@
 | `learn.symptoms.link` | Körpersignale einzeln erklärt | ⬜ Entwurf |  |  |
 | `learn.practice.title` | In Ruhe üben | ⬜ Entwurf |  |  |
 | `learn.practice.text` | Übungen gelingen in einer akuten Situation leichter, wenn man sie vorher in Ruhe ausprobiert hat. Hier gibt es keine Einschätzung vorher und nachher. | ⬜ Entwurf | Begründung: Übung in angstfreien Phasen erleichtert die Anwendung unter Stress (Konzept 5.1 / Psychoedukation). Bitte Formulierung und Beleg prüfen. |  |
-| `learn.practice.grounding` | Im Hier und Jetzt ankommen | ⬜ Entwurf |  |  |
-| `learn.practice.breathing` | Ruhig atmen | ⬜ Entwurf |  |  |
-| `learn.practice.reframe` | Gedanken prüfen | ⬜ Entwurf |  |  |
-| `learn.practice.simple` | Ganz einfache Schritte | ⬜ Entwurf |  |  |
-| `learn.practice.done` | Gut gemacht. Du kannst die Übung jederzeit wiederholen. | ⬜ Entwurf |  |  |
-| `learn.practice.distract` | Ablenken | ⬜ Entwurf |  |  |
+| `learn.prepare.title` | Vorbereitet sein | ⬜ Entwurf |  |  |
+| `learn.prepare.steps` | 1. Probier die Übungen unten einmal in Ruhe aus. Merk dir eine, die dir gutgetan hat.<br>2. Leg ANXIETY.OS auf deinen Startbildschirm. Nach dem ersten Öffnen funktioniert es auch ohne Internet.<br>3. Wenn dir Sprechen in einer Attacke schwerfällt: Richte die Notruf-App nora vorher ein.<br>4. Überleg dir eine Person, die du anrufen oder der du schreiben kannst, und sag ihr vorher Bescheid.<br>5. Lies die Erklärungen zu den Körpersignalen in einem ruhigen Moment. | ⬜ Entwurf | Vorbereitung in ruhigen Phasen als Teil der Psychoedukation; 'eine Person vorher informieren' entspricht dem Hinweis 'Sag einer Person in deiner Nähe Bescheid'. Bitte prüfen. |  |
+
+## `quickend.json`
+
+| ID | Text | Status | Hinweis | Quellen |
+|---|---|---|---|---|
+| `quickend.title` | Kurzer Abschluss | ⬜ Entwurf |  |  |
+| `quickend.text` | Du hast aktiv etwas getan. Die Angst muss dafür nicht ganz weg sein. | ⬜ Entwurf |  |  |
+| `quickend.again` | Noch eine Übung | ⬜ Entwurf |  |  |
+| `quickend.worse` | Es ist schlimmer geworden | ⬜ Entwurf |  |  |
+| `quickend.worse.text` | Das kann passieren. Wenn du dir Sorgen machst oder es nicht nachlässt, hol dir Unterstützung. | ⬜ Entwurf | Ersatz für die Einschätzung vorher/nachher im Schnellzugang: nur eine freiwillige Rückmeldung, damit bei Verschlechterung der Weg zur Hilfe sichtbar wird (Konzept Phase 5). |  |
 
 ## `rating.json`
 
@@ -292,7 +305,7 @@
 | `symptoms.brust.short` | Brustschmerz gehört zu den häufigsten Beschwerden bei Panikattacken. Schnelles Atmen kann selbst Druck und Schmerz in der Brust auslösen. | ⬜ Entwurf | Immer an erster Stelle, 112-Hinweis vor der Erklärung. Fleet 1996: 44 % der Panik-Patient:innen mit Brustschmerz in der Notaufnahme hatten eine dokumentierte KHK. | `tunnell2024`, `nardi2009`, `fleet1996`, `116117-112` |
 | `symptoms.brust.what` | Brustschmerz gehört zu den häufigsten körperlichen Symptomen von Panikattacken. Schnelles, flaches Atmen kann selbst Brustschmerzen auslösen. | ⬜ Entwurf |  | `tunnell2024`, `nardi2009`, `fleet1996`, `116117-112` |
 | `symptoms.brust.why` | Brustschmerz ist auch ein Warnzeichen für Herzerkrankungen. Deshalb ist die Angst davor verständlich – und deshalb ist dieser Punkt anders als die anderen. | ⬜ Entwurf |  | `clark1986` |
-| `symptoms.brust.check` | Bei starken Brustschmerzen oder wenn das für dich neu ist: ruf die 112, auch wenn du Panikattacken kennst. Angst und Herzerkrankung können gleichzeitig vorkommen – unterscheiden kann das nur eine Untersuchung. Wenn eine Ärztin oder ein Arzt deine Beschwerden schon als Teil der Angst eingeordnet hat, darfst du dich an diese Einordnung halten. | ⬜ Entwurf | Vollständiger Text nur unter 'Genauer erklärt' und im Lernbereich. Bitte prüfen, ob der Satz zu Herzerkrankung in der Akutphase eher beruhigt oder beunruhigt. | `fleet1996`, `116117-112` |
+| `symptoms.brust.check` | Bei starken Brustschmerzen oder wenn das für dich neu ist: ruf die 112, auch wenn du Panikattacken kennst. Angst und Herzerkrankung können gleichzeitig vorkommen – unterscheiden kann das nur eine Untersuchung. Hat eine Ärztin oder ein Arzt genau diese Beschwerden schon als Teil der Angst eingeordnet, und fühlen sie sich an wie sonst, darfst du dich an diese Einordnung halten. Sind sie stärker oder anders als sonst: 112. | ⬜ Entwurf | Vollständiger Text nur unter 'Genauer erklärt' und im Lernbereich. Bitte prüfen, ob der Satz zu Herzerkrankung in der Akutphase eher beruhigt oder beunruhigt. | `fleet1996`, `116117-112` |
 | `symptoms.atem.label` | Atemnot, zu wenig Luft | ⬜ Entwurf |  |  |
 | `symptoms.atem.short` | Bei Angst atmen viele schneller oder tiefer, als der Körper gerade braucht – oft ohne es zu merken. Das Gefühl, nicht genug Luft zu bekommen, kann dabei trotzdem sehr stark sein. Du musst nicht extra tief einatmen. | ⬜ Entwurf | Theorie des Erstickungs-Fehlalarms (Klein) ist nicht gesichert und als 'diskutiert' formuliert. | `tunnell2024`, `kyriakoulis2023`, `nardi2009`, `116117-112`, `freire2009` |
 | `symptoms.atem.what` | Die genaue Ursache ist nicht geklärt. Zwei Erklärungen werden diskutiert: Viele Menschen atmen bei Angst schneller oder tiefer, als der Körper braucht (Hyperventilation). Oder ein empfindliches inneres Erstickungs-Alarmsystem schlägt an, obwohl genug Sauerstoff da ist. | ⬜ Entwurf |  | `tunnell2024`, `kyriakoulis2023`, `nardi2009`, `116117-112`, `freire2009` |
@@ -406,3 +419,6 @@
 | `podina2013` | Podină, I. R., Koster, E. H. W., Philippot, P., Dethier, V., David, D. O. (2013). Optimal attentional focus during exposure in specific phobia: A meta-analysis. Clinical Psychology Review, 33(8), 1172–1183. [Meta-Analyse] | https://doi.org/10.1016/j.cpr.2013.10.002 | 2026-11-06 | ⬜ Entwurf |
 | `parrish2008` | Parrish, C. L., Radomsky, A. S., Dugas, M. J. (2008). Anxiety-control strategies: is there room for neutralization in successful exposure treatment? Clinical Psychology Review, 28(8), 1400–1412. [Review; Seitenzahlen bitte verifizieren] | https://doi.org/10.1016/j.cpr.2008.07.007 | 2026-11-06 | ⬜ Entwurf |
 | `oliver2008` | Oliver, N. S., Page, A. C. (2008). Effects of internal and external distraction and focus during exposure to blood-injury-injection stimuli. Journal of Anxiety Disorders, 22(2), 283–291. | https://doi.org/10.1016/j.janxdis.2007.01.006 | 2026-11-06 | ⬜ Entwurf |
+| `ts-online` | TelefonSeelsorge Deutschland: Mail- und Chatseelsorge, Häufige Fragen. [Primärquelle] | https://online.telefonseelsorge.de/haeufige-fragen | 2026-11-11 | ⬜ Entwurf |
+| `krisenchat` | krisenchat gGmbH: Krisenberatung per Chat für alle unter 25. [Primärquelle] | https://www.krisenchat.de/ | 2026-11-11 | ⬜ Entwurf |
+| `nora` | nora – offizielle Notruf-App der Bundesländer (Ministerium des Innern NRW): Was ist nora? / FAQ. [Primärquelle] | https://www.nora-notruf.de/de-as/was-ist-nora | 2026-11-11 | ⬜ Entwurf |

@@ -8,7 +8,15 @@ Alle Inhalte sind weiterhin **Entwurf – nicht fachlich geprüft**. Versionsnum
 - **Schnellzugang auf der Startseite:** Ablenken, Im Raum ankommen, Sanfte Atemhilfe, Körpersignale verstehen und Ein einfacher Schritt direkt nutzbar, ohne Sicherheitsfrage und Einschätzung. Am Ende zurück zur Startseite.
 - **Neue Übung „Ablenken“** mit vier Varianten: Rückwärts zählen, ABC-Spiel, Farben suchen, Ein vertrauter Weg. Auch im Ablauf und unter „In Ruhe üben“.
 
+- **Hilfe-Seite: „Wenn Sprechen gerade schwerfällt“:** Notruf-App nora (vorher einrichten), krisenchat für unter 25, TelefonSeelsorge per Mail und Chat.
+- **Hilfe-Seite: „Während du wartest“:** kurze Übungen nach einem Anruf, ganz unten.
+- **Kurzer Abschluss im Schnellzugang:** keine Skala, aber „Es ist schlimmer geworden“ zeigt den Weg zur Hilfe.
+- **„Vorbereitet sein“** unter „Angst verstehen“: Übung aussuchen, App auf den Startbildschirm, nora einrichten, Vertrauensperson vorher informieren.
+- Bildschirm bleibt während Übungen an (Wake Lock), Browserleiste passt sich dem hellen Farbschema an.
+
 ### Geändert
+- Brustschmerz: klarer, wann eine ärztliche Einordnung gilt (Beschwerden wie sonst) und wann trotzdem die 112 (stärker oder anders).
+- Übungsnamen überall einheitlich.
 - **Lizenz:** Code unter MIT (`LICENSE`), Inhalte, Dokumentation und Grafiken unter CC BY 4.0 (`LICENSE-CONTENT`). Bis 0.2.0 galt CC0 1.0; für diese Fassungen bleibt es dabei.
 
 ## [0.2.0] – 2026-11-04

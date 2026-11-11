@@ -18,7 +18,8 @@ export type Screen =
   | 'learn'
   | 'about'
   | 'settings'
-  | 'distract';
+  | 'distract'
+  | 'quickEnd';
 
 export type Exercise = 'reframe' | 'symptoms' | 'grounding' | 'distract' | 'breathing' | 'simple';
 export type Need = 'thoughts' | 'body' | 'breath' | 'overwhelm';
@@ -38,6 +39,9 @@ export const NEED_TO_EXERCISE: Record<Need, Exercise> = {
 
 /** Reihenfolge in "Alle Übungen": Atemhilfe bewusst nicht zuerst (geringe Evidenz). */
 export const EXERCISE_ORDER: Exercise[] = ['reframe', 'symptoms', 'grounding', 'distract', 'simple', 'breathing'];
+
+/** Übungs-Bildschirme: Hier bleibt der Bildschirm an (Wake Lock), damit er nicht mitten in der Übung ausgeht. */
+export const EXERCISE_SCREENS = new Set<Screen>(['reframe', 'symptoms', 'grounding', 'distract', 'breathing', 'simple']);
 
 /** Direkt von der Startseite nutzbar, ohne Sicherheitsfrage und Einschätzung (Wunsch Projektinhaber). */
 export const QUICK_EXERCISES: Exercise[] = ['distract', 'grounding', 'breathing', 'symptoms', 'simple'];
