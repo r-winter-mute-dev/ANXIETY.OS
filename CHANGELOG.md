@@ -6,6 +6,7 @@ Alle Inhalte sind weiterhin **Entwurf – nicht fachlich geprüft**. Versionsnum
 
 ### Umbau: ein ruhiger Ort
 - **Die Reise:** „Komm mit“ führt in vier Stationen zu einem ruhigen Ort (Insel, Brücke aus Glas, stille Stadt, Kristallbaum) und endet bei „Was ist gerade da?“. Inspiriert von einem Text des Projektinhabers, ohne Bilder von Leere und Schrecken.
+- **Eigene Grafiken für die Szene:** Insel, Stadt, Kristallbaum, Licht in den Rissen, Brücke mit Büchern und Himmel als einzelne Ebenen des Projektinhabers. Das Licht im Baum atmet langsam, Nebelbänder ziehen kaum merklich.
 - **Animierte Szene** im Hintergrund: schwebt sanft, Sterne schimmern langsam, Lichter steigen vom Baum auf. Sie rückt mit dem Fortschritt näher, nach einer Übung leuchtet der Baum am wärmsten. Alles langsam, ohne Blinken, abschaltbar über „Bewegung“.
 - **Startseite „Hier darfst du sein.“** mit der Frage „Was ist gerade da?“. Sicherheitsfrage, Angst-Skala und Bedarfsauswahl entfallen.
 - **Sortieren:** jede Antwort wird anerkannt und bekommt zwei kleine nächste Schritte.

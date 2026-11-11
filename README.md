@@ -193,6 +193,7 @@ Repository forken, unter **Settings → Pages** als Quelle **GitHub Actions** w�
 | Code | [MIT](LICENSE): frei nutzbar, auch kommerziell, Copyright-Hinweis bleibt erhalten |
 | Inhalte (`src/content/`), Dokumentation, Grafiken | [CC BY 4.0](LICENSE-CONTENT): frei nutzbar mit Namensnennung; Änderungen müssen kenntlich gemacht werden |
 | Zitierte Studien und Leitlinien | bei den jeweiligen Rechteinhabern; im Projekt stehen nur bibliografische Angaben |
+| Szene (Insel, Stadt, Baum, Brücke, Himmel) | Grafiken des Projektinhabers, [CC BY 4.0](LICENSE-CONTENT); Originalebenen in [`docs/scene/`](docs/scene) |
 | Farben | [Catppuccin](https://catppuccin.com) Mocha und Latte (MIT) |
 | Schrift | Systemschriften des Geräts, keine eingebundenen Schriftdateien |
 

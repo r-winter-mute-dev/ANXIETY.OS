@@ -1,136 +1,190 @@
 <script lang="ts">
-  // Ein ruhiger Ort: schwebende Insel, Brücke aus Glas, stille Stadt, Baum aus Kristall.
-  // Nur Dekoration (aria-hidden). Alle Bewegungen sind langsam, weich und ohne Blinken;
+  // Ein ruhiger Ort: Himmel, schwebende Insel, stille Stadt, Baum aus Kristall, Brücke mit Büchern.
+  // Grafiken: Ebenen des Projektinhabers (Originale in docs/scene/), hier zusammengeführt und animiert.
+  // Nur Dekoration (aria-hidden). Alle Bewegungen langsam, weich, ohne Blinken;
   // bei reduzierter Bewegung steht die Szene still (globale Regel in app.css).
   import type { Stage } from '../lib/routes';
 
   let { stage = 0, hero = false }: { stage?: Stage; hero?: boolean } = $props();
 
-  // Feste Pseudo-Zufallswerte, damit die Szene bei jedem Laden gleich aussieht.
+  // Feste Pseudo-Zufallswerte: kleine Lichter, die vom Baum aufsteigen („schwebende Verse“).
   function rand(seed: number) {
     const x = Math.sin(seed * 9301 + 49297) * 233280;
     return x - Math.floor(x);
   }
-  const stars = Array.from({ length: 34 }, (_, i) => ({
-    x: rand(i + 1) * 400,
-    y: rand(i + 101) * 330,
-    r: 0.5 + rand(i + 201) * 1.1,
-    d: 7 + rand(i + 301) * 8,
-    delay: -rand(i + 401) * 14,
+  const motes = Array.from({ length: 12 }, (_, i) => ({
+    x: 500 + rand(i + 501) * 200,
+    y: 300 + rand(i + 601) * 160,
+    r: 3 + rand(i + 901) * 3,
+    d: 14 + rand(i + 701) * 10,
+    delay: -rand(i + 801) * 24,
   }));
-  const motes = Array.from({ length: 10 }, (_, i) => ({
-    x: 168 + rand(i + 501) * 64,
-    y: 150 + rand(i + 601) * 40,
-    d: 13 + rand(i + 701) * 9,
-    delay: -rand(i + 801) * 20,
-  }));
-  const books = Array.from({ length: 9 }, (_, i) => i);
+  // Sterne aus der Himmel-Ebene, einzeln, damit sie zeitversetzt schimmern können.
+  const sparkles = [
+    'M245 250 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7Z',
+    'M930 320 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6Z',
+    'M835 180 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5Z',
+  ];
+  const dots: [number, number, number][] = [
+    [360, 210, 5], [780, 265, 5], [1000, 455, 4], [190, 430, 4], [510, 150, 4], [720, 120, 4],
+  ];
+  const pinks: [number, number][] = [[290, 320], [650, 220], [890, 430], [440, 480]];
 </script>
 
 <div class="scene" class:hero data-stage={stage} aria-hidden="true">
-  <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice">
+  <svg viewBox="0 0 1200 1800" preserveAspectRatio="xMidYMid slice">
     <defs>
-      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#cba6f7" stop-opacity="0.55" />
-        <stop offset="45%" stop-color="#b4befe" stop-opacity="0.18" />
+      <linearGradient id="sc-stone" x1="0" y1="0" x2="0.9" y2="1">
+        <stop offset="0" stop-color="#313244" /><stop offset="1" stop-color="#11111b" />
+      </linearGradient>
+      <linearGradient id="sc-crystal" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f5c2e7" /><stop offset=".5" stop-color="#cba6f7" /><stop offset="1" stop-color="#b4befe" />
+      </linearGradient>
+      <radialGradient id="sc-glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#cba6f7" stop-opacity="0.5" />
+        <stop offset="45%" stop-color="#b4befe" stop-opacity="0.16" />
         <stop offset="100%" stop-color="#b4befe" stop-opacity="0" />
       </radialGradient>
-      <linearGradient id="crystal" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#f5c2e7" />
-        <stop offset="55%" stop-color="#cba6f7" />
-        <stop offset="100%" stop-color="#7f849c" />
-      </linearGradient>
-      <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#313244" />
-        <stop offset="100%" stop-color="#11111b" />
-      </linearGradient>
-      <linearGradient id="glass" x1="0" y1="1" x2="1" y2="0">
-        <stop offset="0%" stop-color="#b4befe" stop-opacity="0" />
-        <stop offset="60%" stop-color="#b4befe" stop-opacity="0.35" />
-        <stop offset="100%" stop-color="#cba6f7" stop-opacity="0.5" />
-      </linearGradient>
+      <filter id="sc-softGlow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="14" result="blur" />
+        <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+      </filter>
     </defs>
 
-    <g class="stars">
-      {#each stars as s}
-        <circle cx={s.x} cy={s.y} r={s.r} style="animation-duration:{s.d}s;animation-delay:{s.delay}s" />
-      {/each}
+    <!-- 06 Himmel: Sterne und zarte Nebelbänder -->
+    <g class="sky">
+      <g class="nebula" fill="none" stroke="#cba6f7" stroke-width="5">
+        <path d="M190 350 Q330 280 460 330 T720 315 T1010 360" />
+        <path d="M280 455 Q420 390 550 430 T830 415" />
+      </g>
+      <g fill="#b4befe">
+        {#each sparkles as d, i}<path class="twinkle" {d} style="animation-duration:{9 + i * 2}s;animation-delay:{-i * 3}s" />{/each}
+        {#each dots as [cx, cy, r], i}<circle class="twinkle" {cx} {cy} {r} style="animation-duration:{8 + (i % 4) * 2}s;animation-delay:{-i * 1.7}s" />{/each}
+      </g>
+      <g fill="#f5c2e7">
+        {#each pinks as [cx, cy], i}<circle class="twinkle soft" {cx} {cy} r="3" style="animation-duration:{11 + i * 2}s;animation-delay:{-i * 2.5}s" />{/each}
+      </g>
     </g>
 
     <g class="world">
       <g class="float">
-        <!-- Brücke aus Glas, gesäumt von gebundenen Büchern -->
-        <g class="bridge">
-          <path d="M -40 640 C 40 520, 110 360, 150 262" fill="none" stroke="url(#glass)" stroke-width="5" stroke-linecap="round" />
-          <path d="M -30 628 C 50 510, 116 356, 154 258" fill="none" stroke="#b4befe" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 6" />
-          {#each books as b}
-            {@const t = (b + 1) / 11}
-            {@const x = -40 + (150 + 40) * t + Math.sin(t * 3) * 8}
-            {@const y = 640 - (640 - 262) * t}
-            <rect x={x - 3} y={y - 9} width="5" height="8" rx="1" fill="#45475a" opacity="0.7" />
-          {/each}
+        <!-- Leuchten hinter dem Baum -->
+        <circle class="glow" cx="600" cy="380" r="330" fill="url(#sc-glow)" />
+
+        <!-- 01 Insel -->
+        <g class="island">
+          <path
+            d="M180 770 Q240 720 330 730 Q410 680 500 710 Q600 675 690 710 Q780 680 860 725 Q970 710 1030 770 Q1005 845 940 895 L895 1010 850 980 820 1130 775 1085 735 1230 690 1175 650 1320 600 1220 550 1335 510 1200 465 1260 430 1110 385 1150 350 1015 300 1050 275 930 220 900Z"
+            fill="url(#sc-stone)" stroke="#45465c" stroke-width="8" stroke-linejoin="round"
+          />
+          <path d="M185 770 Q260 730 330 740 Q420 690 500 720 Q600 690 690 720 Q785 690 860 735 Q960 720 1025 770" fill="none" stroke="#6c7086" stroke-width="12" stroke-linecap="round" />
+          <g fill="none" stroke="#6c7086" stroke-width="7" stroke-linecap="round" opacity=".85">
+            <path d="M300 812 Q355 850 395 825 T485 850 L530 900" />
+            <path d="M690 785 Q655 835 690 870 T665 945 L710 990" />
+            <path d="M850 805 Q800 850 830 890 L790 935" />
+            <path d="M420 965 Q470 930 505 980 L490 1050" />
+            <path d="M565 1080 L600 1035 635 1060 655 1010" />
+            <path d="M340 890 L375 925 360 970" />
+          </g>
+          <g fill="none" stroke="#9399b2" stroke-width="3" opacity=".55">
+            <path d="M235 790 Q300 770 340 790" /><path d="M730 750 Q785 735 825 760" />
+            <path d="M890 870 Q925 850 950 865" /><path d="M460 1110 L480 1140" />
+          </g>
         </g>
 
-        <!-- Leuchten des Baumes -->
-        <circle class="glow" cx="200" cy="175" r="95" fill="url(#glow)" />
-
-        <!-- Insel aus dunklem Stein mit Marmoradern, unten wie gefrorene Tropfen -->
-        <path
-          d="M 88 250 Q 200 228 312 250 L 298 276 L 304 300 L 284 330 L 270 384 L 254 350 L 242 414 L 224 362 L 206 446 L 190 366 L 172 404 L 160 352 L 140 372 L 128 322 L 108 302 L 100 276 Z"
-          fill="url(#rock)"
-        />
-        <g class="marble" fill="none" stroke="#6c7086" stroke-width="0.8" stroke-opacity="0.45">
-          <path d="M 120 268 Q 150 290 140 330" />
-          <path d="M 230 262 Q 250 300 236 360" />
-          <path d="M 270 270 Q 262 290 280 318" />
-          <path d="M 180 272 Q 196 320 188 352" />
-        </g>
-        <path d="M 88 250 Q 200 228 312 250" fill="none" stroke="#585b70" stroke-width="1.2" />
-
-        <!-- Stille Stadt -->
-        <g class="city" fill="#232334">
-          <rect x="118" y="214" width="16" height="38" />
-          <rect x="136" y="200" width="12" height="52" />
-          <rect x="150" y="222" width="18" height="30" />
-          <rect x="232" y="218" width="18" height="34" />
-          <rect x="252" y="198" width="12" height="54" />
-          <rect x="266" y="224" width="16" height="28" />
-          <path d="M 136 200 L 142 188 L 148 200 Z" />
-          <path d="M 252 198 L 258 184 L 264 198 Z" />
-        </g>
-        <g class="windows" fill="#b4befe">
-          <rect x="123" y="224" width="2" height="3" />
-          <rect x="140" y="212" width="2" height="3" />
-          <rect x="140" y="230" width="2" height="3" />
-          <rect x="157" y="232" width="2" height="3" />
-          <rect x="238" y="230" width="2" height="3" />
-          <rect x="256" y="210" width="2" height="3" />
-          <rect x="271" y="234" width="2" height="3" />
+        <!-- 02 Stadt -->
+        <g class="city" stroke-linejoin="round">
+          <g fill="#242436" stroke="#6c7086" stroke-width="6">
+            <path d="M300 735 V600 L345 555 390 600 V735Z" />
+            <path d="M390 735 V525 L450 470 510 525 V735Z" />
+            <path d="M520 735 V615 L560 575 600 615 V735Z" />
+            <path d="M675 735 V545 L730 485 785 545 V735Z" />
+            <path d="M800 735 V610 L845 565 890 610 V735Z" />
+          </g>
+          <g fill="#313244" stroke="#6c7086" stroke-width="5">
+            <path d="M260 735 V665 L290 635 320 665 V735Z" />
+            <path d="M470 735 V650 L500 620 530 650 V735Z" />
+            <path d="M615 735 V635 L645 605 675 635 V735Z" />
+            <path d="M755 735 V665 L780 640 805 665 V735Z" />
+            <path d="M875 735 V680 L900 655 925 680 V735Z" />
+          </g>
+          <g class="windows" fill="#cba6f7">
+            <path d="M340 625h14v28h-14z M430 560h16v32h-16z M475 600h14v26h-14z M712 570h16v34h-16z M830 645h14v26h-14z" />
+            <path d="M285 680h10v18h-10z M640 665h10v20h-10z M780 690h10v18h-10z" />
+          </g>
+          <g fill="#11111b" stroke="#6c7086" stroke-width="4">
+            <path d="M430 470 Q450 430 470 470Z" /><path d="M710 485 Q730 445 750 485Z" />
+            <path d="M330 555 Q345 525 360 555Z" />
+          </g>
+          <path d="M255 738 Q600 720 940 738" fill="none" stroke="#9399b2" stroke-width="8" opacity=".7" />
         </g>
 
-        <!-- Baum aus dunklem, gebrochenem Kristall -->
+        <!-- 03 Baum aus Kristall -->
         <g class="tree">
-          <path d="M 196 246 L 198 196 L 202 196 L 205 246 Z" fill="#45475a" />
-          <g fill="url(#crystal)" stroke="#11111b" stroke-width="0.6" stroke-opacity="0.6">
-            <path d="M 200 120 L 214 150 L 206 182 L 194 182 L 186 150 Z" opacity="0.85" />
-            <path d="M 186 150 L 166 140 L 158 166 L 180 178 Z" opacity="0.7" />
-            <path d="M 214 150 L 236 138 L 244 164 L 220 178 Z" opacity="0.7" />
-            <path d="M 180 178 L 162 186 L 170 204 L 196 196 Z" opacity="0.55" />
-            <path d="M 220 178 L 238 186 L 230 204 L 204 196 Z" opacity="0.55" />
+          <path
+            d="M570 770 Q600 675 575 580 Q555 490 600 405 Q625 355 600 300 Q650 360 650 430 Q680 510 635 585 Q620 665 675 770Z"
+            fill="#242436" stroke="#6c7086" stroke-width="12" stroke-linejoin="round"
+          />
+          <path
+            d="M605 675 Q520 600 455 555 Q420 530 390 485 M625 620 Q710 560 770 500 M600 500 Q535 430 500 365 M635 465 Q700 390 725 340"
+            fill="none" stroke="#45465c" stroke-width="30" stroke-linecap="round"
+          />
+          <path d="M600 770 Q600 650 612 570 Q620 490 600 405" fill="none" stroke="#9399b2" stroke-width="5" opacity=".65" />
+          <g fill="url(#sc-crystal)" stroke="#b4befe" stroke-width="6" stroke-linejoin="round">
+            <path d="M600 245 L555 315 570 390 620 420 665 360 650 285Z" />
+            <path d="M510 320 L470 365 490 420 545 410 570 360Z" />
+            <path d="M680 300 L650 360 680 415 735 390 745 335Z" />
+            <path d="M555 395 L530 445 565 475 610 445 600 405Z" />
+            <path d="M645 405 L625 455 670 480 710 440 690 405Z" />
+            <path d="M595 170 L575 230 600 270 630 225 620 175Z" />
           </g>
-          <!-- Risse, durch die Licht schimmert -->
-          <g class="cracks" fill="none" stroke="#f5e0dc" stroke-width="0.7">
-            <path d="M 200 128 L 203 146 L 197 160 L 201 178" />
-            <path d="M 170 152 L 176 164" />
-            <path d="M 232 150 L 226 166" />
+          <g fill="none" stroke="#f5c2e7" stroke-width="5" opacity=".9">
+            <path d="M600 185 L600 265 M510 330 L540 390 M700 315 L685 380" />
+          </g>
+          <path d="M450 770 Q600 740 760 770" fill="none" stroke="#6c7086" stroke-width="8" opacity=".8" />
+        </g>
+
+        <!-- 04 Licht in den Rissen: atmet langsam -->
+        <g class="treelight">
+          <g filter="url(#sc-softGlow)">
+            <path
+              d="M596 300 Q610 340 608 380 M525 360 Q550 380 560 405 M690 345 Q675 370 670 395 M605 455 Q620 475 620 505 M585 565 Q600 590 600 620"
+              fill="none" stroke="#cba6f7" stroke-width="10" stroke-linecap="round"
+            />
+            <g fill="#f5c2e7">
+              <circle cx="608" cy="345" r="8" /><circle cx="553" cy="390" r="6" />
+              <circle cx="675" cy="375" r="7" /><circle cx="620" cy="485" r="6" />
+            </g>
           </g>
         </g>
 
-        <!-- Schwebende Verse: kleine Lichter, die langsam aufsteigen -->
+        <!-- Schwebende Verse -->
         <g class="motes" fill="#f5c2e7">
           {#each motes as m}
-            <circle cx={m.x} cy={m.y} r="1.3" style="animation-duration:{m.d}s;animation-delay:{m.delay}s" />
+            <circle cx={m.x} cy={m.y} r={m.r} style="animation-duration:{m.d}s;animation-delay:{m.delay}s" />
           {/each}
+        </g>
+
+        <!-- 05 Brücke mit Büchern: im Vordergrund, solange man unterwegs ist -->
+        <g class="bridge-pos">
+          <g class="bridge" stroke-linejoin="round">
+            <path d="M170 700 Q600 815 1030 700" fill="none" stroke="#242436" stroke-width="48" />
+            <path d="M170 685 Q600 800 1030 685" fill="none" stroke="#6c7086" stroke-width="8" />
+            <path d="M170 685 Q600 800 1030 685" fill="none" stroke="#45465c" stroke-width="28" />
+            <g stroke="#6c7086" stroke-width="8" fill="none">
+              <path d="M205 690 L205 585 M300 714 L300 610 M395 738 L395 635 M490 758 L490 655 M585 770 L585 665 M680 758 L680 655 M775 738 L775 635 M870 714 L870 610 M965 690 L965 585" />
+              <path d="M205 585 Q585 650 965 585" />
+            </g>
+            <g stroke="#6c7086" stroke-width="5">
+              <path d="M330 680 l0 -72 42 7 0 73Z" fill="#313244" />
+              <path d="M375 690 l0 -83 46 8 0 84Z" fill="#45465c" />
+              <path d="M780 690 l0 -85 48 -8 0 83Z" fill="#313244" />
+              <path d="M830 680 l0 -74 42 -7 0 72Z" fill="#45465c" />
+            </g>
+            <g fill="none" stroke="#cba6f7" stroke-width="4" opacity=".85">
+              <path d="M342 620 l18 3 M388 622 l19 3 M793 622 l20 -3 M842 620 l18 -3" />
+            </g>
+          </g>
         </g>
       </g>
     </g>
@@ -150,8 +204,8 @@
   }
   .scene.hero {
     opacity: 1;
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 34%, transparent 58%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 34%, transparent 58%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 58%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 58%);
   }
   svg {
     width: 100%;
@@ -160,24 +214,27 @@
 
   /* Der Ort rückt Station für Station näher – langsam, ohne Ruck */
   .world {
-    transform-origin: 200px 250px;
+    transform-origin: 600px 700px;
     transition: transform 2.6s cubic-bezier(0.33, 0, 0.2, 1);
-    transform: translateY(-110px) scale(0.42);
+    transform: translateY(-250px) scale(0.45);
   }
   [data-stage='1'] .world {
-    transform: translateY(-70px) scale(0.62);
+    transform: translateY(0) scale(0.62);
   }
   [data-stage='2'] .world {
-    transform: translateY(-36px) scale(0.86);
+    transform: translateY(40px) scale(0.8);
   }
   [data-stage='3'] .world,
   [data-stage='4'] .world {
-    transform: translateY(0) scale(1.12);
+    transform: translateY(100px) scale(0.95);
   }
 
-  /* Brücke erscheint, sobald man losgeht */
+  /* Brücke: in der Ferne kaum sichtbar, unterwegs im Vordergrund, am Baum ausgeblendet */
+  .bridge-pos {
+    transform: translateY(330px);
+  }
   .bridge {
-    opacity: 0.35;
+    opacity: 0.25;
     transition: opacity 2s ease;
   }
   [data-stage='1'] .bridge,
@@ -186,44 +243,56 @@
   }
   [data-stage='3'] .bridge,
   [data-stage='4'] .bridge {
-    opacity: 0.5;
+    opacity: 0;
   }
 
   /* Je näher, desto wärmer das Leuchten */
   .glow {
-    opacity: 0.35;
+    opacity: 0.3;
     transition: opacity 2.4s ease;
   }
   [data-stage='2'] .glow {
-    opacity: 0.6;
+    opacity: 0.55;
   }
   [data-stage='3'] .glow {
-    opacity: 0.85;
+    opacity: 0.8;
   }
   [data-stage='4'] .glow {
     opacity: 1;
   }
   .windows {
-    opacity: 0.35;
+    opacity: 0.45;
     transition: opacity 2s ease;
   }
   [data-stage='2'] .windows,
   [data-stage='3'] .windows,
   [data-stage='4'] .windows {
-    opacity: 0.6;
+    opacity: 0.75;
   }
-  .cracks {
-    opacity: 0.35;
+  .treelight {
+    opacity: 0.4;
     transition: opacity 2.4s ease;
   }
-  [data-stage='3'] .cracks {
-    opacity: 0.6;
+  [data-stage='3'] .treelight {
+    opacity: 0.75;
   }
-  [data-stage='4'] .cracks {
-    opacity: 0.85;
+  [data-stage='4'] .treelight {
+    opacity: 1;
+  }
+  /* Das Licht atmet: sehr langsam, kleiner Ausschlag */
+  .treelight > g {
+    animation: breathe 10s ease-in-out infinite alternate;
+  }
+  @keyframes breathe {
+    from {
+      opacity: 0.65;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
-  /* Ruhige Daueranimationen: sehr langsam, kleine Ausschläge */
+  /* Ruhige Daueranimationen */
   .float {
     animation: bob 16s ease-in-out infinite alternate;
   }
@@ -232,20 +301,34 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(-7px);
+      transform: translateY(-18px);
     }
   }
-  .stars circle {
-    fill: #cdd6f4;
-    opacity: 0.3;
+  .nebula {
+    opacity: 0.35;
+    animation: drift 40s ease-in-out infinite alternate;
+  }
+  @keyframes drift {
+    from {
+      transform: translateX(-12px);
+    }
+    to {
+      transform: translateX(12px);
+    }
+  }
+  .twinkle {
+    opacity: 0.6;
     animation: shimmer ease-in-out infinite alternate;
+  }
+  .twinkle.soft {
+    opacity: 0.45;
   }
   @keyframes shimmer {
     from {
-      opacity: 0.12;
+      opacity: 0.25;
     }
     to {
-      opacity: 0.5;
+      opacity: 0.85;
     }
   }
   .motes circle {
@@ -261,10 +344,10 @@
       opacity: 0.7;
     }
     80% {
-      opacity: 0.45;
+      opacity: 0.4;
     }
     100% {
-      transform: translateY(-70px);
+      transform: translateY(-200px);
       opacity: 0;
     }
   }
@@ -272,18 +355,18 @@
   /* Helles Farbschema: Szene als zarte Zeichnung */
   :global(:root[data-theme='latte']) .scene {
     filter: invert(0.9) hue-rotate(180deg) saturate(1.2);
-    opacity: 0.22;
+    opacity: 0.18;
   }
   :global(:root[data-theme='latte']) .scene.hero {
-    opacity: 0.55;
+    opacity: 0.6;
   }
   @media (prefers-color-scheme: light) {
     :global(:root[data-theme='system']) .scene {
       filter: invert(0.9) hue-rotate(180deg) saturate(1.2);
-      opacity: 0.22;
+      opacity: 0.18;
     }
     :global(:root[data-theme='system']) .scene.hero {
-      opacity: 0.55;
+      opacity: 0.6;
     }
   }
 </style>
